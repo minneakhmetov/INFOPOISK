@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru" class="">
+<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="/bitrix/js/main/core/css/core.min.css?16128673103575" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+				:root {
+					--theme-color-primary: #f7b70b;
+					--theme-color-primary-darken-1: hsl(43.73, 94%, 49%);
+					--theme-color-primary-darken-2: hsl(43.73, 94%, 46%);
+					--theme-color-primary-darken-3: hsl(43.73, 94%, 41%);
+					--theme-color-primary-lighten-1: hsl(43.73, 94%, 61%);
+					--theme-color-primary-opacity-0_1: rgba(247, 183, 11, 0.1);
+					--theme-color-primary-opacity-0_2: rgba(247, 183, 11, 0.2);
+					--theme-color-primary-opacity-0_3: rgba(247, 183, 11, 0.3);
+					--theme-color-primary-opacity-0_4: rgba(247, 183, 11, 0.4);
+					--theme-color-primary-opacity-0_6: rgba(247, 183, 11, 0.6);
+					--theme-color-primary-opacity-0_8: rgba(247, 183, 11, 0.8);
+					--theme-color-primary-opacity-0_9: rgba(247, 183, 11, 0.9);
+					--theme-color-main: #a7a7a7;
+					--theme-color-secondary: hsl(43.73, 20%, 80%);
+					--theme-color-title: #a7a7a7;
+				}
+			</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+
+
+<link href="/bitrix/js/intranet/intranet-common.min.css?156700641462422" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/sidepanel/css/sidepanel.min.css?16044092096434" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/landing/css/landing_public.min.css?1567508327250" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/components/bitrix/landing.pub/templates/.default/style.min.css?160165017637243" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/components/bitrix/search.title/templates/bootstrap_v4/style.min.css?1538402451436" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/bootstrap/bootstrap.min.css?1567508327154948" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/css/custom-grid.min.css?156933840138" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/theme.min.css?1608555882628499" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/css/custom.min.css?15738327531305" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/css/themes_custom.min.css?16085558829475" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/animate.min.css?156750832717634" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/icon/icon/style.min.css?15994906853423" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/icon/fa/style.min.css?15994906853280" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/hamburgers/dist/hamburgers.min.css?16085558826348" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/slick-carousel/slick/slick.min.css?16085558821202" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/slick-carousel/slick/landing-slick.min.css?16085558823218" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/icon/icon-hotel-restaurant/style.min.css?1594736530873" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/icon/icon-communication/style.min.css?1594736530854" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/icon/icon-real-estate/style.min.css?1590650826823" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/assets/vendor/icon/icon-finance/style.min.css?1594736530801" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/templates/landing24/template_styles.min.css?1583933130781" type="text/css"  data-template-style="true"  rel="stylesheet" />
+
+
+
+
+
+
+
+<meta name="robots" content="all" />
+
+
+
+<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/icon/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
+<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/icon/font.woff2" as="font" crossorigin="anonymous" type="font/woff2" crossorigin>
+<style>.icon-clock:before{content:"\e081";}.icon-screen-smartphone:before{content:"\e010";}.icon-envelope:before{content:"\e086";}</style>
+<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/fa/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
+<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/fa/font.woff2" as="font" crossorigin="anonymous" type="font/woff2" crossorigin>
+<style>.fa-user-o:before{content:"\f2c0";}</style>
+<style>.fa-angle-left:before{content:"\f104";}.fa-angle-right:before{content:"\f105";}</style>
+<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/icon-hotel-restaurant/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
+<style>.icon-hotel-restaurant-235:before{content:"\e098";}.icon-hotel-restaurant-003:before{content:"c";}</style>
+<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/icon-communication/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
+<style>.icon-communication-033:before{content:"S";}.icon-communication-062:before{content:"1";}</style>
+<style>.fa-facebook:before{content:"\f09a";}.fa-instagram:before{content:"\f16d";}.fa-twitter:before{content:"\f099";}.fa-youtube:before{content:"\f167";}.fa-vk:before{content:"\f189";}.fa-odnoklassniki:before{content:"\f263";}</style>
+<style>.icon-social-github:before{content:"\e60c";}.icon-heart:before{content:"\e08a";}</style>
+<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/icon-real-estate/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
+<style>.icon-real-estate-044:before{content:"5";}</style>
+<style>.icon-star:before{content:"\e09b";}</style>
+<style>.icon-direction:before{content:"\e042";}</style>
+<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/icon-finance/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
+<style>.icon-finance-032:before{content:"\e086";}</style>
+<style>.icon-people:before{content:"\e001";}</style>
+<link 
+						rel="preload" 
+						as="style" 
+						onload="this.removeAttribute('onload');this.rel='stylesheet'" 
+						data-font="g-font-roboto" 
+						data-protected="true" 
+						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic,cyrillic-ext,latin-ext">
+					<noscript>
+						<link
+							rel="stylesheet" 
+							data-font="g-font-roboto" 
+							data-protected="true" 
+							href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic,cyrillic-ext,latin-ext">
+					</noscript>
+<style>
+				body {
+					font-weight: 400;
+					font-family: "Roboto", Arial, sans-serif;
+					line-height: 1.6;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					-moz-font-feature-settings: "liga", "kern";
+					text-rendering: optimizelegibility;
+				}
+			</style>
+<style>
+				h1, h2, h3, h4, h5, h6 {
+					font-family: "Roboto", Arial, sans-serif;
+				}
+			</style>
+<style>
+			html {font-size: 14px;}
+			body {font-size: 1rem;}
+			.g-font-size-default {font-size: 1rem;}
+		</style>
+
+
+<meta property="og:title" content="Bengalion" /><meta property="og:description" content="Питомник бенгальских кошек" /><meta property="og:type" content="website" /><meta property="twitter:title" content="Bengalion" /><meta property="twitter:description" content="Питомник бенгальских кошек" /><meta property="twitter:type" content="website" /> <meta property="og:image" content="https://bennn.ru/preview.jpg" /><meta property="twitter:image" content="https://bennn.ru/preview.jpg" /> <meta name="og:url" content="https://bennn.ru/" />
+<link rel="canonical" href="https://bennn.ru/"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El+Messiri" data-font="g-font-el-messiri" as="style"></noscript>
+<link rel="preload" href="https://fonts.googleapis.com/css?family=El+Messiri" data-font="g-font-el-messiri" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+<style data-id="g-font-el-messiri">.g-font-el-messiri { font-family: "El Messiri", sans-serif; }</style><link 
+						rel="preload" 
+						as="style" 
+						onload="this.removeAttribute('onload');this.rel='stylesheet'" 
+						data-font="g-font-open-sans" 
+						data-protected="true" 
+						href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic">
+					<noscript>
+						<link
+							rel="stylesheet" 
+							data-font="g-font-open-sans" 
+							data-protected="true" 
+							href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic">
+					</noscript><link 
+						rel="preload" 
+						as="style" 
+						onload="this.removeAttribute('onload');this.rel='stylesheet'" 
+						data-font="g-font-cormorant-infant" 
+						data-protected="true" 
+						href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,400i,600,600i,700,700i&subset=cyrillic-ext,latin-ext">
+					<noscript>
+						<link
+							rel="stylesheet" 
+							data-font="g-font-cormorant-infant" 
+							data-protected="true" 
+							href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,400i,600,600i,700,700i&subset=cyrillic-ext,latin-ext">
+					</noscript><link 
+						rel="preload" 
+						as="style" 
+						onload="this.removeAttribute('onload');this.rel='stylesheet'" 
+						data-font="g-font-montserrat" 
+						data-protected="true" 
+						href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&subset=cyrillic">
+					<noscript>
+						<link
+							rel="stylesheet" 
+							data-font="g-font-montserrat" 
+							data-protected="true" 
+							href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&subset=cyrillic">
+					</noscript> <link rel="icon" type="image/png" href="https://bitrix2.cdnvideo.ru/b10771232/resize_cache/281/047e4a127947eff3c7d861cc2f113186/landing/a70/a70cf69024589780fdc7260fa560c070/1.png?h=bennn.bitrix24.ru" sizes="16x16"><link rel="icon" type="image/png" href="https://bitrix2.cdnvideo.ru/b10771232/resize_cache/281/45fd33a620da2e44653e6a92c96d9446/landing/a70/a70cf69024589780fdc7260fa560c070/1.png?h=bennn.bitrix24.ru" sizes="32x32"><link rel="icon" type="image/png" href="https://bitrix2.cdnvideo.ru/b10771232/resize_cache/281/c8042d925d6656dd077f15192d13bb8f/landing/a70/a70cf69024589780fdc7260fa560c070/1.png?h=bennn.bitrix24.ru" sizes="96x96"><link rel="apple-touch-icon" href="https://bitrix2.cdnvideo.ru/b10771232/resize_cache/281/eb45a9f96698d396483d7a1236fe0380/landing/a70/a70cf69024589780fdc7260fa560c070/1.png?h=bennn.bitrix24.ru" sizes="120x120"><link rel="apple-touch-icon" href="https://bitrix2.cdnvideo.ru/b10771232/resize_cache/281/a03d95df41ccb7c2ab8a9e9ebcd4cf8a/landing/a70/a70cf69024589780fdc7260fa560c070/1.png?h=bennn.bitrix24.ru" sizes="180x180"><link rel="apple-touch-icon" href="https://bitrix2.cdnvideo.ru/b10771232/resize_cache/281/8245e211b4cc1aeef31861f9c55143e5/landing/a70/a70cf69024589780fdc7260fa560c070/1.png?h=bennn.bitrix24.ru" sizes="152x152"><link rel="apple-touch-icon" href="https://bitrix2.cdnvideo.ru/b10771232/resize_cache/281/26c9f99963f016735739c7de412de1e1/landing/a70/a70cf69024589780fdc7260fa560c070/1.png?h=bennn.bitrix24.ru" sizes="167x167"></head>
+<body class="" >
+<main class="w-100 landing-public-mode" ><div class="landing-header"><div id="block1505" class="block-wrapper block-35-6-header-with-contacts-search-wo-logo">
+<header class="landing-block landing-block-menu g-bg-white g-brd-bottom g-brd-gray-light-v4 g-pt-0 g-pb-0">
+	<div class="container">
+		<div class="row flex-lg-row align-items-center justify-content-between">
+			<div class="col-sm-9 d-none d-sm-block text-center text-lg-left">
+				<div class="row align-items-center"><div class="landing-block-node-card col-sm g-brd-right--sm g-brd-gray-light-v4 landing-card" data-card-preset="text">
+						<div class="g-pa-10--lg">
+							<div class="landing-block-node-card-icon-container d-lg-inline-block g-valign-top g-color-primary g-mr-5 g-font-size-18 g-line-height-1">
+								<i class="landing-block-node-card-icon icon icon-clock" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+							</div>
+							<div class="landing-block-node-card-text-container d-inline-block">
+								<div class="landing-block-node-card-title text-uppercase g-font-size-13 g-font-el-messiri g-color-black">Время работы:</div>
+								<div class="landing-block-node-card-text g-font-size-14 g-font-weight-700 g-font-el-messiri g-color-primary">Пн-Вс: 09.00 - 22.00</div>
+							</div>
+						</div>
+					</div><div class="landing-block-node-card col-sm g-brd-right--sm g-brd-gray-light-v4 landing-card" data-card-preset="link">
+						<div class="g-pa-10--lg">
+							<div class="landing-block-node-card-icon-container d-lg-inline-block g-valign-top g-color-primary g-mr-5 g-font-size-18 g-line-height-1">
+								<i class="landing-block-node-card-icon icon icon-screen-smartphone" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;tel:+79877407090&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;enabled&quot;:true}"></i>
+							</div>
+							<div class="landing-block-node-card-text-container d-inline-block">
+								<div class="landing-block-node-card-title text-uppercase g-font-size-13 g-font-el-messiri g-color-black">Телефон:</div>
+								<a class="landing-block-node-card-link g-color-primary g-font-size-14 g-font-weight-700 g-font-el-messiri" href="tel:+79877407090" target="_self">+7 (987) 740 70 90</a>
+							</div>
+						</div>
+					</div><div class="landing-block-node-card col-sm g-brd-right--sm g-brd-gray-light-v4 landing-card" data-card-preset="link">
+						<div class="g-pa-10--lg">
+							<div class="landing-block-node-card-icon-container d-lg-inline-block g-valign-top g-color-primary g-mr-5 g-font-size-18 g-line-height-1">
+								<i class="landing-block-node-card-icon icon g-valign-middle g-font-size-18 g-color-primary g-mr-5 icon-envelope" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;mailto:info@BenNN.ru&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;enabled&quot;:true}"></i>
+							</div>
+							<div class="landing-block-node-card-text-container d-inline-block">
+								<div class="landing-block-node-card-title text-uppercase g-font-size-13 g-font-el-messiri g-color-black">Email:</div>
+								<a class="landing-block-node-card-link g-color-primary g-font-size-14 g-font-weight-700 g-font-el-messiri" href="mailto:info@BenNN.ru" target="_self">info@BenNN.ru</a>
+							</div>
+						</div>
+					</div><div class="landing-block-node-card col-sm g-brd-right--sm g-brd-gray-light-v4 landing-card" data-card-preset="link">
+						<div class="g-pa-10--lg">
+							<div class="landing-block-node-card-icon-container d-lg-inline-block g-valign-top g-color-primary g-mr-5 g-font-size-18 g-line-height-1">
+								<i class="landing-block-node-card-icon icon fa fa-user-o" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+							</div>
+							<div class="landing-block-node-card-text-container d-inline-block">
+								<div class="landing-block-node-card-title text-uppercase g-font-size-13 g-font-el-messiri g-color-black">Кабинет</div>
+								<a class="landing-block-node-card-link g-color-primary g-font-size-14 g-font-weight-700 g-font-el-messiri" href="https://bennn.ru/персональный_раздел/" target="_self">ВОЙТИ</a>
+							</div>
+						</div>
+					</div></div>
+			</div>
+
+			<div class="col-sm-3">
+				<div id="search" class="bx-searchtitle ">
+	<form action="https://bennn.ru/котята/">
+		<div class="input-group">
+			<input id="title-search-input" type="text" name="q" value="" autocomplete="off" class="form-control"/>
+			<div class="input-group-append">
+				<button class="btn btn-primary search-title-button" type="submit" name="s"></button>
+			</div>
+		</div>
+	</form>
+</div>
+			</div>
+		</div>
+	</div>
+</header></div><div id="block1497" class="block-wrapper block-0-menu-02"><header class="landing-block landing-block-menu u-header u-header--sticky u-header--relative">
+	<div class="landing-semantic-background-color u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-16 g-py-10--md" data-header-fix-moment-exclude="g-bg-white" data-header-fix-moment-classes="u-shadow-v27 g-bg-white-opacity-0_9">
+		<nav class="navbar navbar-expand-lg p-0 g-px-15 u-navbar-color-primary--hover u-navbar-color-black">
+			<div class="container">
+				<!-- Logo -->
+				<a href="https://bennn.ru/" class="landing-block-node-menu-logo-link navbar-brand u-header__logo p-0" target="_self">
+					<img class="landing-block-node-menu-logo u-header__logo-img u-header__logo-img--main g-max-width-180" src="https://cdn.bitrix24.ru/b10771232/landing/7cd/7cdf1b5488659f832e6731bd29290957/2.png" alt="Bengalion BenNN Bangalion" srcset="https://cdn.bitrix24.ru/b10771232/landing/d53/d533e274d4463929f3b3ad5eb912a992/2_2x.png 2x" data-fileid="319" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+				</a>
+				<!-- End Logo -->
+
+				<!-- Navigation -->
+				<div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar1495">
+					<ul class="landing-block-node-menu-list js-scroll-nav navbar-nav text-uppercase g-font-weight-700 g-font-size-11 ml-auto g-pt-20 g-pt-0--lg"><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self">Главная</a>
+						</li><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/коты/" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self">Коты</a>
+						</li><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/кошки/" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self">Кошки</a>
+						</li><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/кошки/" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self">Кошки</a>
+						</li><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/котята/" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self" data-url="#catalogSection11">Котята</a>
+						</li><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/полезное/" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self">Полезное</a>
+						</li><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/новости/" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self">Новости</a>
+						</li><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/о_нас/" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self">О нас</a>
+						</li><li class="landing-block-node-menu-list-item nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+							<a href="https://bennn.ru/подвал/#block1415" class="landing-block-node-menu-list-item-link nav-link p-0 g-font-el-messiri g-line-height-0 text-uppercase g-font-weight-700 g-letter-spacing-inherit g-font-size-17" target="_self">Контакты</a>
+						</li></ul>
+				</div>
+				<!-- End Navigation -->
+
+				<!-- Responsive Toggle Button -->
+				<button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 ml-auto" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar1495" data-toggle="collapse" data-target="#navBar1495">
+                <span class="hamburger hamburger--slider">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </span>
+				</button>
+				<!-- End Responsive Toggle Button -->
+			</div>
+		</nav>
+	</div>
+</header></div><div id="block2605" class="block-wrapper block-store-breadcrumb"><section class="landing-block g-bg-transparent g-pb-5 g-pt-5">
+	<div class="landing-breadcrumb-container container g-font-size-12">
+		
+	</div>
+</section></div></div> 
+								<div class="landing-main"><div id="block1463" class="block-wrapper block-54-1-cover-with-slider-bgvideo"><section class="landing-block u-bg-overlay g-flex-centered g-bg-img-hero bg-video__wrapper g-bg-black-opacity-0_5--after g-pt-150 g-pb-0 g-mt-0 g-min-height-80vh">
+	<div class="landing-block-node-video-container embed-responsive bg-video__inner">
+		<div class="landing-block-node-video embed-responsive-item g-video-preview w-100" data-src="https://www.youtube.com/embed/2x6XmdGlNY8?autoplay=1&controls=1&loop=1&mute=1&rel=0&start=0&html5=1&enablejsapi=1" data-source="https://www.youtube.com/watch?v=q4d8g9Dn3ww" data-preview="//img.youtube.com/vi/q4d8g9Dn3ww/sddefault.jpg" style="background-image: url('//img.youtube.com/vi/q4d8g9Dn3ww/sddefault.jpg');"></div>
+	</div>
+
+	<div class="container g-px-30 u-bg-overlay__inner">
+		<div class="js-carousel" data-autoplay="true" data-infinite="true" data-speed="5000" data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-minus-70"><div class="landing-block-node-card js-slide js-animation fadeIn g-px-15 landing-card slick-slide align-self-center">
+				<h2 class="landing-block-node-title text-uppercase g-font-weight-700 g-mb-20 g-font-size-30 g-line-height-0 text-left g-font-el-messiri g-color-primary">ЛЕОПАРД У ВАС ДОМА.</h2>
+
+				<div class="landing-block-node-text g-color-white-opacity-0_7 g-mb-35 g-font-size-14 g-font-open-sans" data-auto-font-scale="">Бенгальская кошка - её красота и грация, олицетворяющая дикую природу, волей неволей наталкивает на мысли о том, а возможно ли сочетать красоту дикой природы и ту нежность, и ласку, проявляемую домашними любимцами….</div>
+				<div class="landing-block-node-button-container">
+					<a href="https://bennn.ru/полезное/леопард_у_вас_дома/" class="landing-block-node-button btn btn-xl text-uppercase g-font-weight-700 g-font-size-12   rounded-0 g-btn-white g-btn-type-outline g-color-white g-color-primary--hover" target="_self">Подробнее</a>
+				</div>
+			</div><div class="landing-block-node-card js-slide js-animation fadeIn g-px-15 landing-card slick-slide align-self-center">
+				<h2 class="landing-block-node-title text-uppercase g-font-weight-700 g-mb-20 g-font-size-30 g-line-height-0 text-left g-font-el-messiri g-color-white">ПРЕДАННОСТЬ И ДОБРОТА.</h2>
+
+				<div class="landing-block-node-text g-color-white-opacity-0_7 g-mb-35 g-font-size-14 g-font-open-sans" data-auto-font-scale="">Бенгальские кошки прекрасно уживаются со всеми членами семьи, любят играть с детьми, а владельцы отмечают, что представители этой породы не проявляют агрессию даже в самых критических ситуациях.</div>
+				<div class="landing-block-node-button-container">
+					<a href="https://bennn.ru/полезное/преданность_и_доброта/" class="landing-block-node-button btn btn-xl text-uppercase g-font-weight-700 g-font-size-12   rounded-0 g-btn-white g-btn-type-outline g-color-white g-color-primary--hover" target="_self">Подробнее</a>
+				</div>
+			</div><div class="landing-block-node-card js-slide js-animation fadeIn g-px-15 landing-card slick-slide align-self-center">
+				<h2 class="landing-block-node-title text-uppercase g-font-weight-700 g-mb-20 g-font-size-30 g-line-height-0 text-left g-font-el-messiri g-color-primary">О БЕНГАЛЬСКОЙ КОШКЕ.</h2>
+
+				<div class="landing-block-node-text g-color-white-opacity-0_7 g-mb-35 g-font-size-14 g-font-open-sans" data-auto-font-scale="">Многие великие открытия основываются на трагических событиях. Браконьеры Азии очень часто убивали безумно красивых и грациозных леопардовых кошек, целью такой жестокости являлась нажива на новорожденных котятах.</div>
+				<div class="landing-block-node-button-container">
+					<a href="https://bennn.ru/полезное/о_бенгальской_кошке/" class="landing-block-node-button btn btn-xl text-uppercase g-font-weight-700 g-font-size-12   rounded-0 g-btn-white g-btn-type-outline g-color-white g-color-primary--hover" target="_self">Подробнее</a>
+				</div>
+			</div></div>
+	</div>
+</section></div><div id="block1083" class="block-wrapper block-44-2-four-columns-with-img-and-text"><section class="g-pb-0 g-pt-50">
+	<div class="container text-center g-max-width-750 g-mb-30">
+		<div class="text-uppercase g-line-height-1_3 g-mb-20">
+			<h4 class="landing-block-node-subtitle g-font-weight-700 g-mb-15 g-color-darkblue custom-text-shadow-1 g-font-el-messiri g-font-weight-700 g-font-size-23">МОНОПОРОДНЫЙ ПИТОМНИК БЕНГАЛЬСКИХ КОШЕК	BENGALION</h4>
+			<h2 class="landing-block-node-title js-animation fadeIn g-line-height-1_3 mb-0 g-text-transform-none g-font-size-0 g-font-open-sans custom-text-shadow-1 g-font-weight-700 g-color-gray-dark-v3">Один из крупнейших питомников бенгальских кошек в городе Нижний Новгород, работающий не только с Россией, но и с другими странами, поэтому
+<br />интернет портал «Бенгалы Нижнего Новгорода» доступен по адресам www.BenNN.ru   www.Bengalion.ru   www.Bengalion.com
+<br />Вы ищете где купить бенгальского котёнка редкого окраса, который принесёт радость и уют в Ваш дом?
+<br />Тогда наши бенгальские котята для вас!</h2>
+		</div>
+
+		<div class="landing-block-node-text js-animation fadeIn mb-0 g-font-weight-700 g-color-blue custom-text-shadow-1 g-font-el-messiri g-font-size-20"><p>ЧЕТЫРЕ ПРИЧИНЫ ВЫБРАТЬ ПИТОМНИК БЕНГАЛЬСКИХ КОШЕК BENGALION<br /></p></div>
+	</div>
+
+	<div class="container px-0">
+		<div class="row no-gutters landing-block-inner"><div class="landing-block-node-card js-animation fadeInUp col-sm-6 col-lg-3 landing-card g-bg-transparent">
+				<!-- Article -->
+				<article class="u-block-hover">
+					<figure class="g-overflow-hidden">
+						<img class="landing-block-node-card-img img-fluid u-block-hover__main--zoom-v1" src="https://cdn.bitrix24.ru/b10771232/landing/11e/11e1a42848ab44b033b7b891d7934d1f/rubie4.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/147/147502fac0d5ba6704ec2e11ae0f3e65/rubie4_2x.png 2x" data-fileid="441" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</figure>
+
+					<div class="g-color-white g-pa-40-30-30">
+						<h3 class="landing-block-node-card-title text-uppercase g-font-weight-700 g-mb-25 g-color-black text-center g-font-size-20 g-font-el-messiri custom-text-shadow-1">Профессионализм</h3>
+						<div class="landing-block-node-card-text g-font-size-default mb-0 text-center g-color-gray-dark-v3 g-letter-spacing-inherit g-line-height-0 g-font-weight-700 g-font-size-0 g-font-open-sans custom-text-shadow-1"><p>Мы являемся одними<br /> из не многих, где всем <br />занимаются профессионалы.
+							</p></div>
+					</div>
+				</article>
+				<!-- End Article -->
+			</div><div class="landing-block-node-card js-animation fadeInUp col-sm-6 col-lg-3 landing-card g-bg-transparent">
+				<!-- Article -->
+				<article class="u-block-hover">
+					<figure class="g-overflow-hidden">
+						<img class="landing-block-node-card-img img-fluid u-block-hover__main--zoom-v1" src="https://cdn.bitrix24.ru/b10771232/landing/cef/cefefdf0463f252a3632f9b1d8fad126/rubie5.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/47f/47fdb0835d686b34ec9eeaeb90e81f7c/rubie5_2x.png 2x" data-fileid="633" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</figure>
+
+					<div class="g-color-white g-pa-40-30-30">
+						<h3 class="landing-block-node-card-title text-uppercase g-font-weight-700 g-mb-25 g-color-black text-center g-font-size-20 g-font-el-messiri custom-text-shadow-1">Забота</h3>
+						<div class="landing-block-node-card-text g-font-size-default mb-0 text-center g-color-gray-dark-v3 g-letter-spacing-inherit g-line-height-0 g-font-weight-700 g-font-size-0 g-font-open-sans custom-text-shadow-1">Все наши питомцы являются равноправными членами нашей семьи.</div>
+					</div>
+				</article>
+				<!-- End Article -->
+			</div><div class="landing-block-node-card js-animation fadeInUp col-sm-6 col-lg-3 landing-card g-bg-transparent">
+				<!-- Article -->
+				<article class="u-block-hover">
+					<figure class="g-overflow-hidden">
+						<img class="landing-block-node-card-img img-fluid u-block-hover__main--zoom-v1" src="https://cdn.bitrix24.ru/b10771232/landing/5c8/5c889a22f514f0927e12d6c6596c2549/rubie3.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/e5b/e5b310b6b9d0532b67a1193486db3a62/rubie3_2x.png 2x" data-fileid="637" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</figure>
+
+					<div class="g-color-white g-pa-40-30-30">
+						<h3 class="landing-block-node-card-title text-uppercase g-font-weight-700 g-mb-25 g-color-black text-center g-font-size-20 g-font-el-messiri custom-text-shadow-1">Доступность</h3>
+						<div class="landing-block-node-card-text g-font-size-default mb-0 text-center g-color-gray-dark-v3 g-letter-spacing-inherit g-line-height-0 g-font-weight-700 g-font-size-0 g-font-open-sans custom-text-shadow-1">Возможность посмотреть обоих родителей, их награды и титулы.</div>
+					</div>
+				</article>
+				<!-- End Article -->
+			</div><div class="landing-block-node-card js-animation fadeInUp col-sm-6 col-lg-3 landing-card g-bg-transparent">
+				<!-- Article -->
+				<article class="u-block-hover">
+					<figure class="g-overflow-hidden">
+						<img class="landing-block-node-card-img img-fluid u-block-hover__main--zoom-v1" src="https://cdn.bitrix24.ru/b10771232/landing/17b/17b0cc1b16a6e6b0540f1bae69276b3c/rubie31.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/117/117cf1569d820138342060ffe176464a/rubie31_2x.png 2x" data-fileid="641" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</figure>
+
+					<div class="g-color-white g-pa-40-30-30">
+						<h3 class="landing-block-node-card-title text-uppercase g-font-weight-700 g-mb-25 g-color-black text-center g-font-size-20 g-font-el-messiri custom-text-shadow-1">Поддержка</h3>
+						<div class="landing-block-node-card-text g-font-size-default mb-0 text-center g-color-gray-dark-v3 g-letter-spacing-inherit g-line-height-0 g-font-weight-700 g-font-size-0 g-font-open-sans custom-text-shadow-1">Практически круглосуточные консультации по телефону и не только.</div>
+					</div>
+				</article>
+				<!-- End Article -->
+			</div></div>
+	</div>
+</section></div><div id="block1795" class="block-wrapper block-19-1-two-cols-fix-img-text-blocks"><section class="landing-block g-pb-0 g-pt-0">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-5 order-2 order-md-1 g-mb-15 g-mb-0--md">
+				<img class="landing-block-node-img img-fluid g-mb-30" src="https://cdn.bitrix24.ru/b10771232/landing/2c6/2c61710744e5af2b61c72e4bbe0d71de/Sertifikat2.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/b16/b16e7e50e44bcbd83c40f345872e4c51/Sertifikat2_2x.png 2x" data-fileid="1301" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+
+				<h3 class="landing-block-node-title g-font-weight-700 g-mb-20 g-font-cormorant-infant g-text-transform-none g-theme-event-color-gray-dark-v1 g-font-size-33"> </h3>
+				<div class="landing-block-node-text"><p class="mb-0"><br /></p></div>
+			</div>
+
+			<div class="col-md-7 order-1 order-md-2 g-mb-15 g-mb-0--md">
+				<div aria-multiselectable="true"><div class="landing-block-card-accordeon-element g-brd-none js-animation fadeInUp landing-card">
+						<div class="card-header u-accordion__header g-bg-transparent g-brd-none rounded-0 p-0">
+							<div class="landing-block-card-accordeon-element-title-link d-block text-uppercase g-pos-rel g-font-weight-700 g-font-size-12 g-brd-bottom g-brd-primary g-brd-2 g-py-15">
+								<span class="landing-block-node-accordeon-element-img-container g-color-primary">
+									<i class="landing-block-node-accordeon-element-img g-valign-middle g-font-size-23 g-mr-10 icon-social-github"></i>
+								</span>
+								<div class="d-inline-block landing-block-node-accordeon-element-title g-font-size-18 text-uppercase g-font-el-messiri g-color-black-opacity-0_9 custom-text-shadow-1">МЫ ЗАНИМАЕМСЯ РАЗВЕДЕНИЕМ КОШЕК БЕНГАЛЬСКОЙ ПОРОДЫ</div>
+							</div>
+						</div>
+
+						<div class="landing-block-card-accordeon-element-body">
+							<div class="card-block u-accordion__body g-py-20 px-0">
+								<div class="landing-block-node-accordeon-element-text custom-text-shadow-1 g-color-black"><p>Наш питомник являемся одними из не многих, где работой с животными занимаются профессионалы, с профильным образованием, в связи с этим, мы можем гарантировать здоровье наших Бенгальских котят и полную поддержку наших питомцев на протяжении всего времени. <br /></p></div>
+							</div>
+						</div>
+					</div><div class="landing-block-card-accordeon-element g-brd-none js-animation fadeInUp">
+						<div class="card-header u-accordion__header g-bg-transparent g-brd-none rounded-0 p-0">
+							<div class="landing-block-card-accordeon-element-title-link d-block text-uppercase g-pos-rel g-font-weight-700 g-font-size-12 g-brd-bottom g-brd-primary g-brd-2 g-py-15">
+								<span class="landing-block-node-accordeon-element-img-container g-color-primary">
+									<i class="landing-block-node-accordeon-element-img g-valign-middle g-font-size-23 g-mr-10 icon-heart"></i>
+								</span>
+								<div class="d-inline-block landing-block-node-accordeon-element-title g-font-size-18 text-uppercase g-font-el-messiri g-color-black-opacity-0_9 custom-text-shadow-1">ЦЕЛЬ.</div>
+							</div>
+						</div>
+
+						<div class="landing-block-card-accordeon-element-body">
+							<div class="card-block u-accordion__body g-py-20 px-0">
+								<div class="landing-block-node-accordeon-element-text custom-text-shadow-1 g-color-black"><p>Цель нашей работы: получение бенгальских котят с крепким здоровьем, устойчивой психикой, шелковистой шерстью и насыщенным цветом глаз: золотистый для черного пятнистого окраса и голубые для снежного окраса.<br /></p></div>
+							</div>
+						</div>
+					</div></div>
+			</div>
+
+		</div>
+	</div>
+</section></div><div id="block1789" class="block-wrapper block-19-1-two-cols-fix-img-text-blocks"><section class="landing-block g-pb-0 g-pt-0">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-5 order-2 order-md-1 g-mb-15 g-mb-0--md">
+				<img class="landing-block-node-img img-fluid g-mb-30" src="https://cdn.bitrix24.ru/b10771232/landing/075/075dd87e3100a581978b20db1a306680/Sertifikat1.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/408/4086857c7e1f72d57f26bf5b9aa54ca2/Sertifikat1_2x.png 2x" data-fileid="1297" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+
+				<h3 class="landing-block-node-title g-font-weight-700 g-mb-20 g-font-cormorant-infant g-text-transform-none g-theme-event-color-gray-dark-v1 g-font-size-33"> </h3>
+				<div class="landing-block-node-text"><p class="mb-0"><br /></p></div>
+			</div>
+
+			<div class="col-md-7 order-1 order-md-2 g-mb-15 g-mb-0--md">
+				<div aria-multiselectable="true"><div class="landing-block-card-accordeon-element g-brd-none js-animation fadeInUp">
+						<div class="card-header u-accordion__header g-bg-transparent g-brd-none rounded-0 p-0">
+							<div class="landing-block-card-accordeon-element-title-link d-block text-uppercase g-pos-rel g-font-weight-700 g-font-size-12 g-brd-bottom g-brd-primary g-brd-2 g-py-15">
+								<span class="landing-block-node-accordeon-element-img-container g-color-primary">
+									<i class="landing-block-node-accordeon-element-img g-valign-middle g-font-size-23 g-mr-10 icon-real-estate-044 u-line-icon-pro"></i>
+								</span>
+								<div class="d-inline-block landing-block-node-accordeon-element-title g-font-size-18 text-uppercase g-font-el-messiri g-color-black-opacity-0_9 custom-text-shadow-1">СЕМЬЯ.</div>
+							</div>
+						</div>
+
+						<div class="landing-block-card-accordeon-element-body">
+							<div class="card-block u-accordion__body g-py-20 px-0">
+								<div class="landing-block-node-accordeon-element-text custom-text-shadow-1 g-color-black"><p>Наши бенгальские коты, кошки и котята - это одна дружная семья.У нас созданы полноценные условия для содержания животных в доме. 
+<br />Все наши питомцы свободно перемещаются по квартире, являются равноправными членами нашей семьи. Мы стараемся уделить внимание и заботу каждому питомцу; они получают хорошее сбалансированное питание, регулярное медицинское обслуживание. <br />Мы часто посещаем выставки кошек, о чём говорят титулы и награды наших питомцев.<br /></p></div>
+							</div>
+						</div>
+					</div></div>
+			</div>
+
+		</div>
+	</div>
+</section></div><div id="block1751" class="block-wrapper block-19-1-two-cols-fix-img-text-blocks"><section class="landing-block g-pt-0 g-pb-0">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-5 order-2 order-md-1 g-mb-15 g-mb-0--md">
+				<img class="landing-block-node-img img-fluid g-mb-30" src="https://cdn.bitrix24.ru/b10771232/landing/d85/d85aab67fce44153597d625545782ffe/1.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/1ae/1ae486661202c1c6e9cb99cefdb985a8/1_2x.png 2x" data-fileid="1261" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+
+				<h3 class="landing-block-node-title g-font-weight-700 g-mb-20 g-font-cormorant-infant g-text-transform-none g-theme-event-color-gray-dark-v1 g-font-size-33"> </h3>
+				<div class="landing-block-node-text"><p class="mb-0"><br /></p></div>
+			</div>
+
+			<div class="col-md-7 order-1 order-md-2 g-mb-15 g-mb-0--md">
+				<div aria-multiselectable="true"><div class="landing-block-card-accordeon-element g-brd-none js-animation fadeInUp landing-card">
+						<div class="card-header u-accordion__header g-bg-transparent g-brd-none rounded-0 p-0">
+							<div class="landing-block-card-accordeon-element-title-link d-block text-uppercase g-pos-rel g-font-weight-700 g-font-size-12 g-brd-bottom g-brd-primary g-brd-2 g-py-15">
+								<span class="landing-block-node-accordeon-element-img-container g-color-primary">
+									<i class="landing-block-node-accordeon-element-img g-valign-middle g-font-size-23 g-mr-10 icon-star"></i>
+								</span>
+								<div class="d-inline-block landing-block-node-accordeon-element-title text-uppercase g-font-el-messiri g-color-black custom-text-shadow-1 g-font-size-18">НАШИ БЕНГАЛЬСКИЕ КОТЯТА - НАСТОЯЩИЕ ЛЕОПАРДИКИ!</div>
+							</div>
+						</div>
+
+						<div class="landing-block-card-accordeon-element-body">
+							<div class="card-block u-accordion__body g-py-20 px-0">
+								<div class="landing-block-node-accordeon-element-text custom-text-shadow-1 g-color-black">Все наши бенгальские котята растут в любви и заботе с самого рождения. 
+<br />Мы помогаем им появится на свет, наблюдаем за их дальнейшем развитием. 
+<br /><p><span style="font-size: 1rem;">Рождаются они от красивых, высокопородных, титулованных производителей с отличной родословной.<br /></span>Они станут не только милыми любимцами вашей семьи, но и достойным украшением вашего дома и предметом восхищения ваших друзей.<br /><span style="font-size: 1rem;">Роскошная расписная шелковистая шубка, умильные круглые мордашки, задорные, игривые. <br /></span><span style="font-size: 1rem;">Сколько радости и восхищения доставляет общение с бенгальскими котятами, наши милые леопардики способны заставить улыбнуться даже очень серьёзного человека. <br /></span><span style="font-size: 1rem;">О бенгалах можно говорить до бесконечности; обладая чудесным характером, они окружат вас нежностью и преданностью, на какие способна только кошачья душа.</span></p></div>
+							</div>
+						</div>
+					</div></div>
+			</div>
+
+		</div>
+	</div>
+</section></div><div id="block1759" class="block-wrapper block-19-1-two-cols-fix-img-text-blocks"><section class="landing-block g-pt-0 g-pb-0">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-5 order-2 order-md-1 g-mb-15 g-mb-0--md">
+				<img class="landing-block-node-img img-fluid g-mb-30" src="https://cdn.bitrix24.ru/b10771232/landing/3d8/3d86fff73255d0e0aecec947d1bb4030/vk-96.jpg" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/32e/32e6386eadc25e408639063b95c8d1a5/vk-96_2x.jpg 2x" data-fileid="1265" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+
+				<h3 class="landing-block-node-title g-font-weight-700 g-mb-20 g-font-cormorant-infant g-text-transform-none g-theme-event-color-gray-dark-v1 g-font-size-33"> </h3>
+				<div class="landing-block-node-text"><p class="mb-0"><br /></p></div>
+			</div>
+
+			<div class="col-md-7 order-1 order-md-2 g-mb-15 g-mb-0--md">
+				<div aria-multiselectable="true"><div class="landing-block-card-accordeon-element g-brd-none js-animation fadeInUp landing-card">
+						<div class="card-header u-accordion__header g-bg-transparent g-brd-none rounded-0 p-0">
+							<div class="landing-block-card-accordeon-element-title-link d-block text-uppercase g-pos-rel g-font-weight-700 g-font-size-12 g-brd-bottom g-brd-primary g-brd-2 g-py-15">
+								<span class="landing-block-node-accordeon-element-img-container g-color-primary">
+									<i class="landing-block-node-accordeon-element-img g-valign-middle g-font-size-23 g-mr-10 icon-direction"></i>
+								</span>
+								<div class="d-inline-block landing-block-node-accordeon-element-title text-uppercase g-font-el-messiri g-color-black custom-text-shadow-1 g-font-size-18">ВЫ ИЩЕТЕ ГДЕ КУПИТЬ БЕНГАЛЬСКОГО КОТЕНКА РЕДКОГО ОКРАСА, 
+<br />КОТОРЫЙ ПРИНЕСЁТ РАДОСТЬ И УЮТ В ВАШ ДОМ?
+<br /><span style="color: rgb(255, 183, 77);">ТОГДА НАШИ БЕНГАЛЬСКИЕ КОТЯТА ДЛЯ ВАС!</span></div>
+							</div>
+						</div>
+
+						<div class="landing-block-card-accordeon-element-body">
+							<div class="card-block u-accordion__body g-py-20 px-0">
+								<div class="landing-block-node-accordeon-element-text custom-text-shadow-1 g-color-black"><p>  <br />Если Вы решили приобрести котёнка именно у нас, то у Вас будет возможность самим дать котенку имя и он будет выращен специально для Вас. 
+<br />Наши котята готовы к переезду в новый дом не ранее 2,5 - 3 месячного возраста. 
+<br />У котят длительное грудное вскармливание и постоянный контакт с матерью. 
+<br />Переезжают к новым хозяевам полностью приученными к лотку с наполнителем, к когтеточке и к самостоятельной еде. Привитыми по возрасту!<br /></p></div>
+							</div>
+						</div>
+					</div></div>
+			</div>
+
+		</div>
+	</div>
+</section></div><div id="block1757" class="block-wrapper block-19-1-two-cols-fix-img-text-blocks"><section class="landing-block g-pt-0 g-pb-0">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-5 order-2 order-md-1 g-mb-15 g-mb-0--md">
+				<img class="landing-block-node-img img-fluid g-mb-30" src="https://cdn.bitrix24.ru/b10771232/landing/98e/98e2da239c4202e25ba646d62555c6c3/image.jpg" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/c1e/c1e7afce343256170e57a43e2604383b/image_2x.jpg 2x" data-fileid="1197" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+
+				<h3 class="landing-block-node-title g-font-weight-700 g-mb-20 g-font-cormorant-infant g-text-transform-none g-theme-event-color-gray-dark-v1 g-font-size-33"> </h3>
+				<div class="landing-block-node-text"><p class="mb-0"><br /></p></div>
+			</div>
+
+			<div class="col-md-7 order-1 order-md-2 g-mb-15 g-mb-0--md">
+				<div aria-multiselectable="true"><div class="landing-block-card-accordeon-element g-brd-none js-animation fadeInUp landing-card">
+						<div class="card-header u-accordion__header g-bg-transparent g-brd-none rounded-0 p-0">
+							<div class="landing-block-card-accordeon-element-title-link d-block text-uppercase g-pos-rel g-font-weight-700 g-font-size-12 g-brd-bottom g-brd-primary g-brd-2 g-py-15">
+								<span class="landing-block-node-accordeon-element-img-container g-color-primary">
+									<i class="landing-block-node-accordeon-element-img g-valign-middle g-font-size-23 g-mr-10 icon-finance-032 u-line-icon-pro"></i>
+								</span>
+								<div class="d-inline-block landing-block-node-accordeon-element-title text-uppercase g-font-el-messiri g-color-black custom-text-shadow-1 g-font-size-18">Хотите узнать, сколько стоит бенгальский котенок?</div>
+							</div>
+						</div>
+
+						<div class="landing-block-card-accordeon-element-body">
+							<div class="card-block u-accordion__body g-py-20 px-0">
+								<div class="landing-block-node-accordeon-element-text custom-text-shadow-1 g-color-black"><p>Наши цены на котят вполне разумны и адекватны и определяется индивидуально.
+<br />Зависят от экстерьера котенка, его потенциала, от окраса и условий покупки, возможна рассрочка.<br /></p></div>
+							</div>
+						</div>
+					</div><div class="landing-block-card-accordeon-element g-brd-none js-animation fadeInUp">
+						<div class="card-header u-accordion__header g-bg-transparent g-brd-none rounded-0 p-0">
+							<div class="landing-block-card-accordeon-element-title-link d-block text-uppercase g-pos-rel g-font-weight-700 g-font-size-12 g-brd-bottom g-brd-primary g-brd-2 g-py-15">
+								<span class="landing-block-node-accordeon-element-img-container g-color-primary">
+									<i class="landing-block-node-accordeon-element-img g-valign-middle g-font-size-23 g-mr-10 icon-people"></i>
+								</span>
+								<div class="d-inline-block landing-block-node-accordeon-element-title text-uppercase g-font-el-messiri g-color-black custom-text-shadow-1 g-font-size-18">Питомникам и заводчикам.</div>
+							</div>
+						</div>
+
+						<div class="landing-block-card-accordeon-element-body">
+							<div class="card-block u-accordion__body g-py-20 px-0">
+								<div class="landing-block-node-accordeon-element-text custom-text-shadow-1 g-color-black"><p>Если Вы — Заводчик Бенгалов, владелец питомника, которому есть чем поделиться и,
+<br />Если Вам интересно идти вперед к самому современному типу в породе,
+<br />Если Вам интересен обмен молодежью — мы готовы и будем рады сотрудничать!
+<br />Если Вам интересна вязка, в том числе за котёнка, добро пожаловать к нам!
+<br />Мы приветствуем обмен котятами между питомниками!<br /></p></div>
+							</div>
+						</div>
+					</div></div>
+			</div>
+
+		</div>
+	</div>
+</section></div><div id="block1099" class="block-wrapper block-04-4-one-col-big-with-img"><section class="landing-block js-animation landing-block-node-mainimg u-bg-overlay g-bg-img-hero animation-none g-bg-black-opacity-0_4--after animated g-pb-10 g-pt-35" style="background-image: url('https://cdn.bitrix24.ru/b10771232/landing/055/0550eee5e005cd75b4a1314f7c520588/bg-spotlight33334.png');" data-fileid="449" data-fileid2x="451" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}">
+	<div class="container g-max-width-800 u-bg-overlay__inner">
+
+		<div class="landing-block-node-inner text-uppercase text-center u-heading-v2-4--bottom g-brd-white">
+			<h4 class="landing-block-node-subtitle g-font-weight-700 g-color-white g-mb-20 text-center g-font-el-messiri custom-text-shadow-1 g-font-size-20">ДОСТИЖЕНИЯ	BENGALION</h4>
+			<h2 class="landing-block-node-title u-heading-v2__title g-line-height-1_1 g-font-weight-700 g-color-white g-mb-minus-10 g-font-size-0 g-text-transform-none g-font-open-sans custom-text-shadow-1">Мы часто посещаем разные мероприятия, выставки кошек, о чём говорят <br />титулы и награды наших бенгальских котов и кошек.</h2>
+		</div>
+
+	</div>
+</section></div><div id="block1071" class="block-wrapper block-22-1-four-cols-fix-bigbgimg"><section class="landing-block landing-block-node-bgimg u-bg-overlay g-bg-img-hero g-bg-black-opacity-0_4--after g-pb-35 g-pt-10" style="background-image: url('https://cdn.bitrix24.ru/b10771232/landing/b27/b27e5affd51791e76da21d8b88548e48/bg-spotlight33335.png');" data-fileid="457" data-fileid2x="459" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}">
+	<div class="container u-bg-overlay__inner">
+		<div class="row landing-block-inner"><div class="landing-block-card js-animation fadeIn col-md-3 col-lg-3 g-mb-20 g-mb-0--md landing-card">
+				<div class="u-heading-v8-1 g-mb-20">
+					<h2 class="landing-block-node-subtitle h6 text-uppercase u-heading-v8__title g-font-weight-700 mb-0 p-0 g-mb-7 g-color-white g-font-size-11 custom-text-shadow-1">Новости</h2>
+					<h2 class="landing-block-node-title h6 text-uppercase u-heading-v8__title g-font-weight-700 mb-0 g-color-black custom-text-shadow-1 g-font-el-messiri g-font-weight-700">Бенгалы Нижнего Новгорода на ННТВ</h2>
+				</div>
+				<img class="landing-block-node-img img-fluid g-mb-20 flex-shrink-0" src="https://cdn.bitrix24.ru/b10771232/landing/390/39059724f73a9969845dfe4146c5660e/ca332973fc363da77aefed58534dcd5c_L.jpg" alt="нтв" srcset="https://cdn.bitrix24.ru/b10771232/landing/616/616cf95a7a7f9dd0a2bdb4749ea46236/ca332973fc363da77aefed58534dcd5c_L_2x.jpg 2x" data-fileid="585" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;https://bennn.ru/новости/бенгалы_нижнего_новгорода_на_ннтв/&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:true}" />
+				<div class="g-mb-40 landing-block-node-text g-line-height-1_8 g-font-size-default g-color-gray-light-v5 custom-text-shadow-1"><p>Телепередача о нашем питомнике бенгальских кошек «Bengalion» на нашем сайте «Бенгалы Нижнего Новгорода»</p></div>
+				<div class="landing-block-node-button-container mt-auto text-center">
+					<a class="landing-block-node-button btn btn-lg g-btn-inset g-btn-type-solid text-lowercase  g-color-white g-color-primary--hover g-btn-primary g-btn-type-outline" href="https://bennn.ru/новости/бенгалы_нижнего_новгорода_на_ннтв/" target="_self">Подробнее</a>
+				</div>
+			</div><div class="landing-block-card js-animation fadeIn col-md-3 col-lg-3 g-mb-20 g-mb-0--md landing-card">
+				<div class="u-heading-v8-1 g-mb-20">
+					<h2 class="landing-block-node-subtitle h6 text-uppercase u-heading-v8__title g-font-weight-700 mb-0 p-0 g-mb-7 g-color-white g-font-size-11 custom-text-shadow-1">Награды</h2>
+					<h2 class="landing-block-node-title h6 text-uppercase u-heading-v8__title g-font-weight-700 mb-0 g-color-black custom-text-shadow-1 g-font-el-messiri g-font-weight-700">Томас - Большой международный чемпион</h2>
+				</div>
+				<img class="landing-block-node-img img-fluid g-mb-20 flex-shrink-0" src="https://cdn.bitrix24.ru/b10771232/landing/d82/d82395e0e22a22a3c0d88728a7da11c5/cef8e7ed10ffa07bd8535ec35e230013_L.jpg" alt="томас" srcset="https://cdn.bitrix24.ru/b10771232/landing/c68/c6848da5926353400ae4b15c8a5d44ca/cef8e7ed10ffa07bd8535ec35e230013_L_2x.jpg 2x" data-fileid="589" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;https://bennn.ru/новости/томас - большой_международный_чемпион/&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:true}" />
+				<div class="g-mb-40 landing-block-node-text g-line-height-1_8 g-font-size-default g-color-gray-light-v5 custom-text-shadow-1"><p>Наш знаменитый Tomas получил звание Большой международный чемпион в системе WCF и чемпион в ICU</p></div>
+				<div class="landing-block-node-button-container mt-auto text-center">
+					<a class="landing-block-node-button btn btn-lg g-btn-inset g-btn-type-solid text-lowercase  g-color-white g-color-primary--hover g-btn-primary g-btn-type-outline" href="#" target="_self">Подробнее</a>
+				</div>
+			</div><div class="landing-block-card js-animation fadeIn col-md-3 col-lg-3 g-mb-20 g-mb-0--md landing-card">
+				<div class="u-heading-v8-1 g-mb-20">
+					<h2 class="landing-block-node-subtitle h6 text-uppercase u-heading-v8__title g-font-weight-700 mb-0 p-0 g-mb-7 g-color-white g-font-size-11 custom-text-shadow-1">Награды</h2>
+					<h2 class="landing-block-node-title h6 text-uppercase u-heading-v8__title g-font-weight-700 mb-0 g-color-black custom-text-shadow-1 g-font-el-messiri g-font-weight-700">Ричард в г. Владимир взял чемпиона</h2>
+				</div>
+				<img class="landing-block-node-img img-fluid g-mb-20 flex-shrink-0" src="https://cdn.bitrix24.ru/b10771232/landing/6ee/6ee743cd5ed1c88b23c9ebc849c84add/e9ad9fee9d0bc73e0b2c055eb0b268ce_L.jpg" alt="ричард" srcset="https://cdn.bitrix24.ru/b10771232/landing/bb7/bb7e42a2d09865cf833493648f074b63/e9ad9fee9d0bc73e0b2c055eb0b268ce_L_2x.jpg 2x" data-fileid="595" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;https://bennn.ru/новости/ричард в г. Владимир взял чемпиона/&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:true}" />
+				<div class="g-mb-40 landing-block-node-text g-line-height-1_8 g-font-size-default g-color-gray-light-v5 custom-text-shadow-1"><p>На выставке в г. Владимир <br />наш котик Ричард получил недостающую оценку до чемпиона. <br />Мы гордимся им!</p></div>
+				<div class="landing-block-node-button-container mt-auto text-center">
+					<a class="landing-block-node-button btn btn-lg g-btn-inset g-btn-type-solid text-lowercase  g-color-white g-color-primary--hover g-btn-primary g-btn-type-outline" href="#" target="_self">Подробнее</a>
+				</div>
+			</div><div class="landing-block-card js-animation fadeIn col-md-3 col-lg-3 g-mb-20 g-mb-0--md landing-card">
+				<div class="u-heading-v8-1 g-mb-20">
+					<h2 class="landing-block-node-subtitle h6 text-uppercase u-heading-v8__title g-font-weight-700 mb-0 p-0 g-mb-7 g-color-white g-font-size-11 custom-text-shadow-1">Новости</h2>
+					<h2 class="landing-block-node-title h6 text-uppercase u-heading-v8__title g-font-weight-700 mb-0 g-color-black custom-text-shadow-1 g-font-el-messiri g-font-weight-700">Профессиональная фотосессия с Ричардом</h2>
+				</div>
+				<img class="landing-block-node-img img-fluid g-mb-20 flex-shrink-0" src="https://cdn.bitrix24.ru/b10771232/landing/192/19274264b40a315f1c06caef19d96142/aa5045f13216477abf2a0e16a08acd59_L.jpg" alt="фотоссесия" srcset="https://cdn.bitrix24.ru/b10771232/landing/9d5/9d5bdaf5ff1faf6c888b2aaad087ba8b/aa5045f13216477abf2a0e16a08acd59_L_2x.jpg 2x" data-fileid="597" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;https://bennn.ru/новости/профессиональная_фотосессия_с_ричардом/&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:true}" />
+				<div class="g-mb-40 landing-block-node-text g-line-height-1_8 g-font-size-default g-color-gray-light-v5 custom-text-shadow-1"><p>Профессиональный фотограф, модели и просто классные девчонки устроили фотосессию с нашим Ричардом.</p></div>
+				<div class="landing-block-node-button-container mt-auto text-center">
+					<a class="landing-block-node-button btn btn-lg g-btn-inset g-btn-type-solid text-lowercase  g-color-white g-color-primary--hover g-btn-primary g-btn-type-outline" href="https://bennn.ru/новости/профессиональная_фотосессия_с_ричардом/" target="_self">Подробнее</a>
+				</div>
+			</div></div>
+	</div>
+</section></div></div> 
+							<div class="landing-footer"><div id="block1501" class="block-wrapper block-43-3-cover-with-feedback"><section class="landing-block">
+	<div class="landing-block-node-bgimg u-bg-overlay g-bg-img-hero g-py-90 g-bg-none--after" style="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}">
+		<div class="container u-bg-overlay__inner g-max-width-800">
+			<div class="landing-block-node-header js-animation fadeInUp text-center mx-auto u-heading-v2-2--bottom g-mb-70 g-brd-main">
+				<h2 class="landing-block-node-title text-uppercase g-line-height-1_1 g-font-weight-700 g-mb-15 g-color-black custom-text-shadow-1 g-font-el-messiri g-font-size-20">Внимание!</h2>
+				<div class="landing-block-node-text mb-0 custom-text-shadow-1 g-font-open-sans g-font-weight-700 g-color-gray-dark-v3"><p>Уважаемые заводчики и покупатели, участились случаи ложной информации! На разных сайтах и досках объявлений «не чистые на руку» заводчики начали размещать объявления, в которых приводятся фотографии наших животных и говорится, что они родители котят содержащихся у них. Это не наши котята и зачастую это не чистокровные животные, портящие нашу репутацию.<br /></p></div>
+			</div>
+		</div>
+
+		<div class="container u-bg-overlay__inner g-width-900">
+			<div class="js-carousel g-pb-70" data-infinite="true" data-arrows-classes="u-arrow-v1 g-absolute-centered--x g-bottom-0 g-width-40 g-height-40 g-rounded-50x g-font-size-default g-color-gray-light-v2 g-color-white--hover g-bg-white g-bg-primary--hover g-transition-0_2 g-transition--ease-in" data-arrow-left-classes="fa fa-angle-left g-ml-minus-30" data-arrow-right-classes="fa fa-angle-right g-ml-30"><div class="landing-block-node-card js-slide">
+					<!-- Testimonial Block -->
+					<div class="landing-block-node-card-container js-animation fadeIn media d-block d-md-flex">
+						<div class="landing-block-img-container align-self-center g-mb-30 g-mb-0--md g-pr-30--sm">
+							<img class="landing-block-node-card-photo img-fluid rounded-circle img-bordered g-brd-white mx-auto" src="https://cdn.bitrix24.ru/b10771232/landing/a02/a02bbbedf1305ce7e01702c27e790439/bt_attention.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/58b/58b98260bbee9d1cb8fcd9617985e2ac/bt_attention_2x.png 2x" data-fileid="713" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+						</div>
+
+						<div class="landing-block-text-container align-self-center media-body text-center text-sm-left g-color-white g-px-5">
+							<div class="landing-block-node-card-text g-mb-25 custom-text-shadow-1 g-font-open-sans g-font-weight-700 g-color-gray-dark-v3 g-font-size-0">При покупки котёнка - Подарок от Royal Canin и доставка по Нижнему Новгороду бесплатно!</div>
+							<h4 class="landing-block-node-card-name h6 text-uppercase g-font-weight-700 g-color-white mb-0"> </h4>
+						</div>
+					</div>
+					<!-- End Testimonial Block -->
+				</div></div>
+		</div>
+	</div>
+
+</section></div><div id="block1383" class="block-wrapper block-12-image-carousel-6-cols-fix"><section class="landing-block js-animation zoomIn text-center g-pb-15 g-pt-0 g-bg-transparent">
+        <div class="container g-px-35 g-px-0--md">
+
+            <div class="js-carousel row" data-autoplay="true" data-pause-hover="true" data-infinite="true" data-slides-show="6" data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-45 g-height-45 g-font-size-30 g-color-gray-light-v1" data-arrow-left-classes="fa fa-angle-left g-left-minus-35" data-arrow-right-classes="fa fa-angle-right g-right-minus-35" data-responsive="[{
+					 &quot;breakpoint&quot;: 1200,
+					 &quot;settings&quot;: {
+					   &quot;slidesToShow&quot;: 5
+					 }
+				   }, {
+					 &quot;breakpoint&quot;: 992,
+					 &quot;settings&quot;: {
+					   &quot;slidesToShow&quot;: 4
+					 }
+				   }, {
+					 &quot;breakpoint&quot;: 768,
+					 &quot;settings&quot;: {
+					   &quot;slidesToShow&quot;: 3
+					 }
+				   }, {
+					 &quot;breakpoint&quot;: 576,
+					 &quot;settings&quot;: {
+					   &quot;slidesToShow&quot;: 2
+					 }
+				   }]" data-init-classes-exclude="[{
+					 &quot;selector&quot;: &quot;.landing-block-card-carousel-item&quot;,
+					 &quot;class&quot;: &quot;col-6 col-sm-4 col-lg-2 justify-content-center&quot;
+				   }, {
+					 &quot;selector&quot;: &quot;.js-carousel&quot;,
+					 &quot;class&quot;: &quot;row&quot;
+				   }]"><div class="landing-block-card-carousel-item js-slide g-transition-0_2 d-flex landing-card slick-slide slick-current slick-active col-6 col-sm-4 col-lg-2 justify-content-center align-items-center g-mx-5 h-auto">
+					<a href="https://bennn.ru/полезное/фенологическая_организация:_ICU_-_INTERNATIONAL_CAT_UNION/" class="landing-block-card-logo-link" target="_self">
+						<img class="landing-block-node-carousel-img img-fluid g-max-width-170--md g-brd-around g-brd-gray-light-v1--hover" src="https://cdn.bitrix24.ru/b10771232/landing/42e/42e144e3c6a86b7ad75dcf44a39a4265/iku.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/ab1/ab1473c860c2216661015e8eedc39b86/iku_2x.png 2x" data-fileid="609" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</a>
+                </div><div class="landing-block-card-carousel-item js-slide g-transition-0_2 d-flex landing-card slick-slide slick-current slick-active col-6 col-sm-4 col-lg-2 justify-content-center align-items-center g-mx-5 h-auto">
+					<a href="https://bennn.ru/полезное/фенологическая_организация:_WCF_WORLD_CAT_FEDERATION/" class="landing-block-card-logo-link" target="_self">
+						<img class="landing-block-node-carousel-img img-fluid g-max-width-170--md g-brd-around g-brd-gray-light-v1--hover" src="https://cdn.bitrix24.ru/b10771232/landing/fcc/fcc67e51f9d23a83f7d6a362b7fe4d75/vsf.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/04e/04e0c0c2f1d2d6524c01a498344d634a/vsf_2x.png 2x" data-fileid="613" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</a>
+                </div><div class="landing-block-card-carousel-item js-slide g-transition-0_2 d-flex landing-card slick-slide slick-current slick-active col-6 col-sm-4 col-lg-2 justify-content-center align-items-center g-mx-5 h-auto">
+					<a href="https://bennn.ru/полезное/фенологическая_организация:_TICA_THE_INTERNATIONAL_CAT_ASSOCIATION/" class="landing-block-card-logo-link" target="_self">
+						<img class="landing-block-node-carousel-img img-fluid g-max-width-170--md g-brd-around g-brd-gray-light-v1--hover" src="https://cdn.bitrix24.ru/b10771232/landing/a30/a3072bebb61b37208a95afc1f6a922de/tika.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/b0d/b0dfbc8a1d60fc4c0907ebda1283933d/tika_2x.png 2x" data-fileid="617" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</a>
+                </div><div class="landing-block-card-carousel-item js-slide g-transition-0_2 d-flex landing-card slick-slide slick-current slick-active col-6 col-sm-4 col-lg-2 justify-content-center align-items-center g-mx-5 h-auto">
+					<a href="https://bennn.ru/полезное/фенологическая_организация:_WСC_-_WORLD_CAT_CONGRESS/" class="landing-block-card-logo-link" target="_self">
+						<img class="landing-block-node-carousel-img img-fluid g-max-width-170--md g-brd-around g-brd-gray-light-v1--hover" src="https://cdn.bitrix24.ru/b10771232/landing/8b3/8b3226695cd8b9659667e774a79b76ca/3.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/024/0245781995bd3288e6518e3099eea173/3_2x.png 2x" data-fileid="629" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</a>
+                </div><div class="landing-block-card-carousel-item js-slide g-transition-0_2 d-flex landing-card slick-slide slick-current slick-active col-6 col-sm-4 col-lg-2 justify-content-center align-items-center g-mx-5 h-auto">
+					<a href="https://bennn.ru/полезное/фенологическая_организация:_FIFE_FEDERATION_INTERNATIONALE_FELINE/" class="landing-block-card-logo-link" target="_self">
+						<img class="landing-block-node-carousel-img img-fluid g-max-width-170--md g-brd-around g-brd-gray-light-v1--hover" src="https://cdn.bitrix24.ru/b10771232/landing/388/388678e81e2cb086e5fadb559330e8af/logo.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/8cb/8cbaeacc1787ae3d704f2305ee8f3b9d/logo_2x.png 2x" data-fileid="625" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</a>
+                </div><div class="landing-block-card-carousel-item js-slide g-transition-0_2 d-flex landing-card slick-slide slick-current slick-active col-6 col-sm-4 col-lg-2 justify-content-center align-items-center g-mx-5 h-auto">
+					<a href="https://bennn.ru/полезное/фенологическая_организация:_АССОЛЮКС_Assolux/" class="landing-block-card-logo-link" target="_self">
+						<img class="landing-block-node-carousel-img img-fluid g-max-width-170--md g-brd-around g-brd-gray-light-v1--hover" src="https://cdn.bitrix24.ru/b10771232/landing/a13/a1361ef32d4aaca1684e3edb0e160549/Assolyuk.png" alt="" srcset="https://cdn.bitrix24.ru/b10771232/landing/4e2/4e26698785ada1ad6c519b3220db64a6/Assolyuk_2x.png 2x" data-fileid="621" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" />
+					</a>
+                </div></div>
+
+        </div>
+    </section></div><div id="block1415" class="block-wrapper block-04-4-one-col-big-with-img"><section class="landing-block js-animation landing-block-node-mainimg u-bg-overlay g-bg-img-hero animation-none g-pb-20 g-pt-20 animated g-bg-black-opacity-0_9--after" style="" data-fileid="449" data-fileid2x="451" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}">
+	<div class="container g-max-width-800 u-bg-overlay__inner">
+
+		<div class="landing-block-node-inner text-uppercase text-center u-heading-v2-4--bottom g-brd-main">
+			<h4 class="landing-block-node-subtitle g-font-weight-700 g-mb-20 text-center g-font-size-25 g-font-el-messiri g-color-white g-font-weight-700 custom-text-shadow-1">Наши контакты</h4>
+			<h2 class="landing-block-node-title u-heading-v2__title g-line-height-1_1 g-font-weight-700 g-mb-minus-10 g-font-size-0 g-color-gray-light-v1 custom-text-shadow-1 g-font-open-sans">Питомник бенгальских кошек Bengalion.</h2>
+		</div>
+
+	</div>
+</section></div><div id="block1269" class="block-wrapper block-33-2-form-1-transparent-black-right-text"><section class="landing-block g-pos-rel landing-block-node-bgimg g-bg-size-cover g-bg-img-hero g-bg-cover g-pt-125 g-pb-125 g-bg-black-opacity-0_7--after" style="background-image: url('https://cdn.bitrix24.ru/b10771232/landing/79c/79c8cdb62c76af0ea73f61ffbcda69a5/aa78f0943021d99a6f1b76085684f107_2x_2x.jpg');" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-fileid="661" data-fileid2x="663">
+
+	<div class="container g-z-index-1 g-pos-rel">
+		<div class="row align-items-center">
+
+			
+
+			<div class="col-md-8">
+				<div class="bitrix24forms landing-block-node-form js-animation fadeInUp g-brd-none g-brd-around--sm g-brd-white-opacity-0_6 g-px-0 g-px-20--sm g-px-45--lg g-py-0 g-py-30--sm g-py-60--lg u-form-alert-v1" data-form-style-input-border-color="1" data-b24form="3|s3f0bd|https://cdn-ru.bitrix24.ru/b10771232/crm/form/loader_3.js" data-b24form-use-style="Y" data-b24form-embed="" data-b24form-design="{&quot;dark&quot;:true,&quot;style&quot;:&quot;modern&quot;,&quot;shadow&quot;:false,&quot;compact&quot;:false,&quot;color&quot;:{&quot;primary&quot;:&quot;--primary&quot;,&quot;primaryText&quot;:&quot;#fff&quot;,&quot;text&quot;:&quot;#fff&quot;,&quot;background&quot;:&quot;#00000000&quot;,&quot;fieldBorder&quot;:&quot;#fff&quot;,&quot;fieldBackground&quot;:&quot;#ffffff00&quot;,&quot;fieldFocusBackground&quot;:&quot;#ffffff00&quot;},&quot;border&quot;:{&quot;top&quot;:false,&quot;bottom&quot;:false,&quot;left&quot;:false,&quot;right&quot;:false}}"></div>
+			</div>
+
+			<div class="col-md-4 g-mb-60">
+				<h2 class="landing-block-node-main-title js-animation fadeInUp h1 g-color-white mb-4 g-font-el-messiri custom-text-shadow-1" data-form-style-main-font-color="1" data-form-style-main-font-family="1">Bengalion</h2>
+
+				<div class="landing-block-node-text js-animation fadeInUp g-line-height-1_5 text-left g-mb-40 g-color-white-opacity-0_6 g-font-open-sans custom-text-shadow-1" data-form-style-main-font-weight="1" data-form-style-header-text-font-size="1" data-form-style-label-font-weight="1" data-form-style-label-font-size="1" data-form-style-second-font-color="1" data-selector=".landing-block-node-text@0"><p>Мы являемся одними из не многих, где работой с животными занимаются профессионалы, с профильным образованием, в связи с этим, мы можем гарантировать здоровье наших Бенгальских котят и полную поддержку наших питомцев на протяжении всего времени.
+<br /><br /><span style="color: rgb(255, 255, 255);">Перед поездкой к нам обязательно свяжитесь с нами любым удобным для вас способом, что бы уточнить местонохождение выбранного вами животного.</span><br /></p></div>
+
+				<h3 class="h4 g-color-white mb-4 landing-block-node-title g-font-el-messiri">Контактная информация</h3>
+
+				<div class="landing-block-node-card-contact-container"><div class="landing-block-node-card-contact" data-card-preset="text">
+						<div class="media align-items-center mb-4">
+							<div class="d-flex">
+								<span class="landing-block-card-contact-icon-container u-icon-v1 u-icon-size--sm g-color-white mr-2">
+								  <i class="landing-block-card-contact-icon icon-hotel-restaurant-235 u-line-icon-pro" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+								</span>
+							</div>
+							<div class="media-body">
+								<div class="landing-block-node-contact-text g-color-white-opacity-0_6 mb-0">г. Нижний Новгород,<br />ул. Ильинская, д.144</div>
+							</div>
+						</div>
+					</div><div class="landing-block-node-card-contact" data-card-preset="text">
+						<div class="media align-items-center mb-4">
+							<div class="d-flex">
+								<span class="landing-block-card-contact-icon-container u-icon-v1 u-icon-size--sm g-color-white mr-2">
+									<i class="landing-block-card-contact-icon icon-hotel-restaurant-003 u-line-icon-pro" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+								</span>
+							</div>
+							<div class="media-body">
+								<div class="landing-block-node-contact-text g-color-white-opacity-0_6 mb-0">Пн-Вс: 09.00 -22.00</div>
+							</div>
+						</div>
+					</div><div class="landing-block-node-card-contact" data-card-preset="link">
+						<div class="media align-items-center mb-4">
+							<div class="d-flex">
+								<span class="landing-block-card-contact-icon-container u-icon-v1 u-icon-size--sm g-color-white mr-2">
+								  <i class="landing-block-card-contact-icon icon-communication-033 u-line-icon-pro" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;tel:+7(987)7407090&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;enabled&quot;:true}"></i>
+								</span>
+							</div>
+							<div class="media-body">
+								<a href="tel:+7(987)7407090" class="landing-block-card-linkcontact-link g-color-white-opacity-0_6" target="_self">+7 (987) 740 70 90</a>
+							</div>
+						</div>
+					</div><div class="landing-block-node-card-contact" data-card-preset="link">
+						<div class="media align-items-center mb-4">
+							<div class="d-flex">
+								<span class="landing-block-card-contact-icon-container u-icon-v1 u-icon-size--sm g-color-white mr-2">
+								  <i class="landing-block-card-contact-icon icon-communication-062 u-line-icon-pro" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;mailto:info@BenNN.ru&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:true}"></i>
+								</span>
+							</div>
+							<a href="mailto:info@BenNN.ru" class="landing-block-card-linkcontact-link g-color-white-opacity-0_6" target="_self">info@BenNN.ru</a>
+						</div>
+					</div></div>
+				
+			</div>
+		</div>
+	</div>
+</section></div><div id="block1385" class="block-wrapper block-html">
+<section class="landing-block g-pt-0 g-pb-0 g-pl-0 g-pr-0">
+	<script data-skip-moving="true" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b46a1cc4be4b9c64f92ac48d80a1df20de03e60e6a69c4d97a2358d2e2af764&width=100%25&height=400&lang=ru_RU&scroll=true"></script></section></div><div id="block1419" class="block-wrapper block-17-1-copyright-with-social"><section class="landing-block js-animation animation-none g-brd-top g-brd-gray-dark-v2 animated g-bg-black-opacity-0_9">
+	<div class="text-center text-md-left g-py-40 g-color-gray-dark-v5 container">
+		<div class="row">
+			<div class="col-md-6 d-flex align-items-center g-mb-15 g-mb-0--md w-100 mb-0">
+				<div class="landing-block-node-text js-animation animation-none mr-1 animated g-font-el-messiri">© 2019 Bengalion. <a href="https://nnnet.ru" target="_blank">Создано студией Web дизайна NNNet</a></div>
+			</div>
+
+			<div class="col-md-6">
+				<ul class="list-inline float-md-right mb-0"><li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="facebook">
+						<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://www.facebook.com" target="_blank">
+							<i class="landing-block-card-social-icon fa fa-facebook" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+						</a>
+					</li><li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="instagram">
+						<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://www.instagram.com/bennn.ru/" target="_blank">
+							<i class="landing-block-card-social-icon fa fa-instagram" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+						</a>
+					</li><li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="twitter">
+						<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://twitter.com" target="_blank">
+							<i class="landing-block-card-social-icon fa fa-twitter" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+						</a>
+					</li><li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="youtube">
+						<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://www.youtube.com/channel/UCHHCEcv2nVcykmFc4ofl0wQ" target="_blank">
+							<i class="landing-block-card-social-icon fa fa-youtube" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+						</a>
+					</li><li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="vk">
+				<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://vk.com/bennn" target="_blank">
+					<i class="landing-block-card-social-icon fa fa-vk" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+				</a>
+			</li><li class="landing-block-card-social list-inline-item g-mr-10" data-card-preset="odnoklassniki">
+				<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-color-gray-light-v1 g-color-white--hover g-bg-primary--hover g-brd-gray-dark-v5 g-brd-primary--hover g-rounded-50x" href="https://ok.ru/bennn" target="_blank">
+					<i class="landing-block-card-social-icon fa fa-odnoklassniki" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}"></i>
+				</a>
+			</li></ul>
+			</div>
+		</div>
+	</div>
+</section></div><div id="block1439" class="block-wrapper block-html">
+<section class="landing-block g-pt-0 g-pl-0 g-pr-0 g-bg-black-opacity-0_9 g-pb-20">
+	<div style="text-align: center;">
+
+<script data-skip-moving="true" type="text/javascript">
+var _tmr = window._tmr || (window._tmr =[]);
+_tmr.push({id: "2549250", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id){if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+  var f = function (){var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]"){d.addEventListener("DOMContentLoaded", f, false);}else{f();}})(document, window, "topmailru-code");
+</script><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2549250;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+
+<a target="_blank" href="http://top.mail.ru/jump?from=2549250">
+<img src="//top-fwz1.mail.ru/counter?id=2549250;t=477;l=1" 
+border="0" height="31" width="88" alt="Рейтинг@Mail.ru"></a>
+
+<!--LiveInternet counter--><script data-skip-moving="true" type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t22.11;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: number of pageviews for 24 hours,"+
+" of visitors for 24 hours and for today is shown' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+
+
+
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=23315881&from=informer"
+target="_blank" rel="nofollow">
+
+
+
+
+
+<img src="https://informer.yandex.ru/informer/23315881/3_0_2F7EA3FF_0F5E83FF_1_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="23315881" data-lang="ru" /></a>
+
+
+</div>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script data-skip-moving="true" type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(23315881, "init",{clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true,
+        ecommerce:"dataLayer"});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/23315881" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --></section></div></div>
+</main>
+<div class="bitrix-footer">
+			<span class="bitrix-footer-text">
+			Заряжено <img src="/bitrix/components/bitrix/landing.pub/templates/.default/images/ru.svg?1" alt="Битрикс24"> &mdash; Бесплатные Сайты и CRM. <a class="bitrix-footer-link" target="_blank" href="https://bitrix24.ru/create.php?b24_type=sites">Создать сайт</a>		</span>
+			</div>
+
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script><script type="text/javascript" src="/bitrix/js/main/core/core.min.js?1612867315259871"></script><script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script type="text/javascript">(window.BX||top.BX).message({'MAIN_SIDEPANEL_CLOSE':'Закрыть','MAIN_SIDEPANEL_PRINT':'Печать'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANDING_BLOCK_WEBFORM_ERROR':'Ошибка создания формы','LANDING_BLOCK_WEBFORM_CONNECT_SUPPORT':'Пожалуйста, обратитесь в техподдержку','LANDING_BLOCK_WEBFORM_NO_FORM':'Нет активных CRM-форм','LANDING_BLOCK_WEBFORM_NO_FORM_CP':'На вашем сайте нет CRM-форм. Проверьте их наличие и активность на странице &laquo;<a target=\"_blank\" class=\"landing-trusted-link\" href=\"/crm/webform\">CRM - CRM-формы<\/a>&raquo;.','LANDING_BLOCK_WEBFORM_NO_FORM_BUS_NEW':'На вашем сайте нет CRM-форм. Проверьте установку модуля &laquo;Интеграция с Битрикс24 (b24connector)&raquo; в разделе &laquo;<a target=\"_blank\" class=\"landing-trusted-link\" href=\"/bitrix/admin/module_admin.php\">Настройки &mdash; Настройки продукта &mdash; Модули<\/a>&raquo; и привязку портала Битрикс24 в настройках &laquo;<a target=\"_blank\" class=\"landing-trusted-link\" href=\"/bitrix/admin/b24connector_b24connector.php\">Коммуникаций с клиентом<\/a>&raquo;.'});(window.BX||top.BX).message({'LANDING_NAVBAR_TOGGLER_SHOW':'Развернуть','LANDING_NAVBAR_TOGGLER_HIDE':'Свернуть','LANDING_NAVBAR_MODAL_ALERT':'Редактирование.<br>Полноценная работа блока будет доступна в&nbsp;режиме просмотра.'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1615022488','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'db01b6fa5610b2399cca092ac0ac7069'});</script><script type="text/javascript" src="/bitrix/js/main/polyfill/customevent/main.polyfill.customevent.min.js?1544619813556"></script>
+<script type="text/javascript" src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?159049177860291"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ls.min.js?14328944187365"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_fx.min.js?14909536449768"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.min.js?159765985710532"></script>
+<script type="text/javascript" src="/bitrix/js/landing/metrika/dist/metrika.bundle.min.js?16085558822654"></script>
+<script type="text/javascript" src="/bitrix/js/main/pageobject/pageobject.min.js?1584117434570"></script>
+<script type="text/javascript" src="/bitrix/js/main/sidepanel/manager.min.js?161286731019209"></script>
+<script type="text/javascript" src="/bitrix/js/main/sidepanel/slider.min.js?161286731027303"></script>
+<script type="text/javascript" src="/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.min.js?15362428577124"></script>
+<script type="text/javascript" src="/bitrix/js/landing/utils/utils.min.js?160855588219535"></script>
+<script type="text/javascript" src="/bitrix/js/landing/mediaplayer/base_mediaplayer.min.js?1538388755874"></script>
+<script type="text/javascript" src="/bitrix/js/landing/mediaplayer/youtube_mediaplayer.min.js?15906508261408"></script>
+<script type="text/javascript" src="/bitrix/js/landing/mediaplayer/mediaplayer_factory.min.js?1538388755320"></script>
+<script type="text/javascript" src="/bitrix/js/landing/ui/tool/auto-font-scale.min.js?15428821101240"></script>
+<script type="text/javascript" src="/bitrix/js/landing/ui/tool/auto-font-scale-entry.min.js?15382278712061"></script>
+<script type="text/javascript" src="/bitrix/js/landing/event-tracker/event-tracker.min.js?15839331302876"></script>
+<script type="text/javascript" src="/bitrix/js/landing/event-tracker/services/base-service.min.js?1538227870259"></script>
+<script type="text/javascript" src="/bitrix/js/landing/event-tracker/services/google-analytics-service.min.js?1538227870485"></script>
+<script type="text/javascript" src="/bitrix/js/landing/polyfill.min.js?15675083271062"></script>
+<script type="text/javascript" src="/bitrix/js/landing/events/block_event.min.js?1538227870520"></script>
+<script type="text/javascript" src="/bitrix/js/landing/public.min.js?16016501762237"></script>
+<script type="text/javascript">var bxDate = new Date(); document.cookie="BITRIX_SM_TIME_ZONE="+bxDate.getTimezoneOffset()+"; path=/; expires=Tue, 01 Mar 2022 00:00:00 +0300"</script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/lazyload.min.js?15994906851713"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/onscroll-animation_init.min.js?15382279011323"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/vendor/jquery/jquery-3.2.1.min.js?156750832790987"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/vendor/jquery.easing/js/jquery.easing.min.js?15675083273583"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/vendor/bootstrap/js/dist/util.min.js?15906508262242"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/vendor/bootstrap/js/dist/collapse.min.js?15906508266674"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/menu/hamburgers.min.js?1599490685289"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/menu/scrollspy.min.js?15994906852584"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/menu/menu_init.min.js?16016501763718"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/menu/block-header-entry.min.js?15947365305591"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/menu/block-header-init.min.js?15947365301082"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/vendor/slick-carousel/slick/slick.min.js?159949068545069"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/components/hs.core_landing.min.js?1599490685590"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/components/hs.carousel.min.js?15758953494081"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/carousel/carousel_helper.min.js?16085558824691"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/carousel/base_carousel_init.min.js?16085558822096"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/form_init.min.js?16085558823172"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/inline-video.min.js?15906508261255"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/upper_init.min.js?1594736530704"></script>
+<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/auto_font_scale_init.min.js?1567508327233"></script>
+<script type="text/javascript" src="/bitrix/components/bitrix/landing.pub/templates/.default/script.min.js?16085558823456"></script>
+<script type="text/javascript" src="/bitrix/components/bitrix/search.title/script.min.js?15254269836313"></script>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+<script>
+	BX.ready(function(){
+		new JCTitleSearch({
+			'AJAX_PAGE' : '/',
+			'CONTAINER_ID': 'search',
+			'INPUT_ID': 'title-search-input',
+			'MIN_QUERY_LEN': 2
+		});
+	});
+</script>
+
+<script>
+	(function()
+	{
+		new BX.Landing.Metrika();
+	})();
+</script>
+
+<script>
+	(function(w,d,u){
+		var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+		var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+	})(window,document,'https://cdn-ru.bitrix24.ru/b10771232/crm/tag/call.tracker.js');
+</script>
+</body>
+</html>

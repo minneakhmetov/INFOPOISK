@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Ветеринарная клиника "Ветус" в Калининском и Выборгском районе СПб</title>
+		<meta name='robots' content='index,follow' />
+		<meta name='description' content='Ветеринарная клиника Ветус - это лучший частный центр для животных, работающий ежедневно и круглосуточно (24 часа) в Калининском районе СПб.'>
+		<meta name='keywords' content='ветеринарная
+клиника 
+калининский 
+район 
+спб 
+круглосуточная 
+лучшая 
+животное'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name='google-site-verification' content='zlOgamiur7gjby_-n_jPI41B845jEX3RTHgpXlH2G74' />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--Мета-тег слайдера-->
+		<!--Оформление слайдера-->
+		<style type="text/css">
+/*новое оформление*/
+.slider {
+  /* устанавливаем относительное позиционирование элементу */
+  position: relative;
+  height: 25.25vw;
+}
+
+.slider__items {
+  /* устанавливаем относительное позиционирование элементу */
+  position: relative;
+  /* устанавливаем элементу ширину, равную 100% */
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__item {
+  /* устанавливаем относительное позиционирование элементу */
+  position: relative;
+  /* отключаем по умолчанию отображение всех слайдов */
+  display: none;
+  /* устанавливаем элементу ширину, равную 100% */
+  width: 100%;
+  /* длительность анимации трансформации */
+  transition: transform 0.6s ease;
+  /* не показывать обратную сторону трансформируемого элемента */
+  backface-visibility: hidden;
+}
+
+.slider__item_active,
+.slider__item_next,
+.slider__item_prev {
+  /* отображаем слайд, если он имеет один из этих классов */
+  display: block;
+}
+
+.slider__item_next,
+.slider__item_prev {
+  /* устанавливаем абсолютное позиционирование для элемента, на который будет сменяться слайд (на время трансформации) */
+  position: absolute;
+  /* устанавливаем положение элемента, т.е. координату top */
+  top: 0;
+}
+
+.slider__item_next.slider__item_left,
+.slider__item_prev.slider__item_right {
+  /* сдвигаем элемент на 0 по горизонтали */
+  transform: translateX(0);
+}
+
+.slider__item_next,
+.slider__item_right.slider__item_active {
+  /* сдвигаем элемент на 100% по горизонтали */
+  transform: translateX(100%);
+}
+
+.slider__item_prev,
+.slider__item_left.slider__item_active {
+  /* сдвигаем элемент на -100% по горизонтали */
+  transform: translateX(-100%);
+}
+
+/* элементы управления (назад и вперёд) слайдером */
+
+.slider__control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.slider__control_prev {
+  left: 0;
+}
+
+.slider__control_next {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* индикаторы слайдера*/
+
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.slider__indicator {
+  position: relative;
+  flex: 0 1 auto;
+  /*width: 30px;*/
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+
+.slider__indicator::before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.slider__indicator::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.slider__indicator_active {
+  background-color: #fff;
+}
+/* Caption text */
+.text {
+   line-height: 1.5em;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 2.5vw;
+  padding: 8px 12px;
+  font-style: normal;
+  text-shadow: 0 0 0;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  bottom: 8px;
+  width: 100%;
+  /*text-align: center;*/
+}
+@media screen and (width:1280px){
+.slider{height: 26.95vw;}
+}
+@media screen and (width:1440px){
+.slider{height: 24vw;}
+}
+@media screen and (width:1536px){
+.slider{height: 22.37vw;}
+}
+@media screen and (width:1920px){
+.slider{height: 31.65vw;}
+}
+@media screen and (width:1600px){
+.slider{height: 38.438vw;}
+}
+@media screen and (width:2560px){
+.slider{height: 26.9vw;}
+}
+}
+
+/*новое оформление*/
+		</style>
+        <!--Оформление слайдера-->
+		<script src="/netcat_template/template/_vetusklinika_ru/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="/netcat_template/template/_vetusklinika_ru/js/main.js"></script>
+		
+		<!-- Fancy -->
+		<script type="text/javascript" src="/vetus/js/jquery.mousewheel-3.0.6.pack.js"></script>
+		<link rel="stylesheet" href="/vetus/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="/vetus/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'></script>
+        <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-128993-1bPbr';</script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-99227873-1', 'auto');
+          ga('send', 'pageview');
+        
+        </script>
+
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel='stylesheet' href='/netcat_template/template/_vetusklinika_ru/css/style.php' />
+
+        <!-- VK Pixel Code -->
+        <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-224037-58Wyp';</script>
+        <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-228168-87nSW';</script>
+        <!-- Facebook Pixel Code -->
+        
+        <script>
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '2035483910040611');
+          fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+          src="https://www.facebook.com/tr?id=2035483910040611&ev=PageView&noscript=1"
+        /></noscript>
+        <script>
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '150023495665398');
+          fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+          src="https://www.facebook.com/tr?id=150023495665398&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Facebook Pixel Code -->
+    </head>
+	<body>
+		<header>
+			<div class='social-networks'>
+				<a class='vk' href='https://vk.com/vetusklinika'></a>
+				<!--<a class='fb' href='https://fb.com'></a>-->
+				<a class='insta' href='https://www.instagram.com/vetusclinic/'></a>
+			</div>
+			<a href="#addQuestionForm" class="asc-a-question button">Задать вопрос</a>
+			<div class='logo'>
+				<a href='/'>
+					<img src='/netcat_template/template/_vetusklinika_ru/images/logo.png' />
+					<span>Сеть ветеринарных клиник &laquo;Ветус&raquo;</span>
+				</a>
+			</div>
+			<div class='wrapper left-side'>
+				<!--div class='banner'></div-->
+                
+                <!--Слайдер рабочий-->
+                <div id="slider" class="slider">
+  <ol class="slider__indicators">
+    <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+    <li class="slider__indicator" data-slide-to="1"></li>
+    <li class="slider__indicator" data-slide-to="2"></li>
+    <li class="slider__indicator" data-slide-to="3"></li>
+  </ol>
+  <div class="slider__items">
+    <div class="slider__item slider__item_active">
+<img src="/netcat_template/template/_vetusklinika_ru/images/tm-4.jpg" style="width:100%; height: auto; z-index: 0;">
+  <div class="text">Сеть ветеринарных клиник в Калининском<br>и выборгском районе<br>
+  <p class="buttond"  style="text-align:left;"><a href="https://vetusklinika.ru/about/vyborgskoye-shosse/" target="_blank" style="cursor: pointer; font-size:1.5vw;  text-decoration: none; padding:0.5vw 1.2vw; color:#f2f7fa; border-radius:0px; border: 0.2vw solid #f2f7fa;">Перейти</a></p>
+    </div>
+    </div>
+    <div class="slider__item">
+  <img src="/netcat_template/template/_vetusklinika_ru/images/main-banner-tm-2.jpg" style="width:100%; height: auto; z-index: 0;">
+    <div class="text">Работаем с 2006 года 24/7,<br> лучшее рядом<br>
+    <p class="buttond"  style="text-align:left;"><a href="https://vetusklinika.ru/about/vedeneeva/" target="_blank" style="cursor: pointer; font-size:1.5vw;  text-decoration: none; padding:0.5vw 1.2vw; color:#f2f7fa; border-radius:0px; border: 0.2vw solid #f2f7fa;">Перейти</a></p>
+    </div>
+    </div>
+    <div class="slider__item">
+  <img src="/netcat_template/template/_vetusklinika_ru/images/main-banner-tm-3.jpg" style="width:100%; height: auto;">
+    <div class="text">Опытные врачи<br>
+  <p class="buttond"  style="text-align:left;"><a href="https://www.vetusklinika.ru/about/doctors/" target="_blank" style="cursor: pointer; font-size:1.5vw;  text-decoration: none; padding:0.5vw 1.2vw; color:#f2f7fa; border-radius:0px; border: 0.2vw solid #f2f7fa;">Перейти</a></p>
+   </div>
+   </div>
+    <div class="slider__item">
+  <img src="/netcat_template/template/_vetusklinika_ru/images/tm-3.jpg" style="width:100%; height: auto;">
+    <div class="text">Ветеринарная Аптека<br>
+  <p class="buttond"  style="text-align:left;"><a href="https://www.vetusklinika.ru/facilities/pharmacy/" target="_blank" style="cursor: pointer; font-size:1.5vw;  text-decoration: none; padding:0.5vw 1.2vw; color:#f2f7fa; border-radius:0px; border: 0.2vw solid #f2f7fa;">Перейти</a></p>
+  </div>
+    </div>
+    <div class="slider__item">
+  <img src="/netcat_template/template/_vetusklinika_ru/images/tm-6.jpg" style="width:100%; height: auto;">
+    <div class="text">Клиника на Веденеева 12 к. 4<br>Клиника на Есенина д. 30<br>Клиника на Выборгском шоссе 17 к. 4<br>
+  <p class="buttond"  style="text-align:left;"><a href="https://www.vetusklinika.ru/contact/" target="_blank" style="cursor: pointer; font-size:1.5vw;  text-decoration: none; padding:0.5vw 1.2vw; color:#f2f7fa; border-radius:0px; border: 0.2vw solid #f2f7fa;">Перейти</a></p>
+  </div>
+    </div>
+  </div>
+  <a class="slider__control slider__control_prev" href="#" role="button"></a>
+  <a class="slider__control slider__control_next" href="#" role="button"></a>
+</div>
+				<!--Сам слайдер-->
+				
+<!--br>
+
+<!--div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div-->
+
+<script type="text/javascript">
+'use strict';
+var slider = (function (config) {
+
+  const ClassName = {
+    INDICATOR_ACTIVE: 'slider__indicator_active',
+    ITEM: 'slider__item',
+    ITEM_LEFT: 'slider__item_left',
+    ITEM_RIGHT: 'slider__item_right',
+    ITEM_PREV: 'slider__item_prev',
+    ITEM_NEXT: 'slider__item_next',
+    ITEM_ACTIVE: 'slider__item_active'
+  }
+
+  var
+    _isSliding = false, // индикация процесса смены слайда
+    _interval = 0, // числовой идентификатор таймера
+    _transitionDuration = 700, // длительность перехода
+    _slider = {}, // DOM элемент слайдера
+    _items = {}, // .slider-item (массив слайдов) 
+    _sliderIndicators = {}, // [data-slide-to] (индикаторы)
+    _config = {
+      selector: '', // селектор слайдера
+      isCycling: true, // автоматическая смена слайдов
+      direction: 'next', // направление смены слайдов
+      interval: 5000, // интервал между автоматической сменой слайдов
+      pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+    };
+
+  var
+    // функция для получения порядкового индекса элемента
+    _getItemIndex = function (_currentItem) {
+      var result;
+      _items.forEach(function (item, index) {
+        if (item === _currentItem) {
+          result = index;
+        }
+      });
+      return result;
+    },
+    // функция для подсветки активного индикатора
+    _setActiveIndicator = function (_activeIndex, _targetIndex) {
+      if (_sliderIndicators.length !== _items.length) {
+        return;
+      }
+      _sliderIndicators[_activeIndex].classList.remove(ClassName.INDICATOR_ACTIVE);
+      _sliderIndicators[_targetIndex].classList.add(ClassName.INDICATOR_ACTIVE);
+    },
+
+    // функция для смены слайда
+    _slide = function (direction, activeItemIndex, targetItemIndex) {
+      var
+        directionalClassName = ClassName.ITEM_RIGHT,
+        orderClassName = ClassName.ITEM_PREV,
+        activeItem = _items[activeItemIndex], // текущий элемент
+        targetItem = _items[targetItemIndex]; // следующий элемент
+
+      var _slideEndTransition = function () {
+        activeItem.classList.remove(ClassName.ITEM_ACTIVE);
+        activeItem.classList.remove(directionalClassName);
+        targetItem.classList.remove(orderClassName);
+        targetItem.classList.remove(directionalClassName);
+        targetItem.classList.add(ClassName.ITEM_ACTIVE);
+        window.setTimeout(function () {
+          if (_config.isCycling) {
+            clearInterval(_interval);
+            _cycle();
+          }
+          _isSliding = false;
+          activeItem.removeEventListener('transitionend', _slideEndTransition);
+        }, _transitionDuration);
+      };
+
+      if (_isSliding) {
+        return; // завершаем выполнение функции если идёт процесс смены слайда
+      }
+      _isSliding = true; // устанавливаем переменной значение true (идёт процесс смены слайда)
+
+      if (direction === "next") { // устанавливаем значение классов в зависимости от направления
+        directionalClassName = ClassName.ITEM_LEFT;
+        orderClassName = ClassName.ITEM_NEXT;
+      }
+
+      targetItem.classList.add(orderClassName); // устанавливаем положение элемента перед трансформацией
+      _setActiveIndicator(activeItemIndex, targetItemIndex); // устанавливаем активный индикатор
+
+      window.setTimeout(function () { // запускаем трансформацию
+        targetItem.classList.add(directionalClassName);
+        activeItem.classList.add(directionalClassName);
+        activeItem.addEventListener('transitionend', _slideEndTransition);
+      }, 0);
+
+    },
+    // функция для перехода к предыдущему или следующему слайду
+    _slideTo = function (direction) {
+      var
+        activeItem = _slider.querySelector('.' + ClassName.ITEM_ACTIVE), // текущий элемент
+        activeItemIndex = _getItemIndex(activeItem), // индекс текущего элемента 
+        lastItemIndex = _items.length - 1, // индекс последнего элемента
+        targetItemIndex = activeItemIndex === 0 ? lastItemIndex : activeItemIndex - 1;
+      if (direction === "next") { // определяем индекс следующего слайда в зависимости от направления
+        targetItemIndex = activeItemIndex == lastItemIndex ? 0 : activeItemIndex + 1;
+      }
+      _slide(direction, activeItemIndex, targetItemIndex);
+    },
+    // функция для запуска автоматической смены слайдов в указанном направлении
+    _cycle = function () {
+      if (_config.isCycling) {
+        _interval = window.setInterval(function () {
+          _slideTo(_config.direction);
+        }, _config.interval);
+      }
+    },
+    // обработка события click
+    _actionClick = function (e) {
+      var
+        activeItem = _slider.querySelector('.' + ClassName.ITEM_ACTIVE), // текущий элемент
+        activeItemIndex = _getItemIndex(activeItem), // индекс текущего элемента
+        targetItemIndex = e.target.getAttribute('data-slide-to');
+
+      if (!(e.target.hasAttribute('data-slide-to') || e.target.classList.contains('slider__control'))) {
+        return; // завершаем если клик пришёлся на не соответствующие элементы
+      }
+      if (e.target.hasAttribute('data-slide-to')) {// осуществляем переход на указанный сдайд 
+        if (activeItemIndex === targetItemIndex) {
+          return;
+        }
+        _slide((targetItemIndex > activeItemIndex) ? 'next' : 'prev', activeItemIndex, targetItemIndex);
+      } else {
+        e.preventDefault();
+        _slideTo(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
+      }
+    },
+    // установка обработчиков событий
+    _setupListeners = function () {
+      // добавление к слайдеру обработчика события click
+      _slider.addEventListener('click', _actionClick);
+      // остановка автоматической смены слайдов (при нахождении курсора над слайдером)
+      if (_config.pause && _config.isCycling) {
+        _slider.addEventListener('mouseenter', function (e) {
+          clearInterval(_interval);
+        });
+        _slider.addEventListener('mouseleave', function (e) {
+          clearInterval(_interval);
+          _cycle();
+        });
+      }
+    };
+
+  // init (инициализация слайдера)
+  for (var key in config) {
+    if (key in _config) {
+      _config[key] = config[key];
+    }
+  }
+  _slider = (typeof _config.selector === 'string' ? document.querySelector(_config.selector) : _config.selector);
+  _items = _slider.querySelectorAll('.' + ClassName.ITEM);
+  _sliderIndicators = _slider.querySelectorAll('[data-slide-to]');
+  // запуск функции cycle
+  _cycle();
+  _setupListeners();
+
+  return {
+    next: function () { // метод next 
+      _slideTo('next');
+    },
+    prev: function () { // метод prev 
+      _slideTo('prev');
+    },
+    stop: function () { // метод stop
+      clearInterval(_interval);
+    },
+    cycle: function () { // метод cycle 
+      clearInterval(_interval);
+      _cycle();
+    }
+  }
+}({
+  selector: '.slider',
+  isCycling: true,
+  direction: 'next',
+  interval: 5000,
+  pause: true
+}));
+</script>
+    <!--div>
+    <!--a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right" href="#" role="button"></a>
+  </div-->
+
+  <!--script type="javascript">
+    'use strict';
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 7000); // Change image every 7 seconds
+}
+    var multiItemSlider = (function () {
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = []; // массив элементов
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var position = {
+          getMin: 0,
+          getMax: _items.length - 1,
+        }
+
+        var _transformItem = function (direction) {
+          if (direction === 'right') {
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+              return;
+            }
+            if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+              _sliderControlLeft.classList.add('slider__control_show');
+            }
+            if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+              _sliderControlRight.classList.remove('slider__control_show');
+            }
+            _positionLeftItem++;
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            if (_positionLeftItem <= position.getMin) {
+              return;
+            }
+            if (!_sliderControlRight.classList.contains('slider__control_show')) {
+              _sliderControlRight.classList.add('slider__control_show');
+            }
+            if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+              _sliderControlLeft.classList.remove('slider__control_show');
+            }
+            _positionLeftItem--;
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          var direction = this.classList.contains('slider__control_right') ? 'right' : 'left';
+          e.preventDefault();
+          _transformItem(direction);
+        };
+
+        var _setUpListeners = function () {
+          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+          _sliderControls.forEach(function (item) {
+            item.addEventListener('click', _controlClick);
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider')
+
+  </script>
+				<!--Конец слайдера-->
+
+				<div class='navigation' style="position:relative; z-index:1000;">
+					<form action='/result/' method='GET' class='search-form'>
+						<input type='hidden' name='searchid' value='1995686' />
+						<input type='text' name='text' placeholder='Поиск' required />
+						<button type='submit'></button>
+					</form>
+					
+<nav class='main-menu'>
+			<input type='checkbox' id='showLeftMenu' />
+		<label for='showLeftMenu'></label>
+		<ul>
+					<li><label for='showLeftMenu'></label></li>
+							<li>
+									<ul>
+													<li>
+								<a href="/about/vedeneeva/">Ветклиника на ул.Веденеева</a>
+							</li>
+													<li>
+								<a href="/about/esenina/">Ветклиника на ул. Есенина</a>
+							</li>
+													<li>
+								<a href="/about/vyborgskoye-shosse/">Ветклиника на Выборгском шоссе</a>
+							</li>
+													<li>
+								<a href="/about/news/">Новости</a>
+							</li>
+													<li>
+								<a href="/about/doctors/">Ветеринарные врачи</a>
+							</li>
+													<li>
+								<a href="/about/certificates/">Сертификаты ветклиники</a>
+							</li>
+													<li>
+								<a href="/about/opinions/">Отзывы о ветклинике</a>
+							</li>
+													<li>
+								<a href="/about/patients/">Наши пациенты</a>
+							</li>
+													<li>
+								<a href="/about/clinical-cases/">Клинические случаи</a>
+							</li>
+													<li>
+								<a href="/about/achievements/">Наши достижения</a>
+							</li>
+													<li>
+								<a href="/about/press/">Пресса о нас</a>
+							</li>
+													<li>
+								<a href="/about/partners/">Партнерам</a>
+							</li>
+													<li>
+								<a href="/about/publication/">Публикации</a>
+							</li>
+											</ul>
+								<a href='/about/'><span>О ветцентре</span></a>
+			</li>
+					<li>
+									<ul>
+													<li>
+								<a href="/facilities/inspection/">Осмотр и консультация</a>
+							</li>
+													<li>
+								<a href="/facilities/terapia/">Терапия</a>
+							</li>
+													<li>
+								<a href="/facilities/diagnosis/">Диагностика</a>
+							</li>
+													<li>
+								<a href="/facilities/laboratory/">Лаборатория</a>
+							</li>
+													<li>
+								<a href="/facilities/vaccination/">Вакцинация и уход</a>
+							</li>
+													<li>
+								<a href="/facilities/animal-id/">Чипирование</a>
+							</li>
+													<li>
+								<a href="/facilities/gynecology/">Акушерство, гинекология</a>
+							</li>
+													<li>
+								<a href="/facilities/anaesthesiology/">Анестезия,  реанимация</a>
+							</li>
+													<li>
+								<a href="/facilities/hirurgiya/">Хирургия</a>
+							</li>
+													<li>
+								<a href="/facilities/endoscopy/">Эндоскопия</a>
+							</li>
+													<li>
+								<a href="/facilities/onkologiya/">Онкология</a>
+							</li>
+													<li>
+								<a href="/facilities/ortopediya/">Ортопедия</a>
+							</li>
+													<li>
+								<a href="/facilities/traumatology/">Травматология</a>
+							</li>
+													<li>
+								<a href="/facilities/dentistry/">Стоматология</a>
+							</li>
+													<li>
+								<a href="/facilities/ophthalmology/">Офтальмология</a>
+							</li>
+													<li>
+								<a href="/facilities/dermatology/">Дерматология</a>
+							</li>
+													<li>
+								<a href="/facilities/neurology/">Неврология</a>
+							</li>
+													<li>
+								<a href="/facilities/cardiology/">Кардиология</a>
+							</li>
+													<li>
+								<a href="/facilities/pharmacy/">Ветаптека</a>
+							</li>
+													<li>
+								<a href="/facilities/lulling/">Гуманное усыпление</a>
+							</li>
+													<li>
+								<a href="/facilities/hospital/">Стационар</a>
+							</li>
+													<li>
+								<a href="/facilities/endocrinology/">Эндокринология</a>
+							</li>
+													<li>
+								<a href="/facilities/parasitology/">Паразитология</a>
+							</li>
+											</ul>
+								<a href='/facilities/'><span>Услуги</span></a>
+			</li>
+					<li>
+									<ul>
+													<li>
+								<a href="/price/actions/">Акции ветклиники "Ветус"</a>
+							</li>
+											</ul>
+								<a href='/price/'><span>Прайс</span></a>
+			</li>
+					<li>
+									<ul>
+													<li>
+								<a href="/diseases/symptoms/">Симптомы</a>
+							</li>
+													<li>
+								<a href="/diseases/cats/">Болезни кошек</a>
+							</li>
+													<li>
+								<a href="/diseases/dogs/">Болезни собак</a>
+							</li>
+													<li>
+								<a href="/diseases/rabbits/">Болезни кроликов</a>
+							</li>
+													<li>
+								<a href="/diseases/birds/">Болезни птиц</a>
+							</li>
+													<li>
+								<a href="/diseases/guinea-pigs/">Болезни морских свинок</a>
+							</li>
+													<li>
+								<a href="/diseases/infectious/">Инфекционные</a>
+							</li>
+													<li>
+								<a href="/diseases/parasitic/">Паразитарные</a>
+							</li>
+													<li>
+								<a href="/diseases/digestive/">Пищеварительной системы</a>
+							</li>
+													<li>
+								<a href="/diseases/cardiovascular/">Сердечно-сосудистой системы</a>
+							</li>
+													<li>
+								<a href="/diseases/lungs/">Легких и дыхательных путей</a>
+							</li>
+													<li>
+								<a href="/diseases/skin-coat/">Кожи и шерстного покрова</a>
+							</li>
+													<li>
+								<a href="/diseases/kidney-urinary-system/">Почек и мочевыводящей системы</a>
+							</li>
+													<li>
+								<a href="/diseases/reproduction/">Репродуктивной системы</a>
+							</li>
+													<li>
+								<a href="/diseases/musculoskeletal/">Опорно-двигательной системы</a>
+							</li>
+													<li>
+								<a href="/diseases/nervous-system/">Нервной системы</a>
+							</li>
+													<li>
+								<a href="/diseases/endocrine-system/">Гормональной системы</a>
+							</li>
+													<li>
+								<a href="/diseases/immune-system/">Иммунной системы</a>
+							</li>
+													<li>
+								<a href="/diseases/oncological/">Онкологические</a>
+							</li>
+													<li>
+								<a href="/diseases/pathology/">Патологии развития</a>
+							</li>
+													<li>
+								<a href="/diseases/eyes/">Болезни глаз</a>
+							</li>
+													<li>
+								<a href="/diseases/ears/">Болезни ушей</a>
+							</li>
+											</ul>
+								<a href='/diseases/'><span>Болезни</span></a>
+			</li>
+					<li>
+									<ul>
+													<li>
+								<a href="/article/veterinary/">Ветеринария</a>
+							</li>
+													<li>
+								<a href="/article/dictionary/">Вет-словарь</a>
+							</li>
+													<li>
+								<a href="/article/advices/">Советы ветврача</a>
+							</li>
+													<li>
+								<a href="/article/maintenance/">Содержание животных</a>
+							</li>
+													<li>
+								<a href="/article/diseases-animals/">Заболевания животных</a>
+							</li>
+													<li>
+								<a href="/article/medicine/">Лекарственные препараты</a>
+							</li>
+													<li>
+								<a href="/article/cats/">Кошки</a>
+							</li>
+													<li>
+								<a href="/article/dogs/">Собаки</a>
+							</li>
+													<li>
+								<a href="/article/rabbit/">Кролики</a>
+							</li>
+													<li>
+								<a href="/article/bird/">Птицы</a>
+							</li>
+													<li>
+								<a href="/article/galapago/">Рептилии</a>
+							</li>
+													<li>
+								<a href="/article/aquarium/">Аквариум</a>
+							</li>
+													<li>
+								<a href="/article/pet/">Зоотовары</a>
+							</li>
+											</ul>
+								<a href='/article/'><span>Статьи</span></a>
+			</li>
+					<li>
+									<ul>
+													<li>
+								<a href="/feed/royal-canin/">Royal Canin</a>
+							</li>
+													<li>
+								<a href="/feed/monge/">Корм Монж</a>
+							</li>
+											</ul>
+								<a href='/feed/'><span>Корма</span></a>
+			</li>
+					<li>
+								<a href='/contact/'><span>Контакты</span></a>
+			</li>
+			</ul>
+</nav>
+				</div>
+			</div>
+			<div class='contacts list' style="position:relative; z-index:1000;">
+				<div class='item'>
+					<svg version="1.0" xmlns="https://www.w3.org/2000/svg" viewBox="250 90 650 940" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,1121.000000) scale(0.100000,-0.100000)" fill="#6bddcd" stroke="none" style=""><path d="M5490 10206 c-717 -76 -1325 -356 -1829 -842 -497 -478 -817 -1102 -918 -1789 -24 -166 -24 -560 1 -730 74 -517 347 -1249 822 -2205 218 -441 290 -576 566 -1073 558 -1005 1005 -1747 1412 -2344 84 -124 160 -226 171 -229 38 -13 106 -6 148 16 94 49 167 141 313 396 53 93 109 185 124 204 43 55 412 658 682 1115 677 1145 1198 2162 1519 2963 303 756 390 1157 360 1654 -18 301 -55 506 -138 763 -198 611 -612 1173 -1143 1552 -403 287 -870 469 -1380 539 -158 21 -551 27 -710 10z m728 -371 c286 -49 495 -117 757 -245 560 -274 991 -702 1265 -1255 248 -499 325 -1041 225 -1580 -60 -321 -150 -586 -397 -1165 -375 -877 -908 -1876 -1696 -3180 -263 -435 -569 -925 -578 -925 -12 0 -227 348 -613 990 -558 929 -876 1498 -1215 2175 -426 848 -686 1472 -795 1908 -87 348 -107 582 -76 892 61 604 334 1170 780 1615 365 365 847 630 1340 739 108 23 300 52 400 60 28 2 140 2 250 1 159 -3 231 -9 353 -30z"></path><path d="M5644 8480 c-282 -30 -548 -154 -763 -356 -209 -197 -351 -454 -408 -741 -24 -121 -24 -377 0 -490 89 -418 354 -761 740 -955 92 -46 217 -88 337 -114 120 -25 383 -26 500 -1 800 172 1274 984 1020 1749 -107 321 -365 615 -675 771 -234 117 -493 164 -751 137z m331 -369 c308 -63 579 -275 710 -554 179 -379 90 -835 -218 -1124 -115 -107 -239 -178 -396 -227 -322 -101 -676 -17 -943 223 -122 110 -241 304 -288 471 -44 153 -37 378 16 539 83 249 272 466 509 583 209 104 403 132 610 89z"></path></g></svg>
+					<div class="ya-phone"><a class='phone' href='tel:+78122966796'>+7 (812) 296-67-96</a></div>
+					<span class='address'><a href="https://vetusklinika.ru/about/vedeneeva/">ул. Веденеева д.12, к.4</a></span>
+                    <div class="ya-phone"><a class='phone' href='tel:+78122914464'>+7 (812) 291-44-64</a></div>
+					<span class="address"><a href="https://vetus.su">Ул.Есенина д.30, лит А</a></span>
+                    <div class="ya-phone"><a class='phone' href='tel:+78129207797'>+7 (812) 920-77-97</a></div>
+					<span class="address"><a href="https://vetusklinika.ru/about/vyborgskoye-shosse/">Выборгское шоссе д.17, к.4</a></span>
+					<span class='working-hours'><b>круглосуточно</b>,<br />ежедневно</span>
+					<a class='map-link' href='/contact?map1'>
+						<img src='/netcat_template/template/_vetusklinika_ru/temp/map-icon-1.jpg' />Карта
+					</a>
+				</div>
+				<!--<div class='item'>
+					<svg version="1.0" xmlns="https://www.w3.org/2000/svg" viewBox="250 90 650 940" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,1121.000000) scale(0.100000,-0.100000)" fill="#38c8fd" stroke="none" style=""><path d="M5490 10206 c-717 -76 -1325 -356 -1829 -842 -497 -478 -817 -1102 -918 -1789 -24 -166 -24 -560 1 -730 74 -517 347 -1249 822 -2205 218 -441 290 -576 566 -1073 558 -1005 1005 -1747 1412 -2344 84 -124 160 -226 171 -229 38 -13 106 -6 148 16 94 49 167 141 313 396 53 93 109 185 124 204 43 55 412 658 682 1115 677 1145 1198 2162 1519 2963 303 756 390 1157 360 1654 -18 301 -55 506 -138 763 -198 611 -612 1173 -1143 1552 -403 287 -870 469 -1380 539 -158 21 -551 27 -710 10z m728 -371 c286 -49 495 -117 757 -245 560 -274 991 -702 1265 -1255 248 -499 325 -1041 225 -1580 -60 -321 -150 -586 -397 -1165 -375 -877 -908 -1876 -1696 -3180 -263 -435 -569 -925 -578 -925 -12 0 -227 348 -613 990 -558 929 -876 1498 -1215 2175 -426 848 -686 1472 -795 1908 -87 348 -107 582 -76 892 61 604 334 1170 780 1615 365 365 847 630 1340 739 108 23 300 52 400 60 28 2 140 2 250 1 159 -3 231 -9 353 -30z"></path><path d="M5644 8480 c-282 -30 -548 -154 -763 -356 -209 -197 -351 -454 -408 -741 -24 -121 -24 -377 0 -490 89 -418 354 -761 740 -955 92 -46 217 -88 337 -114 120 -25 383 -26 500 -1 800 172 1274 984 1020 1749 -107 321 -365 615 -675 771 -234 117 -493 164 -751 137z m331 -369 c308 -63 579 -275 710 -554 179 -379 90 -835 -218 -1124 -115 -107 -239 -178 -396 -227 -322 -101 -676 -17 -943 223 -122 110 -241 304 -288 471 -44 153 -37 378 16 539 83 249 272 466 509 583 209 104 403 132 610 89z"></path></g></svg>
+					<a class='address'target='_blank' href='https://www.vetus.su/'>ул. Есенина д.30, лит А</a>
+					<a class='phone' href='tel:+78122914464'>+7 (812) 291-44-64</a>
+					<span class='working-hours'>круглосуточно,<br />ежедневно</span>
+					<a class='map-link' href='/contact?map2'>
+						<img src='/netcat_template/template/_vetusklinika_ru/temp/map-icon-2.jpg' />Карта
+					</a>
+				</div>-->
+			</div>
+		</header>
+        		<main class='sec-lev-subdivision-1310'>
+			                      <h1>Ветеринарная клиника &quot;Ветус&quot; в Калининском и Выборгском районе СПб</h1>
+                
+
+<section class='services index'>
+	<div class='list'>
+
+	<a href='/facilities/hirurgiya/abdominal-surgery/castration-dogs/' class='item'>
+		<img src='/netcat_files/891_2.jpg' />
+		<span>Кастрация собак</span>
+	</a>
+
+
+	<a href='/facilities/vaccination/' class='item'>
+		<img src='/netcat_files/891_3.jpg' />
+		<span>Вакцинация и уход</span>
+	</a>
+
+
+	<a href='/facilities/traumatology/' class='item'>
+		<img src='/netcat_files/891_4.jpg' />
+		<span>Травматология</span>
+	</a>
+
+
+	<a href='/facilities/onkologiya/' class='item'>
+		<img src='/netcat_files/891_5.jpg' />
+		<span>Онкология</span>
+	</a>
+
+
+	<a href='/facilities/dentistry/' class='item'>
+		<img src='/netcat_files/891_6.jpg' />
+		<span>Стоматология</span>
+	</a>
+
+
+	<a href='/facilities/diagnosis/' class='item'>
+		<img src='/netcat_files/891_7.jpg' />
+		<span>Диагностика</span>
+	</a>
+
+
+	<a href='/facilities/hirurgiya/' class='item'>
+		<img src='/netcat_files/891_8.jpg' />
+		<span>Хирургия</span>
+	</a>
+
+
+	</div>
+	<div class='all-items'><a href='/facilities/' class='button'>Все услуги</a></div>
+</section>
+					
+ 
+<div class='nc_list nc_text html'> 
+
+
+<h3 style="text-align: center;"><a href="/about/news/vetus-top-clinic.html"><img alt="" src="/netcat_files/userfiles/top3.png" style="width: 152px; height: 152px; margin-left: 30px; margin-right: 30px; float: left;" /></a>Сеть ветеринарных клиник &quot;Ветус&quot;&ndash; это 24 часа в сутки и круглосуточно: полный комплекс услуг для ваших питомцев!</h3>
+<p>Мы по праву гордимся качеством наших услуг, так как располагаем широким спектром новейшего оборудования и опытом лучших ведущих специалистов Санкт-Петербурга!</p>
+<h2>Мы работаем круглосуточно - 24 часа в сутки!</h2>
+<p></p>
+<p><span style="color:#FF0000;" wfd-id="1619">Внимание! <strong>Новогодний график работы</strong> наших клиник:</span></p>
+<p><strong>Улица Веденеева, 12 к4</strong><br />
+31 декабря &mdash; до 16:30<br />
+1 января &mdash; с 15:00</p>
+<p><span wfd-id="1618"><strong>Улица Есенина, 30</strong><br />
+31 декабря &mdash; до 17:00<br />
+1 января &mdash; с 15:00</span></p>
+<p><span wfd-id="1617"><strong>Выборгское шоссе, 17 к4</strong><br />
+31 декабря &mdash; до 17:00<br />
+1 января &mdash; выходной</span></p>
+<h2><span style="color: rgb(51, 51, 51); font-size: 20px;" wfd-id="1616">Лучшая ветклиника для животных</span></h2>
+<p><img alt="Современное оборудование ветеринарной клиники" src="/netcat_files/userfiles/diagnostics/dog-dgip-01.jpg" style="padding: 1px; margin: 5px 10px; border: none; outline: rgb(7, 130, 193) solid 1px; color: rgb(7, 130, 193); width: 300px; height: 225px; float: right;" title="Современное оборудование ветеринарной клиники" /></p>
+<p>Многие питомники и заводчики выбирают именно нашу ветеринарную клинику для наблюдения своих животных, по праву считая их одними из лучших в Санкт-Петербурге, ведь мы трепетно относимся к истории отношений, а благодаря опыту&nbsp;наших врачей оптимально выбираем методы лечения и профилактики.</p>
+<p>Работа наших сотрудников ориентирована на интересы пациента, а не на личную выгоду. Лечащий врач при необходимости всегда отправит вас к нужному специалисту для успешного лечения.</p>
+<p>Наши врачи принимают активное участие в научной жизни <a href="/article/veterinary/">ветеринарной медицины</a>, все они докладчики научных конференций, участники международных и российских стажировок, мастер-классов, авторы&nbsp;статей и книг.</p>
+<p></p>
+<p><a href="/netcat_files/userfiles/veterinarian/vet-clinic-spb.jpg" target="_blank"><img alt="Ветклиника Ветус в Санкт-Петербурге" src="/netcat_files/userfiles/veterinarian/vet-clinic-vetus.jpg" style="width: 300px; height: 400px; float: left; margin: 5px 20px;" title="Ветклиника Ветус в Санкт-Петербурге" /></a>Первая ветеринарная клиника в Санкт-Петербурге построенная по индивидуальному проекту!</p>
+<p>Ветеринарная клиника располагает собственной лабораторией и богатой базой экспресс-тестов, что позволяет в кратчайшие сроки проводить необходимые исследования для <a href="/facilities/diagnosis/">диагностики заболеваний животных</a> и успешного лечения.</p>
+<p>Самое современное оборудование позволяет проводить не только стандартный список исследований, но и серьезные диагностические мероприятия, как то: УЗИ сердца, допплерометрию и т.п. Наши рентген-кабинеты имеют необходимые лицензии, что также очень важно для безопасности владельцев животных!</p>
+<p>Наш <a href="/about/">ветеринарный&nbsp;центр</a>&nbsp;можно смело назвать ведущим&nbsp;в области анестезии, современных техник и препаратов, применяющихся для наркоза животным.</p>
+<p>&laquo;Ветус&raquo; может предложить лучшее, что есть в <a href="/facilities/hirurgiya/">ветеринарной хирургии</a> &ndash; наши клиники оснащены современным оборудованием для проведения:</p>
+<ul wfd-id="1612">
+<li wfd-id="1615">эндоскопической диагностики</li>
+<li wfd-id="1614">эндохирургии</li>
+<li wfd-id="1613">лапароскопически ассистированных операций&nbsp;</li></ul>
+<p>Неврологи проводят сложнейшие операции на позвоночнике.</p>
+<p></p>
+<p>Центр &laquo;Ветус&raquo; является обучающей базой Санкт-Петербурга по вопросам <a href="/facilities/anaesthesiology/">анестезии домашних животных</a>. Ингаляционный наркоз, эпидуральная анестезия являются для наших хирургов приоритетными вариантами и применяются при оперативных вмешательствах.</p>
+<h2></h2>
+<p><a href="/netcat_files/userfiles/about/vetus-spb-01.jpg" target="_blank"><img alt="Ветеринарная клиника &quot;Ветус&quot; в Калининском районе СПб" src="/netcat_files/userfiles/about/vetus-01.jpg" style="margin: 5px 10px; float: left;" title="Ветеринарная клиника &quot;Ветус&quot; в Калининском районе СПб" /></a><strong>Ветеринарный центр &quot;Ветус&quot; принимает</strong> активное участие в благотворительной деятельности, принимал участие в съемках программы &quot;День Ангела&quot; на 5-ом канале, поддерживал животных Ленинградского зоопарка, сотрудничает с приютами и организациями помощи животным.</p>
+<h3>Прием животных даже ночью!</h3>
+<p>Все три ветеринарных клиники принимают пациентов ежедневно и круглосуточно, 24 часа в сутки:</p>
+<ul wfd-id="1608">
+<li wfd-id="1611">на улице Веденеева д.12, к.4, Калининский район СПб . Ближайшие станции метро: Политехническая, Академическая и и Пл. Мужества (технологический перерыв с 9:00 до 10:00 и с 21:00 до 22:00.</li>
+<li wfd-id="1610">на улице Есенина д.30,&nbsp;Выборгский &nbsp;район&nbsp;Санкт-Петербурга. Ближайшие станции метро: Просвещения и Парнас.</li>
+<li wfd-id="1609">на Выборгском шоссе,&nbsp;Выборгский &nbsp;район&nbsp;Санкт-Петербурга.&nbsp;Ближайшие станции метро: Просвещения и Озерки (ветклиника является ближайшей для жителей Парголово и Осиновой Рощи).</li></ul>
+<p></p>
+<p></p><div class='author'>Дмитрий Тамошкин – главный ветврач ветклиники «Ветус»</div>
+ </div> <aside class='bottom-side on-main'>
+
+	<section class='actions widget-block'> 
+	<header>
+		<h1>Акции</h1>
+	</header>
+	<div class='list'>
+	</div>
+	<div class='all-items'><a href='/price/actions/'>Все акции</a></div>
+</section>
+	<section class='reviews widget-block'> 
+	<header>
+		<h1>Отзывы</h1>
+	</header>
+	<div class='list'>
+		<article class='item'>
+			<header>
+				<time datetime='2020-11-05 00:00:00'>05.11.2020</time>
+				<h1>Ирина Евсеева</h1>
+			</header>
+			<p>Хочу сказать огромное спасибо нашему доктору Алесю Викторовичу за здоровье и, не побоюсь сказать-жиз...</p>
+			<a href='/about/opinions/opinions-1_94.html' class='read-more'>Подробнее</a>
+		</article>
+		<article class='item'>
+			<header>
+				<time datetime='2020-09-05 00:00:00'>05.09.2020</time>
+				<h1>Лидия Калинина</h1>
+			</header>
+			<p>Посетили клинику сегодня в первый раз - специалиста - онколога (пациент - собака Найда).<br />
+Пока...</p>
+			<a href='/about/opinions/opinions-1_93.html' class='read-more'>Подробнее</a>
+		</article>
+		<article class='item'>
+			<header>
+				<time datetime='2020-07-14 18:54:51'>14.07.2020</time>
+				<h1>Татьяна К</h1>
+			</header>
+			<p>Огромное спасибо всем врачам клиники на Веденеева!<br />
+Несколько раз обращались за лечением нашей...</p>
+			<a href='/about/opinions/opinions-1_87.html' class='read-more'>Подробнее</a>
+		</article>
+	</div>
+	<div class='all-items'><a href='/about/opinions/'>Все отзывы</a></div>
+</section>
+	<section class='widget-block'>
+		<div id='vk_widget'>
+			<script type="text/javascript" src="//vk.com/js/api/openapi.js?150"></script>
+			<div id="vk_groups"></div>
+			<style>
+				#vk_groups {
+					width: 100%;
+				}
+			</style>
+			<!--script type="text/javascript">
+			function VK_Widget_Init(){
+					document.getElementById('vk_groups').innerHTML = "";
+					var vk_width = document.getElementById('vk_widget').clientWidth;
+					VK.Widgets.Group("vk_groups", {mode: 4, width: vk_width, height: "400"}, 38284088);
+			};
+			window.addEventListener('load', VK_Widget_Init, false);
+			window.addEventListener('resize', VK_Widget_Init, false);
+			</script-->
+            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?161"></script>
+              <!-- VK Widget -->
+              <div id="vk_groups"></div>
+              <script type="text/javascript">
+                VK.Widgets.Group("vk_groups", {mode: 3}, 38284088);
+            </script>
+            
+		</div>
+	</section>
+</aside>
+            <div class='scroll-to-top'></div>
+		</main>
+			<form method='POST' class='add-question' enctype='multipart/form-data' action='/netcat/add.php'>
+		<a id='addQuestionForm'></a>
+		<input name='catalogue' type='hidden' value='6' />
+		<input name='cc' type='hidden' value='2041' />
+		<input name='sub' type='hidden' value='2141' />				
+		<input name='posting' type='hidden' value='1' />
+		<h2>На все вопросы отвечают квалифицированные ветеринарные врачи</h2>
+				<fieldset>
+		 <input type="text" name="f_Email" required />
+			<legend>E-mail</legend>
+		</fieldset>
+		<fieldset>
+			<textarea name="f_Question" required style='min-height: 9.6em;'></textarea>
+			<legend>Вопрос</legend>
+		</fieldset>
+		<div class='required-info'>(<b class='star'>*</b>) Поля обязательные для заполнения</div>
+		<div class='submit'>
+			<div class="g-recaptcha-placeholder"></div>
+			<button type='submit' class='button solid'>Отправить</button>
+		</div>
+	</form>
+		<footer>
+			<div class='navigation'>
+				
+<nav class='main-menu'>
+		<ul>
+							<li>
+								<a href='/about/'><span>О ветцентре</span></a>
+			</li>
+					<li>
+								<a href='/facilities/'><span>Услуги</span></a>
+			</li>
+					<li>
+								<a href='/price/'><span>Прайс</span></a>
+			</li>
+					<li>
+								<a href='/diseases/'><span>Болезни</span></a>
+			</li>
+					<li>
+								<a href='/article/'><span>Статьи</span></a>
+			</li>
+					<li>
+								<a href='/feed/'><span>Корма</span></a>
+			</li>
+					<li>
+								<a href='/contact/'><span>Контакты</span></a>
+			</li>
+			</ul>
+</nav>
+			</div>
+			<div class='contacts list'>
+				<div class='item'>
+					<span class='address'><a href="https://vetusklinika.ru/about/vedeneeva/">ул. Веденеева д.12, к.4</a></span>
+					<a class='phone' href='tel:+78122966796'>+7 (812) 296-67-96</a>
+                    <a class='phone' href='tel:+79211862580'>+7 (921) 186-25-80</a>
+				</div>
+				<div class='item'>
+					<span class='address'><a href="https://vetus.su">ул. Есенина д.30, лит А</a></span>
+					<a class='phone' href='tel:+78122914464'>+7 (812) 291-44-64</a>
+					<a class='phone' href='tel:+78122914487'>+7 (812) 291-44-87</a>
+				</div>
+                <div class='item'>
+					<span class='address'><a href="https://vetusklinika.ru/about/vyborgskoye-shosse/">Выборгское шоссе д.17, к.4</a></span>
+					<a class='phone' href='tel:+78129207797'>+7 (812) 920-77-97</a>
+					<a class='phone' href='tel:+78122425532'>+7 (812) 242-55-32</a>
+				</div>
+			</div>
+			<div class='counters'>
+				 
+<div class='nc_list nc_text html'> 
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='https://www.liveinternet.ru/click' "+
+"target=_blank><img src='https://counter.yadro.ru/hit?t19.8;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border=0 width=88 height=31><\/a>")//--></script><!--/LiveInternet--> <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=17405704&amp;from=informer" rel="nofollow" target="_blank"><img alt="Яндекс.Метрика" class="ym-advanced-informer" data-cid="17405704" data-lang="ru" src="https://informer.yandex.ru/informer/17405704/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter17405704 = new Ya.Metrika({
+                    id:17405704,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script> <noscript><div><img src="https://mc.yandex.ru/watch/17405704" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></p>
+ </div> 			</div>
+			<div class='links'>
+				<a href='/map/'><img src='/netcat_template/template/_vetusklinika_ru/images/map-icon.png' class='icon icon-map'></i></a>
+				<br />
+				<a href='http://advecon.ru/'>Дизайн сайта</a>
+				<br />
+				<a href='http://seomagia.ru/'>Оптимизация</a>
+			</div>
+			<div class='pay-systems'></div>
+			<div class='copy'>&copy; Все права защищены 2007-2019 &laquo;Ветус&raquo;, Санкт-Петербург</div>
+		</footer>
+	</body>
+</html>	
+ 

@@ -31,7 +31,7 @@ for i in range(files_len):
     html = html_file.read().replace("<br>", " ")
     html_file.close()
     parsed_html = BeautifulSoup(html, features="html.parser")
-    sentence = re.sub(r"[\n\s.,:–\\?—\-!()/»><;'+©\"]+", " ", parsed_html.text, flags=re.UNICODE).lower() # makes normalization faster
+    sentence = re.sub(r"[\n\s.,:–\\?—\-!()/»><;'*+©\"]+", " ", parsed_html.text, flags=re.UNICODE).lower() # makes normalization faster
     tokens = [token for token in sentence.split(" ") if token not in russian_stopwords \
               and token != " " \
               and token.strip() not in punctuation and len(token) > 1]

@@ -59,16 +59,17 @@ for i in range(words_len):
     print('Processing word ' + str(i) + '/' + str(words_len) + '. ' + word)
     token = mystem.lemmatize(word)[0]
     if token in tokens:
-        tokens.get(token).append(word)
+        tokens.get(token).add(word)
     else:
-        tokens[token] = [word]
+        tokens[token] = set(word)
 
 print("Dumping tokens to file......................")
 tokens_file = open(tokens_path, "a", encoding="utf-8")
 for key, words_tokens in tokens.items():
     tokens_file.write(key + " ")
     for word in words_tokens:
-        tokens_file.write(word + " ")
+        if word != key:
+            tokens_file.write(word + " ")
     tokens_file.write("\n")
 
 i = 0

@@ -12,12 +12,6 @@ except ImportError:
     from bs4 import BeautifulSoup
 
 #nltk.download("stopwords") # used only for first time
-# def preprocess_text(text):
-#     tokens = mystem.lemmatize(text.lower())
-#     tokens = [token for token in tokens if token not in russian_stopwords \
-#               and token != " " \
-#               and token.strip() not in punctuation]
-#     return tokens
 
 words_path = 'words.txt'
 tokens_path = 'tokens.txt'
@@ -56,12 +50,13 @@ print('Lemmatizing words to file......................')
 words_len = len(words)
 for i in range(words_len):
     word = words[i]
-    print('Processing word ' + str(i) + '/' + str(words_len) + '. ' + word)
-    token = mystem.lemmatize(word)[0]
-    if token in tokens:
-        tokens.get(token).add(word)
-    else:
-        tokens[token] = set(word)
+    if len(word) > 2:
+        print('Processing word ' + str(i) + '/' + str(words_len) + '. ' + word)
+        token = mystem.lemmatize(word)[0]
+        if token in tokens:
+            tokens.get(token).add(word)
+        else:
+            tokens[token] = set(word)
 
 print("Dumping tokens to file......................")
 tokens_file = open(tokens_path, "a", encoding="utf-8")

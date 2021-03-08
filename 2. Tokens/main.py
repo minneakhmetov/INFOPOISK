@@ -11,7 +11,7 @@ try:
 except ImportError:
     from bs4 import BeautifulSoup
 
-#nltk.download("stopwords") # used only for first time
+nltk.download("stopwords") # used only for first time
 
 words_path = 'words.txt'
 tokens_path = 'tokens.txt'

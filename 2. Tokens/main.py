@@ -32,7 +32,7 @@ for i in range(files_len):
     sentence = re.sub(r"[\n\s.,:–\\?—\-!()/»+©\"]+", " ", parsed_html.text, flags=re.UNICODE).lower() # makes normalization faster
     tokens = [token for token in sentence.split(" ") if token not in russian_stopwords \
               and token != " " \
-              and token.strip() not in punctuation]
+              and token.strip() not in punctuation and len(token) > 1]
     words.extend(tokens)
     html.close()
 
@@ -50,13 +50,12 @@ print('Lemmatizing words to file......................')
 words_len = len(words)
 for i in range(words_len):
     word = words[i]
-    if len(word) > 2:
-        print('Processing word ' + str(i) + '/' + str(words_len) + '. ' + word)
-        token = mystem.lemmatize(word)[0]
-        if token in tokens:
-            tokens.get(token).add(word)
-        else:
-            tokens[token] = set(word)
+    print('Processing word ' + str(i) + '/' + str(words_len) + '. ' + word)
+    token = mystem.lemmatize(word)[0]
+    if token in tokens:
+        tokens.get(token).add(word)
+    else:
+        tokens[token] = set(word)
 
 print("Dumping tokens to file......................")
 tokens_file = open(tokens_path, "a", encoding="utf-8")
@@ -66,9 +65,5 @@ for key, words_tokens in tokens.items():
         if word != key:
             tokens_file.write(word + " ")
     tokens_file.write("\n")
-
-i = 0
-
-    # print(.find('div', attrs={'class': 'container'}).text)
 
 

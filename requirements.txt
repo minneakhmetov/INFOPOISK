@@ -5,6 +5,8 @@ click==7.1.2
 idna==2.10
 joblib==1.0.1
 nltk==3.5
+psycopg2==2.8.6
+psycopg2-binary==2.8.6
 pymystem3==0.2.0
 regex==2020.11.13
 requests==2.25.1

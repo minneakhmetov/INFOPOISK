@@ -11,10 +11,10 @@ for i in range(max_requests):
     for row in data[1:30]:
         iterator += 1
         url = row.split("\t")[1].replace("/", "")
-        print(str(iterator) + '. ' + url + " ... ", end='')
+        print(url + " ... ", end='')
         try:
             page = requests.get("http://" + url)
-            filename = folder_name + '/' + str(iterator) + '. ' + url + ".html"
+            filename = folder_name + '/' + url + ".html"
             html = open(filename, "a", encoding="utf-8")
             html.write(page.text)
             html.close()

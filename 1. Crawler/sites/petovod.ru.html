@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+    <head>   
+	<!-- Required meta tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ᐉПортал (сайт) о кошках и собаках, помощь профессионалов в выборе породы и поиске щенка или котенка</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="content-language" content="ru"/> 
+	<link rel="shortcut icon" type="image/x-icon" href="https://petovod.ru/favicon.ico">
+	
+	<meta name="keywords" content="портал, сайт, домашние, питомцы, собаки, кошки, помощь профессионалов при выборе породы и поиске щенка или котенка" />
+	<meta name="description" content="Петовод- лучший способ найти питомца.Объявления от заводчиков, питомников, приютов, частных лиц. Описание пород, помощь с выбором, статьи по уходу"/>
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="store" />
+	<meta property="og:title" content="Портал (сайт) о кошках и собаках, помощь профессионалов в выборе породы и поиске щенка или котенка" />
+	<meta property="og:description" content="Петовод- лучший способ найти питомца.Объявления от заводчиков, питомников, приютов, частных лиц. Описание пород, помощь с выбором, статьи по уходу" />
+	<meta property="og:url" content="https://petovod.ru//" />
+	<meta property="og:image" content="/templates/img/logo.png" />
+	<meta property="og:site_name" content="ПЕТОВОД-легкий способ найти петомца" />
+	<meta property="yandex_recommendations_image" content="/templates/img/logo.png"/>
+   	<!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="/templates/css/bootstrap.minixl.css">
+	  <meta name="yandex-verification" content="088cc361fe4434ad" />
+	  
+	<!-- Bootstrap CSS -->
+	
+	
+</head>	  
+
+	<body>
+		<header class="bg-white shadow" style="position:fixed; z-index:100;width:100%; margin-top:0;top:0;">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white container">
+  		<a class="navbar-brand" href="/">
+			<img src="/templates/img/logoPT.png"  alt="" class="logo">
+			<p class="text_logo">ЛУЧШИЙ СПОСОБ НАЙТИ ПИТОМЦА</p>
+		</a>
+		<button class="navbar-toggler btn btn-success" type="button" data-toggle="collapse" 
+				data-target="#top_menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<i class="fas fa-bars"></i>
+  		</button>
+		<div class="collapse navbar-collapse" id="top_menu">
+               	<ul class="navbar-nav mr-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="/advs.html" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Объявления</a>
+				 
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+			 <a class="dropdown-item" href="/advs/dogs.html">Собаки</a>
+			 <a class="dropdown-item" href="/advs/cats.html">Кошки</a>
+			 <a class="dropdown-item" href="/advs/other.html">Другие животные</a>
+			 <a class="dropdown-item" href="/advs/goods.html">Товары для животных</a>
+			 <a class="dropdown-item" href="/advs/services.html">Услуги</a>
+			</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/professionaly.html">ПРОФИ</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="/breed.html" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Породы</a>
+				 
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+			 <a class="dropdown-item" href="/breed/dogs.html">Собаки</a>
+			 <a class="dropdown-item" href="/breed/cats.html"> Кошки</a>
+			</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/article.html">Статьи</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/profile.html">Личный кабинет</a>
+			</li>
+			             <li class="nav-item d-lg-none">
+							<a class="nav-link" href="/profile/additem.html">ПОДАТЬ ОБЪЯВЛЕНИЕ</a>
+						</li>
+			</ul>
+		
+		</div>
+		
+		<div class="my-2 my-lg-0 col-12 col-lg-auto d-none d-lg-block" id="message_add">
+			<button type="button" class="btn btn-success" onClick="document.location.href='/profile/additem.html';">Подать объявление</button>
+		</div>
+</nav>
+</header>
+		<div id="my_contents">
+  		<div class="container d-block d-md-none">
+	
+		<button type="button" class="btn bg-primary text-white col-12 py-3" onclick="$('#bst').show(500);">Найти питомца</button>
+	
+</div>
+
+
+<div class="container-fluid m-0 p-0" id="bst">
+	<div class="container">
+		<div class="row" id="block_index">
+		<h1 class="col-12 text-center text-white">ЛУЧШИЙ СПОСОБ НАЙТИ ПИТОМЦА</h1>
+		</div>
+		
+				<form class="bg-white pt-2 pb-1" action="/" method="post" id="petSearch">
+  			<div class="form-row text-dark ml-2 mr-2">
+				<div class="form-group col-12 col-md-4 col-lg-4">
+						<select id="selectAdvTypes" class="form-control filter_select">
+							<option value='0' selected>Выбери тип объявления</option>
+							<option value="1">Продаю</option><option value="2">Куплю</option><option value="3">Отдам в дар</option><option value="4">Потерялся/Нашелся</option><option value="5">Вязка</option><option value="6">Предлагаю услуги</option>
+						</select>
+				</div>
+    			<div class="form-group col-12 col-md-4 col-lg-3">
+					<select id="selectPets" class="form-control filter_select">
+						<option value='0'>Питомец/услуга</option>
+							
+					</select>
+				</div>
+    			<div class="form-group  col-12 col-md-4 col-lg-4">
+					<select id="selectBreeds" class="form-control filter_select">
+						<option value='0'>Порода</option>
+					</select>
+				</div>
+				<div class="form-group col-12 col-md-12 col-lg-1">
+					
+					<button type="button" class="btn btn-primary ml-md-auto" id="sendAdvs">Найти</button>
+				</div>
+				
+			</div>
+			
+		</form>
+
+	</div>
+</div>
+
+<div class="container mt-0">
+	<div class="row ">
+		<h2 class="h3 col-12 text-dark mt-5 mb-3" style="border-left: 4px solid #28a745 !important;">ОБЪЯВЛЕНИЯ ОТ ПРОФИ</h2>
+		<div id="owl-ff" class="owl-carousel owl-theme col-12">
+
+		<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/britanskaya-klubnaya-devochka-chernogo-okrasa-60762.html';">
+			<img  src="https://foto.petovod.ru/fotos/2020/11/11/160509614641.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2020/11/11/160509614641.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Питомник</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/britanskaya-klubnaya-devochka-chernogo-okrasa-60762.html" class="text-dark">Британская клубная девочка черного окраса.</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 30000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Британская короткошерстная</i></div>
+				<div><b>Пол:</b> <i>Кошка</i></div>
+				<div><b>Возраст:</b> <i></i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/britanskaya-klubnaya-devochka-chernogo-okrasa-60762.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/golubye-plyushevye-britanskie-kotyata-60696.html';">
+			<img  src="https://foto.petovod.ru/fotos/2020/06/10/159181493937.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2020/06/10/159181493937.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Питомник</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/golubye-plyushevye-britanskie-kotyata-60696.html" class="text-dark">Голубые плюшевые британские котята</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 40000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><b>Город:</b> <i>Все города</i></div>
+				<div><b>Порода:</b><br/><i>Британская короткошерстная</i></div>
+				<div><b>Пол:</b> <i>Кошка</i></div>
+				<div><b>Возраст:</b> <i>11 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/golubye-plyushevye-britanskie-kotyata-60696.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/shotlandskie-mramornye-kotyata-60685.html';">
+			<img  src="https://foto.petovod.ru/fotos/2020/05/21/159006676882.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2020/05/21/159006676882.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Питомник</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/shotlandskie-mramornye-kotyata-60685.html" class="text-dark">Шотландские мраморные котята</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 30000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Шотландская вислоухая (короткошерстная)</i></div>
+				<div><b>Пол:</b> <i>Разнополые</i></div>
+				<div><b>Возраст:</b> <i>11 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/shotlandskie-mramornye-kotyata-60685.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/britanskaya-shinshilla-kotyata-shou-klass-60651.html';">
+			<img  src="https://foto.petovod.ru/fotos/2020/11/10/160501549400.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2020/11/10/160501549400.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Заводчик</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/britanskaya-shinshilla-kotyata-shou-klass-60651.html" class="text-dark">Британская шиншилла котята шоу класс</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 50000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Британская короткошерстная</i></div>
+				<div><b>Пол:</b> <i>Разнополые</i></div>
+				<div><b>Возраст:</b> <i>6 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/britanskaya-shinshilla-kotyata-shou-klass-60651.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/yorkshirskogo-terera-shchenki-60574.html';">
+			<img  src="https://foto.petovod.ru/fotos/2020/03/17/158442934221.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2020/03/17/158442934221.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Заводчик</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/yorkshirskogo-terera-shchenki-60574.html" class="text-dark">Йоркширского терьера щенки </a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 20000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Йоркширский терьер </i></div>
+				<div><b>Пол:</b> <i>Кобель</i></div>
+				<div><b>Возраст:</b> <i>1 г(лет). 3 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/yorkshirskogo-terera-shchenki-60574.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/britanskie-kotyata-chernyy-mramor-60530.html';">
+			<img  src="https://foto.petovod.ru/fotos/2020/03/07/158353997531.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2020/03/07/158353997531.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Питомник</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/britanskie-kotyata-chernyy-mramor-60530.html" class="text-dark">Британские котята черный мрамор.</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 35000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Британская короткошерстная</i></div>
+				<div><b>Пол:</b> <i>Кот</i></div>
+				<div><b>Возраст:</b> <i></i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/britanskie-kotyata-chernyy-mramor-60530.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/britanskie-kotyata-viskas-60490.html';">
+			<img  src="https://foto.petovod.ru/fotos/2020/01/27/158007385242.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2020/01/27/158007385242.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Питомник</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/britanskie-kotyata-viskas-60490.html" class="text-dark">Британские котята вискас.</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 35000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Британская короткошерстная</i></div>
+				<div><b>Пол:</b> <i>Кошка</i></div>
+				<div><b>Возраст:</b> <i></i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/britanskie-kotyata-viskas-60490.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/britanskiy-klubnyy-kotik-krasnyy-mramor-60475.html';">
+			<img  src="https://foto.petovod.ru/fotos/2020/01/12/157885665836.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2020/01/12/157885665836.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Питомник</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/britanskiy-klubnyy-kotik-krasnyy-mramor-60475.html" class="text-dark">Британский клубный котик красный мрамор.</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 35000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Британская короткошерстная</i></div>
+				<div><b>Пол:</b> <i>Кот</i></div>
+				<div><b>Возраст:</b> <i></i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/britanskiy-klubnyy-kotik-krasnyy-mramor-60475.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/roksi-laskovoe-solnyshko-v-dar-v-dobrye-ruki-107695.html';">
+			<img  src="https://foto.petovod.ru/fotos/2019/12/15/157640527395.jpg" class="img-fluid rid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2019/12/15/157640527395.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Питомник</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/roksi-laskovoe-solnyshko-v-dar-v-dobrye-ruki-107695.html" class="text-dark">Рокси ласковое солнышко в дар, в добрые руки.</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 0 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кошка</i></div>
+				<div><b>Возраст:</b> <i>2 г(лет). 3 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/roksi-laskovoe-solnyshko-v-dar-v-dobrye-ruki-107695.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/aktivnyy-i-neveroyatno-krasivyy-barni-ishchet-semyu-107688.html';">
+			<img  src="https://foto.petovod.ru/fotos/2019/12/13/157623492444.jpg" class="img-fluid rid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2019/12/13/157623492444.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Питомник</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/aktivnyy-i-neveroyatno-krasivyy-barni-ishchet-semyu-107688.html" class="text-dark">Активный и невероятно красивый Барни ищет семью!</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 0 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кот</i></div>
+				<div><b>Возраст:</b> <i>2 г(лет). 3 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/aktivnyy-i-neveroyatno-krasivyy-barni-ishchet-semyu-107688.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	
+
+
+
+	
+
+		</div>
+
+		
+<script async src="https://an.yandex.ru/system/widget.js"></script>
+<script>
+    (yaads = window.yaads || []).push({
+        id: "80871-7",
+        render: "#id-80871-7"
+    });
+
+    (yaads = window.yaads || []).push({
+        id: "80871-10",
+        render: "#id-80871-10"
+    });
+	(yaads = window.yaads || []).push({
+        id: "80871-11",
+        render: "#id-80871-11"
+    });
+	(yaads = window.yaads || []).push({
+        id: "80871-12",
+        render: "#id-80871-12"
+    });
+</script>		
+	
+		
+		
+<div id="id-80871-7" class="d-none d-xl-block d-xxl-none col-12"></div>		
+<div id="id-80871-10" class="d-none d-lg-block d-xl-none col-12"></div>	
+<div id="id-80871-11" class="d-none d-md-block d-lg-none col-12"></div>	
+<div id="id-80871-12" class="d-none d-xxl-block col-12"></div>					
+		
+		<!-- Yandex.RTB R-A-80871-4 -->
+<div id="yandex_rtb_R-A-80871-4" class="d-block d-md-none col-12 mt-3"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-80871-4",
+                renderTo: "yandex_rtb_R-A-80871-4",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+		
+
+		<h2 class="h3 col-12 text-dark mt-5 mb-3" style="border-left: 4px solid #28a745 !important;">ОБЪЯВЛЕНИЯ ОТ ПРИЮТОВ</h2>
+		<div id="owl-ffo" class="owl-carousel owl-theme col-12">
+
+		<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/malyshka-marta-ishchet-dom-60913.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/14/161572693573.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/14/161572693573.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/malyshka-marta-ishchet-dom-60913.html" class="text-dark">Малышка Марта ищет дом!</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Бeспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i>1 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/malyshka-marta-ishchet-dom-60913.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/malyshka-agata-ishchet-dom-60912.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/14/161572397313.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/14/161572397313.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/malyshka-agata-ishchet-dom-60912.html" class="text-dark">Малышка Агата ищет дом!</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Бeспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i>1 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/malyshka-agata-ishchet-dom-60912.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/ryzhiy-irzhik-zhdet-hozyaina-60911.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/13/161566253330.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/13/161566253330.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/ryzhiy-irzhik-zhdet-hozyaina-60911.html" class="text-dark">Рыжий Иржик ждет хозяина</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кот</i></div>
+				<div><b>Возраст:</b> <i>2 г(лет). </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/ryzhiy-irzhik-zhdet-hozyaina-60911.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/neobyknovennaya-osya-ishchet-dom-60910.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/13/161566244035.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/13/161566244035.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/neobyknovennaya-osya-ishchet-dom-60910.html" class="text-dark">Необыкновенная Ося ищет дом</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кошка</i></div>
+				<div><b>Возраст:</b> <i>3 г(лет). </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/neobyknovennaya-osya-ishchet-dom-60910.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/kuzenka-ishchet-dom-60908.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/08/161521650351.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/08/161521650351.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/kuzenka-ishchet-dom-60908.html" class="text-dark">Кузенька ищет дом!</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кот</i></div>
+				<div><b>Возраст:</b> <i>5 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/kuzenka-ishchet-dom-60908.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/milasha-ishchet-dom-60907.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/08/161521139785.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/08/161521139785.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/milasha-ishchet-dom-60907.html" class="text-dark">Милаша ищет дом!</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Бeспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i>2 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/milasha-ishchet-dom-60907.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/kotik-smoki-ishchet-dom-60906.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/08/161520896875.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/08/161520896875.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/kotik-smoki-ishchet-dom-60906.html" class="text-dark">Котик Смоки ищет дом!</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кот</i></div>
+				<div><b>Возраст:</b> <i>2 г(лет). 5 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/kotik-smoki-ishchet-dom-60906.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/belosnezhnyy-larik-ishchet-dom-60899.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/02/23/161411085595.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/23/161411085595.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/belosnezhnyy-larik-ishchet-dom-60899.html" class="text-dark">Белоснежный Ларик ищет дом</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кот</i></div>
+				<div><b>Возраст:</b> <i>9 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/belosnezhnyy-larik-ishchet-dom-60899.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/tor-60898.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/02/19/161376738093.jpg" class="img-fluid rid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/19/161376738093.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/tor-60898.html" class="text-dark">Тор</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 300 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Русская пегая гончая</i></div>
+				<div><b>Пол:</b> <i>Кобель</i></div>
+				<div><b>Возраст:</b> <i>1 г(лет). 9 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/tor-60898.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	<div class="item owl-item__inner slide1">
+
+	<div class="col-12 bg-white  p-0  mb-3 ml-1">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/shikarnaya-maska-ishchet-dom-60895.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/02/18/161365709685.jpg" class="img-fluid rid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/18/161365709685.jpg">
+			<div style="z-index:50; position:absolute; top:5px;"><div  class="btn btn-danger btn-sm rounded-pill ml-1 mt-1">Приют</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/shikarnaya-maska-ishchet-dom-60895.html" class="text-dark">Шикарная Маска ищет дом!</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark">ЦЕНА: 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><b>Город:</b> <i>Москва</i></div>
+				<div><b>Порода:</b><br/><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кошка</i></div>
+				<div><b>Возраст:</b> <i>2 г(лет). 1 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/shikarnaya-maska-ishchet-dom-60895.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+
+</div>	
+
+
+
+	
+
+		</div>
+		
+		
+		
+		<h2 class="h3 col-12 text-dark mt-5 mb-3" style="border-left: 4px solid #28a745 !important;">ПОСЛЕДНИЕ ОБЪЯВЛЕНИЯ</h2>
+		<div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/shenki-krolichey-miniatyurnoy-taksy-dlinnosherstnoy-60909.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/11/161544646565.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/11/161544646565.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/shenki-krolichey-miniatyurnoy-taksy-dlinnosherstnoy-60909.html" class="text-dark">Щенки кроличьей миниатюрной таксы длинношерстной</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 50000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><i>Ленинградская область, Гатчина</i></div>
+				<div><i>Такса кроличья</i></div>
+				<div><b>Пол:</b> <i>Разнополые</i></div>
+				<div><b>Возраст:</b> <i>2 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/shenki-krolichey-miniatyurnoy-taksy-dlinnosherstnoy-60909.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/cats/nayden-kot-kuzminki-60905.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/05/161491963235.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/05/161491963235.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/cats/nayden-kot-kuzminki-60905.html" class="text-dark">Найден кот, Кузьминки</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о пропаже</b></div>
+				<div><i>Московский регион, Юго-Восточный АО</i></div>
+				<div><i>Беспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Кот</i></div>
+				<div><b>Возраст:</b> <i>1 г(лет). </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/cats/nayden-kot-kuzminki-60905.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/sero-belaya-haski-goluboglazka-porodistaya-vzroslaya-vospitannaya-zdorovaya-60904.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/04/161485160070.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/04/161485160070.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/sero-belaya-haski-goluboglazka-porodistaya-vzroslaya-vospitannaya-zdorovaya-60904.html" class="text-dark"> Серо-белая хаски голубоглазка. Породистая, взрослая, воспитанная, здоровая. </a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 30000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><i>Ставропольский край, Ставрополь</i></div>
+				<div><i>Сибирский хаски </i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i></i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/sero-belaya-haski-goluboglazka-porodistaya-vzroslaya-vospitannaya-zdorovaya-60904.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/bekki-radostnyy-i-solnechnyy-personazh-60903.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/03/02/161466800211.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/03/02/161466800211.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/bekki-radostnyy-i-solnechnyy-personazh-60903.html" class="text-dark">Бэкки радостный и солнечный персонаж. </a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 10 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><i>Московский регион, Москва</i></div>
+				<div><i>Австралийская овчарка</i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i>2 г(лет). </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/bekki-radostnyy-i-solnechnyy-personazh-60903.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/zita-samaya-predannaya-sobaka-v-poiskah-semi-60902.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/02/27/161445549194.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/27/161445549194.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/zita-samaya-predannaya-sobaka-v-poiskah-semi-60902.html" class="text-dark">Зита. Самая преданная собака в поисках семьи</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><i>Московский регион, Западный АО</i></div>
+				<div><i>Бeспородные и метисы </i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i>6 г(лет). 1 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/zita-samaya-predannaya-sobaka-v-poiskah-semi-60902.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/angliyskiy-setter-shchenki-60901.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/02/26/161435118582.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/26/161435118582.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/angliyskiy-setter-shchenki-60901.html" class="text-dark">Английский сеттер щенки</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 45000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><i>Московский регион, Москва</i></div>
+				<div><i>Английский сеттер</i></div>
+				<div><b>Пол:</b> <i>Кобель</i></div>
+				<div><b>Возраст:</b> <i>2 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/angliyskiy-setter-shchenki-60901.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/freya-sobaka-ishchet-dom-60893.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/02/16/161346872994.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/16/161346872994.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/freya-sobaka-ishchet-dom-60893.html" class="text-dark">Фрея - собака ищет дом</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 100 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><i>Московский регион, Москва</i></div>
+				<div><i>Акита</i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i>3 г(лет). 1 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/freya-sobaka-ishchet-dom-60893.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/prodam-haskisrochno-60892.html';">
+			<img  src="https://foto.petovod.ru/fotos/2021/02/16/161346394328.jpg" class="img-fluid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/16/161346394328.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/prodam-haskisrochno-60892.html" class="text-dark">Продам хаски...СРОЧНО!!!</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 5000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><i>Иркутская область, Иркутск</i></div>
+				<div><i>Сибирский хаски </i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i></i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/prodam-haskisrochno-60892.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/srochno-otdam-v-ochen-dobrye-ruki-60889.html';">
+			<img  src="/foto/animal0.jpeg" class="img-fluid rid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/14/161329827354.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/srochno-otdam-v-ochen-dobrye-ruki-60889.html" class="text-dark">СРОЧНО ОТДАМ В ОЧЕНЬ ДОБРЫЕ РУКИ! </a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 1 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о дарении</b></div>
+				<div><i>Московский регион, Москва</i></div>
+				<div><i>Лабрадор ретривер</i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i>3 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/srochno-otdam-v-ochen-dobrye-ruki-60889.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/yorkshirskiy-terer-60885.html';">
+			<img  src="/foto/animal0.jpeg" class="img-fluid rid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/08/161280060345.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/yorkshirskiy-terer-60885.html" class="text-dark">Йоркширский терьер</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 20000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><i>Московский регион, Москва</i></div>
+				<div><i>Йоркширский терьер </i></div>
+				<div><b>Пол:</b> <i>Разнополые</i></div>
+				<div><b>Возраст:</b> <i>4 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/yorkshirskiy-terer-60885.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/shenki-rotveylerov-60884.html';">
+			<img  src="/foto/animal0.jpeg" class="img-fluid rid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/06/161260508924.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/shenki-rotveylerov-60884.html" class="text-dark">Щенки ротвейлеров</a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 50000 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><i>Московский регион, Москва</i></div>
+				<div><i>Ротвейлер</i></div>
+				<div><b>Пол:</b> <i>Сука</i></div>
+				<div><b>Возраст:</b> <i>1 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/shenki-rotveylerov-60884.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div><div class="col-12 col-sm-6 col-lg-4 col-xl-4  col-xxl-3 mb-3" >
+	<div class="col-12 bg-white shadow p-0 m-0">
+		<div class="px-0 img_adv_list"   onClick="document.location.href='/advs/dogs/metis-yorka-60883.html';">
+			<img  src="/foto/animal0.jpeg" class="img-fluid rid" style="max-width: 100%;height: auto;cursor:pointer;transition: background 0.7s ease;" rid="https://foto.petovod.ru/fotos/2021/02/05/161252340075.jpg" 
+				 onError="this.onerror=null;this.src='/foto/animal.jpeg';">
+			<div style="z-index:50; position:absolute; top:5px;"><div>&nbsp;</div></div>
+		</div>
+		<div class="advs_text_block col-12">
+			<div class="advs_title my-2 align-self-center"><a href="/advs/dogs/metis-yorka-60883.html" class="text-dark">Метис Йорка </a></div>
+			<div class="py-2 border-top border-bottom h5 text-dark"> 1500 Р.</div>
+			<div class="advs_param_block ">
+				<div><b>Объявления о продаже</b></div>
+				<div><i>Саратовская область, Саратов</i></div>
+				<div><i>Йоркширский терьер </i></div>
+				<div><b>Пол:</b> <i>Кобель</i></div>
+				<div><b>Возраст:</b> <i>3 мес. </i></div>
+			</div>
+		</div>
+		<div class="col-12 pb-3 text-right">
+			<a href="/advs/dogs/metis-yorka-60883.html" class="h6">Подробнее...</a>
+		</div>
+	</div>
+</div>
+
+
+
+	
+	</div>
+</div>
+		<div class="container">
+<script async src="https://yastatic.net/pcode-native/loaders/loader.js"></script>
+<script>
+(yaads = window.yaads || []).push({
+id: "80871-9",
+render: "#id-80871-9"
+});
+</script>
+<div class="row">
+	<div id="id-80871-9" class="d-none d-md-block col-12"></div>
+
+
+<!-- Yandex.RTB R-A-80871-8 -->
+<div id="yandex_rtb_R-A-80871-8" class="d-block  d-md-none col-12 mb-3"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-80871-8",
+                renderTo: "yandex_rtb_R-A-80871-8",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+
+</div>	
+</div>
+
+<footer class="bg-ccc">
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col-1 bg-primary">&nbsp;</div>
+			<div class="col-1 bg-dark">&nbsp;</div>
+			<div class="col-1 bg-success">&nbsp;</div>
+			<div class="col-1 bg-info">&nbsp;</div>
+			<div class="col-1 bg-warning">&nbsp;</div>
+			<div class="col-1 bg-danger ">&nbsp;</div>
+			<div class="col-1 bg-primary">&nbsp;</div>
+			<div class="col-1 bg-dark">&nbsp;</div>
+			<div class="col-1 bg-success">&nbsp;</div>
+			<div class="col-1 bg-info">&nbsp;</div>
+			<div class="col-1 bg-warning">&nbsp;</div>
+			<div class="col-1 bg-danger ">&nbsp;</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-12 col-lg-3 mt-3">
+				<span class="text-dark">О ПРОЕКТЕ:</span><br/>
+				<ul>
+					<li><a href="/o-sajte.html">О нашем сайте</a></li>
+					<li><a href="/polzovatelskoe-soglashenie.html">Соглашение</a></li>
+					<li><a href="/profile.html">Личный кабинет</a></li>
+				</ul><br/>
+				<span id="css_info"></span>
+			</div>
+			<div class="col-12 col-lg-3 mt-3">
+				<span class="text-dark">ОБЪЯВЛЕНИЯ</span><br/>
+				<ul>
+					<li><a href="/advs/dogs.html">Собаки</a></li>
+					<li><a href="/advs/cats.html">Кошки</a></li>
+					<li><a href="/advs/other.html">Другие животные</a></li>
+					<li><a href="/advs/goods.html">Товары для животных</a></li>
+					<li><a href="/advs/services.html">Услуги</a></li>
+					<br/>
+					<li><a href="/article.html">Статьи</a></li>
+					<li><a href="/breed/dogs.html">Породы собак</a></li>
+					<li><a href="/breed/cats.html">Породы кошек</a></li>
+				</ul>	
+			</div>
+			<div class="col-12 col-lg-6 text-dark text-right">
+				<a href='/'  alt="ЛЕГКИЙ СПОСОБ НАЙТИ ПИТОМЦА" class="flogo"><img src="/templates/img/logoPT.png"  alt="" class="logo">
+				<p class="text_logo">ЛУЧШИЙ СПОСОБ НАЙТИ ПИТОМЦА</p>
+			</a>
+			<p class="mt-3 mb-3" style="font-size:0.8rem;">2012-2020 ® «Петовод» <br/>
+			ООО "АСБУС"<br/>
+			ИНН 7719629288 / КПП 771901001<br/>
+			105264, г. Москва, Измайловский б-р,47<br/>
+			© Все права защищены</p>
+			 
+<!-- Код счетчиков -->
+ <noindex> 
+<!-- Yandex.Metrika informer -->
+ <a href="https://metrika.yandex.ru/stat/?id=6936253&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/6936253/3_1_FFFFFFFF_FFFFFFFF_0_pageviews" style="width:1px; height:1px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="6936253" data-lang="ru" /></a> 
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+ <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(6936253, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/6936253" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter-->
+<script type="text/javascript"> document.write('<a href="//www.liveinternet.ru/click" '+ 'target="_blank"><img src="//counter.yadro.ru/hit?t14.6;r'+ escape(document.referrer)+((typeof(screen)=='undefined')?'': ';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth? screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+ ';h'+escape(document.title.substring(0,150))+';'+Math.random()+ '" alt="" title="LiveInternet: показано число просмотров за 24'+ ' часа, посетителей за 24 часа и за сегодня" '+ 'border="0" width="1" height="1"><\/a>') </script>
+<!--/LiveInternet-->
+ </noindex> 
+			</div>
+		</div>	
+	</div>
+</footer>
+		<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/js/new_main_site.js"></script>
+	  
+<!--footer_script-->
+	<link rel="stylesheet" href="/css/owl.carousel.min.css"> 	
+<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+<script src="/js/index_list.js?rnd=85723291"></script>
+<script src="/js/owl.carousel.min.js?rnd=85723291"></script>
+<script src="/js/slider.js?rnd=85723291"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/templates/css/all.css">
+	<link rel="stylesheet" href="/templates/css/main_site.css?rnd=4">  
+		</div>
+</body>
+	
+</html>

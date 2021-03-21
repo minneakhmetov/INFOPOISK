@@ -1,0 +1,4585 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<script data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','footerad':'d41d8cd98f00','mobfix':'d41d8cd98f00'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+<script data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+
+<link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?15445270121861" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?159272710523459" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/lapkins/template_4743a9ee595a7bbaba3faf9c8302740d/template_4743a9ee595a7bbaba3faf9c8302740d_v1.css?1610714191137873" type="text/css"  data-template-style="true" rel="stylesheet" />
+<meta name="keywords" content="кошки, собаки, коты, псы, домашние, животные, хозяева, форум, сообщества, объявления" />
+<meta name="description" content="сообщество питомцев и их хозяев" />
+
+
+
+
+
+
+
+<style>.o-saite{height:400px;background-repeat:no-repeat;background-position:420px 30px;display:table;width:100%;position:relative;}
+.o-saite.dog{background:url(/img/sobaki.jpg);background-size:100%;height:570px;margin:-1px 0 -20px 0;color:#fff;}
+.o-saite.dog h1{font-size:32px;font-weight:800;margin:90px 0 0 0;}
+.o-saite p , .o-saite h1{margin:230px 120px 0 120px;font-size:25px;text-align:center;line-height:36px;color:#fff;}
+.o-saite h1{margin:196px 120px 0 120px;line-height:70px;font-size:55px;}
+.main-find-rezult{background:#fff;margin:-1px 0 0 0;border:1px solid #eee;position:absolute;width:100%;padding:0 0 10px;z-index:1;}
+.main-find-rezult .ava-rezult{width:70px;height:70px;}
+.main-find-rezult .content-rezult{margin:0 0 0 70px;}
+.main-find-rezult .name-rezult{font-size:20px;}
+.main-find-rezult .rezult-tags{margin:2px 0 0 0;}
+.main-find-rezult .poroda-rezult{padding:20px;}
+.o-chem{right:30px;bottom:30px;position:absolute;color:#fff;}
+.o-chem p{line-height:20px;font-size:14px;}
+.o-chem a{color:#fff;border-bottom:1px solid rgba(255,255,255,0.5);}
+.o-saite{height:600px;background-repeat:no-repeat;background-position:50% 70px;display:table;width:100%;position:relative;background-size:150px;background-color:rgba(0,0,0,0.4);}
+.main-h2{font-size:35px;margin:0;text-align:center;}
+.main-tag{text-align:center;}
+.hide-on{overflow:hidden;height:55px;}
+.show-all{text-align:center;margin:15px auto;color:#333;border-bottom:1px dotted#ddd;display:table;cursor:pointer;}
+.obh{height:300px;}
+.main-search{width:670px;line-height:19px;background:#fff;height:50px;padding:0 16px;outline:none;border:none;color:#424242;font-size:16px;border-color:#cccccc;border-radius:2px;box-shadow:inset 2px 2px 0 0 #f0f0f0;}
+.bg-fon{position:relative;margin:0 0 20px;background-size:cover;}
+.o-saite p{margin:230px 120px 0 120px;font-size:25px;text-align:center;line-height:36px;color:#fff;}
+.main-find{margin:20px auto;width:670px;position:relative;}
+.lapka-white{background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzIwMCcgd2lkdGg9JzIwMCcgIGZpbGw9IiNmZmZmZmYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTM2LjI1LDM1YzYuMjAzLDAsMTEuMjUtNS42MDcsMTEuMjUtMTIuNVM0Mi40NTMsMTAsMzYuMjUsMTBTMjUsMTUuNjA3LDI1LDIyLjVTMzAuMDQ3LDM1LDM2LjI1LDM1eiBNMzYuMjUsMTUgIGMzLjQ0NiwwLDYuMjUsMy4zNjQsNi4yNSw3LjVTMzkuNjk2LDMwLDM2LjI1LDMwUzMwLDI2LjYzNiwzMCwyMi41UzMyLjgwNCwxNSwzNi4yNSwxNXoiPjwvcGF0aD48cGF0aCBkPSJNMTYuMjUsNTVjNi4yMDMsMCwxMS4yNS01LjYwNywxMS4yNS0xMi41UzIyLjQ1MywzMCwxNi4yNSwzMFM1LDM1LjYwNyw1LDQyLjVTMTAuMDQ3LDU1LDE2LjI1LDU1eiBNMTYuMjUsMzUgIGMzLjQ0NiwwLDYuMjUsMy4zNjQsNi4yNSw3LjVTMTkuNjk2LDUwLDE2LjI1LDUwUzEwLDQ2LjYzNiwxMCw0Mi41UzEyLjgwNCwzNSwxNi4yNSwzNXoiPjwvcGF0aD48cGF0aCBkPSJNODMuNzUsMzBjLTYuMjAzLDAtMTEuMjUsNS42MDctMTEuMjUsMTIuNVM3Ny41NDcsNTUsODMuNzUsNTVTOTUsNDkuMzkzLDk1LDQyLjVTODkuOTUzLDMwLDgzLjc1LDMweiBNODMuNzUsNTAgIGMtMy40NDYsMC02LjI1LTMuMzY0LTYuMjUtNy41czIuODA0LTcuNSw2LjI1LTcuNVM5MCwzOC4zNjQsOTAsNDIuNVM4Ny4xOTYsNTAsODMuNzUsNTB6Ij48L3BhdGg+PHBhdGggZD0iTTYzLjc1LDM1QzY5Ljk1MywzNSw3NSwyOS4zOTMsNzUsMjIuNVM2OS45NTMsMTAsNjMuNzUsMTBTNTIuNSwxNS42MDcsNTIuNSwyMi41UzU3LjU0NywzNSw2My43NSwzNXogTTYzLjc1LDE1ICBjMy40NDYsMCw2LjI1LDMuMzY0LDYuMjUsNy41UzY3LjE5NiwzMCw2My43NSwzMHMtNi4yNS0zLjM2NC02LjI1LTcuNVM2MC4zMDQsMTUsNjMuNzUsMTV6Ij48L3BhdGg+PHBhdGggZD0iTTM0LjQ0Myw0Ni45NDZMMjQuMDU2LDU5LjkzQzIxLjQzLDYzLjIxMiwyMCw2Ny4yOSwyMCw3MS40OTJDMjAsODEuNzE0LDI4LjI4Niw5MCwzOC41MDgsOTBoMjIuOTg0ICBDNzEuNzE0LDkwLDgwLDgxLjcxNCw4MCw3MS40OTJjMC00LjIwMy0xLjQzLTguMjgtNC4wNTYtMTEuNTYyTDY1LjU1Nyw0Ni45NDZDNjIuMDQ1LDQyLjU1Niw1Ni43MjcsNDAsNTEuMTA1LDQwaC0yLjIwOSAgQzQzLjI3Myw0MCwzNy45NTUsNDIuNTU2LDM0LjQ0Myw0Ni45NDZ6IE00OC44OTUsNDcuNWgyLjIwOWMzLjM2MiwwLDYuNDk1LDEuNTA2LDguNTk2LDQuMTMxbDEwLjM4OCwxMi45ODQgIGMxLjU1NiwxLjk0NCwyLjQxMiw0LjM4NywyLjQxMiw2Ljg3N2MwLDYuMDctNC45MzgsMTEuMDA4LTExLjAwOCwxMS4wMDhIMzguNTA4Yy02LjA3LDAtMTEuMDA4LTQuOTM4LTExLjAwOC0xMS4wMDggIGMwLTIuNDksMC44NTctNC45MzIsMi40MTItNi44NzdMNDAuMyw1MS42MzFDNDIuNCw0OS4wMDYsNDUuNTMzLDQ3LjUsNDguODk1LDQ3LjV6Ij48L3BhdGg+PC9zdmc+");}
+
+@media screen and (max-width:720px){
+.main-find{width: 90%;}
+.main-search{width:100%;}
+.o-saite p{margin:230px 0 0;font-size: 23px;line-height:30px;}
+.bg-fon{background-position:50%;}
+.o-saite h1{margin:196px 20px 0 20px;line-height:70px;font-size:38px;}
+.o-saite{height:400px;background-size:90px;}
+.o-saite p{margin:165px 0 0;}
+.o-saite h1{margin:86px 20px 0 20px;}
+}
+@media screen and (max-width:600px){
+.main-find-rezult .poroda-rezult{width:100%;}
+.o-saite{background-position:50% 35px;}
+.o-saite p{margin: 140px 0 0;}
+.o-chem{text-align:center;margin:-40px auto 0;position:relative;right:0;}
+.main-find-rezult .name-rezult{font-size:16px;}
+}</style>
+
+<title>Lapkins.ru — собаки, кошки и их хозяева</title>
+
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="Lapkins.ru" />
+<meta property="og:url" content="https://lapkins.ru/" />
+<meta property="og:title" content="Lapkins.ru — собаки, кошки и их хозяева" />
+<meta property="og:description" content="сообщество питомцев и их хозяев" />
+</head>
+<body>
+
+<div class="wrapper">
+
+<div id="bxdynamic_y0XwfU_start" style="display:none"></div><div id="bxdynamic_y0XwfU_end" style="display:none"></div>
+    <div class="page">
+        <span class="hidden-mask"></span>
+        <div class="content">
+            <div class="r-side">
+
+<div class="bg-fon" style="background-image:url(/upload/iblock/578/578eef26ed7500de1752786c293f67ca.jpg);">
+<div class="o-saite lapka-white">
+<p>Lapkins.ru — сообщество питомцев и их хозяев.</p>
+
+<div class="main-find">
+    <input id="title-search-input" type="text" data-target="index" placeholder="Поиск информации по породам" name="q" autocomplete="off" class="main-search">
+    <div class="main-find-rezult" style="display: none"></div>
+</div>
+</div>
+<div class="o-chem">
+<p><a href="/cat/somaliyskaya-koshka/">Сомалийская кошка</a> и еще<br>112 кошек в нашем <a href="/cat/">каталоге пород</a>.</p>
+</div>
+</div>
+
+<div class="forum-inside">
+    <h2 class="dr-h2">Новые материалы</h2>
+    <div class="ob-line-hid">
+        <div class="ob-line">
+	    <div class="ob-block" id="bx_3218110189_23039">
+<div class="ob-placeholder"></div>
+<div class="ob-back" style="background: rgb(32, 32, 48);">
+<div class="ob-image" style='background-image:url("/upload/resize_cache/iblock/5db/544_400_2/5dbd09653574a8870bdd3904db6c882d.jpeg")'></div>
+<div class="ob-blur" style='background-image:url("/upload/resize_cache/iblock/5db/544_400_2/5dbd09653574a8870bdd3904db6c882d.jpeg")'></div>
+<div class="ob-grad" style="background: linear-gradient(to top, rgb(32, 32, 48) 25%, rgba(32, 32, 48, 0.85) 35%, rgba(32, 32, 48, 0.6) 45%, rgba(32, 32, 48, 0) 70%);"></div>
+</div>
+<a href="/p/kak-pravilno-myt-sobaku/" class="ob-href">
+<div class="ob-text">
+<div class="ob-tz">Как правильно мыть собаку</div>
+<div class="ob-ta">Ухоженная шерсть собаки – настоящее украшение и показатель хорошего здоровья питомца, а также свидетельство...</div>
+</div>
+</a>
+</div>
+	
+
+	    <div class="ob-block" id="bx_3218110189_22615">
+<div class="ob-placeholder"></div>
+<div class="ob-back" style="background: rgb(32, 32, 48);">
+<div class="ob-image" style='background-image:url("/upload/resize_cache/iblock/15c/544_400_2/15c9d0d44d3b9042834f7fd095577ecc.jpg")'></div>
+<div class="ob-blur" style='background-image:url("/upload/resize_cache/iblock/15c/544_400_2/15c9d0d44d3b9042834f7fd095577ecc.jpg")'></div>
+<div class="ob-grad" style="background: linear-gradient(to top, rgb(32, 32, 48) 25%, rgba(32, 32, 48, 0.85) 35%, rgba(32, 32, 48, 0.6) 45%, rgba(32, 32, 48, 0) 70%);"></div>
+</div>
+<a href="/p/skolko-vremeni-koshka-vynashivaet-kotyat/" class="ob-href">
+<div class="ob-text">
+<div class="ob-tz">Сколько времени кошка вынашивает котят</div>
+<div class="ob-ta">Как правило, кошки становятся половозрелыми, то есть способными давать потомство, в возрасте 6-8 месяцев. Но...</div>
+</div>
+</a>
+</div>
+	
+
+	    <div class="ob-block" id="bx_3218110189_22376">
+<div class="ob-placeholder"></div>
+<div class="ob-back" style="background: rgb(32, 32, 48);">
+<div class="ob-image" style='background-image:url("/upload/resize_cache/iblock/25a/544_400_2/25a86d308ba48de833b6c19ee52938ea.jpg")'></div>
+<div class="ob-blur" style='background-image:url("/upload/resize_cache/iblock/25a/544_400_2/25a86d308ba48de833b6c19ee52938ea.jpg")'></div>
+<div class="ob-grad" style="background: linear-gradient(to top, rgb(32, 32, 48) 25%, rgba(32, 32, 48, 0.85) 35%, rgba(32, 32, 48, 0.6) 45%, rgba(32, 32, 48, 0) 70%);"></div>
+</div>
+<a href="/p/kak-podstrich-kogti-koshke/" class="ob-href">
+<div class="ob-text">
+<div class="ob-tz">Как подстричь когти кошке</div>
+<div class="ob-ta">У «кошачьего маникюра» множество противников и сторонников. Первые считают, что котики могут самостоятельно...</div>
+</div>
+</a>
+</div>
+	
+
+            </div>
+        </div>
+    </div>
+    
+
+<!--helloArray
+(
+    [ID] => 1999
+    [FORUM_ID] => 71
+    [TOPIC_ID] => 
+    [TITLE] => Это Корги? 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте, подскажите пожалуйста 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 25
+    [USER_START_ID] => 3155
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1999-eto-korgi_
+    [START_DATE] => 18.03.2021 18:53:05
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 268
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 18.03.2021 19:31:43
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-18 19:31:43
+    [LAST_MESSAGE_ID] => 5168
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 268
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 18.03.2021 19:31:43
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-18 19:31:43
+    [ABS_LAST_MESSAGE_ID] => 5168
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Вельш-корги пемброк
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1997
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Стул в щенка 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. У меня щенок француз 3 месяца. Пару дней назад сделали 2 прививку. Кормила кормом который дал заводчик, но корм заканчивался и заводчица мне посоветовала взять корм Forza 10 для щенков. Я начала их смешивать, потом перевела только на новый к
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 61
+    [USER_START_ID] => 3147
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1997-stul-v-shchenka
+    [START_DATE] => 17.03.2021 17:13:27
+    [POSTS] => 4
+    [LAST_POSTER_ID] => 3154
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 18.03.2021 19:56:41
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-18 19:56:41
+    [LAST_MESSAGE_ID] => 5169
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 3154
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 18.03.2021 19:56:41
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-18 19:56:41
+    [ABS_LAST_MESSAGE_ID] => 5169
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1988
+    [FORUM_ID] => 78
+    [TOPIC_ID] => 
+    [TITLE] => Вопрос. Йорк скулит в одиночестве?
+    [TAGS] => 
+    [DESCRIPTION] => Планирую завести йорка. Но днем нас не бывает дома. Сильно ли скучает йорик в одиночестве? Скулит? Соседи будут жаловаться?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 45
+    [USER_START_ID] => 3138
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1988-vopros.-york-skulit-v-odinochestve
+    [START_DATE] => 16.03.2021 07:52:35
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 497
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 16.03.2021 17:17:04
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-16 17:17:04
+    [LAST_MESSAGE_ID] => 5148
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 497
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 16.03.2021 17:17:04
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-16 17:17:04
+    [ABS_LAST_MESSAGE_ID] => 5148
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Йоркширский терьер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1987
+    [FORUM_ID] => 83
+    [TOPIC_ID] => 
+    [TITLE] => Роды у лабрадору 
+    [TAGS] => 
+    [DESCRIPTION] => Пожалуйста откликнетесь , у беременной собаки чёрные выделение родился потом щенок не доразвитый без шерсти сантиметров 9-10 . И нет схваток , что делать ?????!!!!! Пожалуйста скажите . Роды вторые . 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 33
+    [USER_START_ID] => 3136
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1987-rody-u-labradoru
+    [START_DATE] => 15.03.2021 21:56:32
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 465
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 16.03.2021 17:11:42
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-16 17:11:42
+    [LAST_MESSAGE_ID] => 5147
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 465
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 16.03.2021 17:11:42
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-16 17:11:42
+    [ABS_LAST_MESSAGE_ID] => 5147
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Лабрадор-ретривер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1986
+    [FORUM_ID] => 71
+    [TOPIC_ID] => 
+    [TITLE] => Ищут свой дом щенки вельш корги кардиган Ормай «П»
+    [TAGS] => 
+    [DESCRIPTION] => Ищут свой дом щенки вельш корги кардиган Ормай «П».
+Свободны две суки и пять кобелей, все щенки тигрово-белого окраса.
+Дата рождения 26.12.2020
+Отец – Ormai Cillini (Kerman Catcher in the Rye & Ormai Jemima) JChRus, JChRKF
+Мать – Ormai Verona (Man on 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 45
+    [USER_START_ID] => 1190
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1986-ishchut-svoy-dom-shchenki-velsh-korgi-kardigan-ormay-_p
+    [START_DATE] => 15.03.2021 19:04:26
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 25
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 16.03.2021 16:56:16
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-16 16:56:16
+    [LAST_MESSAGE_ID] => 5146
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 25
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 16.03.2021 16:56:16
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-16 16:56:16
+    [ABS_LAST_MESSAGE_ID] => 5146
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Вельш-корги пемброк
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1985
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Как вылечить кота от МКБ ?
+    [TAGS] => 
+    [DESCRIPTION] => И как оградить кошку 5 лет от МКБ? Кошка стерилизована, питается натуралкой. Задаю вопрос, потому что кот, живущий у бабушки, подхватил мкб
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 26
+    [USER_START_ID] => 1706
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1985-kak-vylechit-kota-ot-mkb
+    [START_DATE] => 15.03.2021 15:11:42
+    [POSTS] => 3
+    [LAST_POSTER_ID] => 1783
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 18.03.2021 10:59:23
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-18 10:59:23
+    [LAST_MESSAGE_ID] => 5163
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 1783
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 18.03.2021 10:59:23
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-18 10:59:23
+    [ABS_LAST_MESSAGE_ID] => 5163
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1984
+    [FORUM_ID] => 28
+    [TOPIC_ID] => 
+    [TITLE] => Вес котенка
+    [TAGS] => 
+    [DESCRIPTION] => Котёнок 22.07.2020 года вес 2700 смотрю везде пишут что котёнок такого возраста должен весить чуть ли не 4-5 кг. Был переезд, стресс, но все равно маловато. Скажите почему?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 90
+    [USER_START_ID] => 3116
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1984-ves-kotenka
+    [START_DATE] => 14.03.2021 22:12:22
+    [POSTS] => 4
+    [LAST_POSTER_ID] => 3116
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 18.03.2021 02:55:35
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-18 02:55:35
+    [LAST_MESSAGE_ID] => 5161
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 3116
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 18.03.2021 02:55:35
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-18 02:55:35
+    [ABS_LAST_MESSAGE_ID] => 5161
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Мейн-кун
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1983
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Прошу вашей помощи!!!!  SOS!!!!! 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. У нас такая проблема, ранее если пролистать то найдете от меня обращение.  В общем в крации собака переодически проявляла агрессию к супругу. Врач (сука)  изъвеняюсь, посоветовала кастрировать.  Все сделали по ее рекомендации.  Жаль документ
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 128
+    [USER_START_ID] => 2064
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1983-proshu-vashey-pomoshchi_-sos_
+    [START_DATE] => 13.03.2021 17:16:28
+    [POSTS] => 3
+    [LAST_POSTER_ID] => 2522
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 14.03.2021 15:36:41
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-14 15:36:41
+    [LAST_MESSAGE_ID] => 5132
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2522
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 14.03.2021 15:36:41
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-14 15:36:41
+    [ABS_LAST_MESSAGE_ID] => 5132
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1982
+    [FORUM_ID] => 60
+    [TOPIC_ID] => 
+    [TITLE] => Аргентинские доги Пахра Магнифика
+    [TAGS] => 
+    [DESCRIPTION] => У нас свободны два мальчика аргентинского дога. Белоснежные, обещают вырасти очень красивые и крупными дого.
+На фото 2, 3 мама щенков Зои и на фото 4, 5 дедушка щенков Zaino
+Эксклюзивное накопление кровей лучших питомников породы Verdes Pampas (Бразилия
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 68
+    [USER_START_ID] => 3120
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1982-argentinskie-dogi-pakhra-magnifika
+    [START_DATE] => 12.03.2021 16:08:46
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 3120
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 12.03.2021 16:08:46
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-12 16:08:46
+    [LAST_MESSAGE_ID] => 5123
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 3120
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 12.03.2021 16:08:46
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-12 16:08:46
+    [ABS_LAST_MESSAGE_ID] => 5123
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Аргентинский дог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1980
+    [FORUM_ID] => 78
+    [TOPIC_ID] => 
+    [TITLE] => Помощь в питании
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте!Срочно нужна помощь!купили йорочку,ей 4 месяц.очень плохо ест!когда купили кормили только детским питанием тема(мясным),я начала вводить сухой корм. Попробавала пурину ван,посоветовала девушка,у которой купили щенка.Почти не ела его.Купила ро
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 62
+    [USER_START_ID] => 3121
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1980-pomoshch-v-pitanii
+    [START_DATE] => 12.03.2021 15:18:50
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 441
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 13.03.2021 13:16:41
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-13 13:16:41
+    [LAST_MESSAGE_ID] => 5124
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 441
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 13.03.2021 13:16:41
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-13 13:16:41
+    [ABS_LAST_MESSAGE_ID] => 5124
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Йоркширский терьер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1979
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Какой объём сухого корма давать щенку!?
+    [TAGS] => 
+    [DESCRIPTION] => Какой объём сухого корма давать 4х месячному щенку в день?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 76
+    [USER_START_ID] => 3117
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1979-kakoy-obyem-sukhogo-korma-davat-shchenku_
+    [START_DATE] => 11.03.2021 23:27:43
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 2522
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 12.03.2021 12:28:52
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-12 12:28:52
+    [LAST_MESSAGE_ID] => 5120
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2522
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 12.03.2021 12:28:52
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-12 12:28:52
+    [ABS_LAST_MESSAGE_ID] => 5120
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1978
+    [FORUM_ID] => 28
+    [TOPIC_ID] => 
+    [TITLE] => Мейн-кун 10 месяцев
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. Приобрела мейн-куна 2 дня назад. Он пугливый и не выходит вообще из под кровати. Только когда меня нет. Как его приручить, чтоб он не боялся
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 175
+    [USER_START_ID] => 3116
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1978-meyn_kun-10-mesyatsev
+    [START_DATE] => 11.03.2021 16:48:22
+    [POSTS] => 2
+    [LAST_POSTER_ID] => 3116
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 11.03.2021 20:09:55
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-11 20:09:55
+    [LAST_MESSAGE_ID] => 5116
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 3116
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 11.03.2021 20:09:55
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-11 20:09:55
+    [ABS_LAST_MESSAGE_ID] => 5116
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Мейн-кун
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1849
+    [FORUM_ID] => 28
+    [TOPIC_ID] => 
+    [TITLE] => Мейнкун или метис?
+    [TAGS] => 
+    [DESCRIPTION] => Дорогие форумчане! Возможно, на первом фото котята ещё малыши, но хочется узнать Вашего мнения. Насколько красавцы с двух фото похожи на чистокровных? Спасибо!
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 912
+    [USER_START_ID] => 2736
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1849-meynkun-ili-metis
+    [START_DATE] => 02.01.2021 03:07:42
+    [POSTS] => 31
+    [LAST_POSTER_ID] => 2948
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 09.02.2021 16:03:52
+    [LAST_POST_DATE_ORIGINAL] => 2021-02-09 16:03:52
+    [LAST_MESSAGE_ID] => 4986
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2948
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 09.02.2021 16:03:52
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-02-09 16:03:52
+    [ABS_LAST_MESSAGE_ID] => 4986
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Мейн-кун
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1884
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Питомник IMPERIAL-DOG 89169900618
+    [TAGS] => 
+    [DESCRIPTION] => Всем привет. Купили щенка французского бульдога в вышеуказанном питомники на авито, картинки красивые щенков и они есть в наличие, вроде как питомник, вообщем купили. Привезли домой, щенок шустрый, игривый. Спустя день-два щенок перестал кушать, спал пост
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 1783
+    [USER_START_ID] => 2802
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1884-pitomnik-imperial_dog-89169900618
+    [START_DATE] => 17.01.2021 14:32:59
+    [POSTS] => 11
+    [LAST_POSTER_ID] => 2890
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 04.02.2021 20:21:39
+    [LAST_POST_DATE_ORIGINAL] => 2021-02-04 20:21:39
+    [LAST_MESSAGE_ID] => 4978
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2890
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 04.02.2021 20:21:39
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-02-04 20:21:39
+    [ABS_LAST_MESSAGE_ID] => 4978
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1845
+    [FORUM_ID] => 38
+    [TOPIC_ID] => 
+    [TITLE] => У котенка Регдола понос и иногда рвота.
+    [TAGS] => 
+    [DESCRIPTION] => Моему коту 7 месяцев, на данный момент никак не получается определиться с сбалансированным питание, чтобы нашему коту подходило. Когда он у нас только появился (где-то 2,5-3 месяца ему было), мы его кормили сухим кормом от Роял кинин киттен до 12 месяцев 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 339
+    [USER_START_ID] => 2731
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1845-u-kotenka-regdola-ponos-i-inogda-rvota.
+    [START_DATE] => 01.01.2021 14:46:33
+    [POSTS] => 9
+    [LAST_POSTER_ID] => 2759
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 08.01.2021 12:16:53
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-08 12:16:53
+    [LAST_MESSAGE_ID] => 4842
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2759
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 08.01.2021 12:16:53
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-08 12:16:53
+    [ABS_LAST_MESSAGE_ID] => 4842
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Рэгдолл
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1896
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Маленький вес 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте! Приобрели девочку бульдожку 21.01. 21 у местного заводчика. Щенки от первого помета 10.11.20г Меня пугает её маленький вес 3100, смотрю фотографии щенков они все крупные, шкурастые а у моей косточки,ребра торчат. Как можно проверить настояща
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 469
+    [USER_START_ID] => 2869
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1896-malenkiy-ves
+    [START_DATE] => 26.01.2021 14:20:49
+    [POSTS] => 9
+    [LAST_POSTER_ID] => 2869
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 12.03.2021 10:43:31
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-12 10:43:31
+    [LAST_MESSAGE_ID] => 5119
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2869
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 12.03.2021 10:43:31
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-12 10:43:31
+    [ABS_LAST_MESSAGE_ID] => 5119
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1848
+    [FORUM_ID] => 14
+    [TOPIC_ID] => 
+    [TITLE] => Кошка и котёнок 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте! У кошки родились котята, 4 отдали, хотим одного оставить , и хотим узнать не будет ли кошка бить котёнка, хотим оставить девочку. 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 136
+    [USER_START_ID] => 2733
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1848-koshka-i-kotyenok
+    [START_DATE] => 01.01.2021 16:55:34
+    [POSTS] => 7
+    [LAST_POSTER_ID] => 2725
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 04.01.2021 11:33:24
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-04 11:33:24
+    [LAST_MESSAGE_ID] => 4813
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2725
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 04.01.2021 11:33:24
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-04 11:33:24
+    [ABS_LAST_MESSAGE_ID] => 4813
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Британская короткошерстная кошка
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1852
+    [FORUM_ID] => 14
+    [TOPIC_ID] => 
+    [TITLE] => Крики ночные
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте,может кто сможет помочь,у меня кошка,британка,5 лет,стерилизованная, последние 6 месяцев сходит сума ,орет ночами как ненормальная!!! Ходила к ветеринару,со стороны здоровья проблем нет,все в один голос говорят-скучает(дело в том,что 6 месяце
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 319
+    [USER_START_ID] => 2741
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1852-kriki-nochnye
+    [START_DATE] => 04.01.2021 00:04:53
+    [POSTS] => 7
+    [LAST_POSTER_ID] => 2741
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 12.01.2021 22:58:44
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-12 22:58:44
+    [LAST_MESSAGE_ID] => 4876
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2741
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 12.01.2021 22:58:44
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-12 22:58:44
+    [ABS_LAST_MESSAGE_ID] => 4876
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Британская короткошерстная кошка
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1865
+    [FORUM_ID] => 78
+    [TOPIC_ID] => 
+    [TITLE] => У Йорка ломкая шерсть и жёсткая. Что делать? 
+    [TAGS] => 
+    [DESCRIPTION] => Всем привет. У нас девочка, ей 4 мес. Она сразу была не очень пушистая. Покупали в 2.5 мес. Родители Йорки, но без родословной. И мы такие же. Стала почти и стали проявляться гены далеко не Йорка. Выяснили, что у отца нашей девочки в роду действительно бы
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 988
+    [USER_START_ID] => 2791
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1865-u-yorka-lomkaya-sherst-i-zhyestkaya.-chto-delat_
+    [START_DATE] => 11.01.2021 00:17:36
+    [POSTS] => 7
+    [LAST_POSTER_ID] => 2791
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 13.01.2021 14:59:11
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-13 14:59:11
+    [LAST_MESSAGE_ID] => 4886
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2791
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 13.01.2021 14:59:11
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-13 14:59:11
+    [ABS_LAST_MESSAGE_ID] => 4886
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Йоркширский терьер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1910
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Возникли сомнения по породе 
+    [TAGS] => 
+    [DESCRIPTION] => Взяли щенка с метрикой по РКФ. Связывались с клубом. Клеймо и щенка подтвердил. Ему 3 месяца, был на плохом корме. Обратились в ветклиники проверить здоровье — там сказали, что это боксёр. Мы в растерянности. Какие у вас мысли на этот счёт 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 514
+    [USER_START_ID] => 2913
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1910-voznikli-somneniya-po-porode
+    [START_DATE] => 02.02.2021 14:25:03
+    [POSTS] => 7
+    [LAST_POSTER_ID] => 2913
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 03.03.2021 11:05:24
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-03 11:05:24
+    [LAST_MESSAGE_ID] => 5076
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2913
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 03.03.2021 11:05:24
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-03 11:05:24
+    [ABS_LAST_MESSAGE_ID] => 5076
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1850
+    [FORUM_ID] => 104
+    [TOPIC_ID] => 
+    [TITLE] => 10 лет кобель облысел
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. Небольшое отступление. 3 года назад с передержки взяла кобеля таксы. На передержку он попал с улицы, подобрала добрая девочка (пес несколько дней "бомжевал" на улице). Когда забрала кобеля хвост был облезший немного на бугорках позвонков, гл
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 180
+    [USER_START_ID] => 2737
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1850-10-let-kobel-oblysel
+    [START_DATE] => 02.01.2021 20:06:02
+    [POSTS] => 6
+    [LAST_POSTER_ID] => 2737
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 03.01.2021 17:45:03
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-03 17:45:03
+    [LAST_MESSAGE_ID] => 4804
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2737
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 03.01.2021 17:45:03
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-03 17:45:03
+    [ABS_LAST_MESSAGE_ID] => 4804
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Такса
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1855
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Сильный стресс у кота
+    [TAGS] => 
+    [DESCRIPTION] => Всем привет! Взяли неделю назад кота, ему 7 месяцев. Похоже, что он рос всё время с другими животными, но с людьми тесного контакта не было. Очень нас боится, всё время шипит. Вроде начал немного привыкать, но дело очень осложнилось тем, что у него какая-
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 49
+    [USER_START_ID] => 2762
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1855-silnyy-stress-u-kota
+    [START_DATE] => 07.01.2021 15:51:25
+    [POSTS] => 6
+    [LAST_POSTER_ID] => 2725
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 08.01.2021 01:06:37
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-08 01:06:37
+    [LAST_MESSAGE_ID] => 4839
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2725
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 08.01.2021 01:06:37
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-08 01:06:37
+    [ABS_LAST_MESSAGE_ID] => 4839
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1857
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Вязка котов разного возраста 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. Коту 1,5 года, дворняжка маленького размера. Кошке 4 года, полуперс, намного больше по размеру. У обоих это первая вязка. Кошка переехала 2,5 недели назад к коту, сутки назад началась течка. Кот залезает на неё, но тычется в спину, никак поп
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 42
+    [USER_START_ID] => 2764
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1857-vyazka-kotov-raznogo-vozrasta
+    [START_DATE] => 07.01.2021 19:53:51
+    [POSTS] => 6
+    [LAST_POSTER_ID] => 2764
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 08.01.2021 01:08:23
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-08 01:08:23
+    [LAST_MESSAGE_ID] => 4840
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2764
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 08.01.2021 01:08:23
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-08 01:08:23
+    [ABS_LAST_MESSAGE_ID] => 4840
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1903
+    [FORUM_ID] => 28
+    [TOPIC_ID] => 
+    [TITLE] => Мейн кунята 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте любители и владельцы такой замечательной породы кошек как мейн кун! Вчера наконец то забрали своё маленькое чудо от заводчицы. Мейн кун мальчик . 4 февраля будет 2 месяца. Столкнулись с такой лично для меня проблемой. Заводчики сказали что к 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 579
+    [USER_START_ID] => 2882
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1903-meyn-kunyata
+    [START_DATE] => 28.01.2021 13:17:09
+    [POSTS] => 6
+    [LAST_POSTER_ID] => 2882
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 10.02.2021 16:40:37
+    [LAST_POST_DATE_ORIGINAL] => 2021-02-10 16:40:37
+    [LAST_MESSAGE_ID] => 5001
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2882
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 10.02.2021 16:40:37
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-02-10 16:40:37
+    [ABS_LAST_MESSAGE_ID] => 5001
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Мейн-кун
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1824
+    [FORUM_ID] => 83
+    [TOPIC_ID] => 
+    [TITLE] => Брошенный лабрадор
+    [TAGS] => 
+    [DESCRIPTION] => Помогите найти дом для лабрадора. Живёт на улице,на остановке. Уже долго. Очень умный. Добрый,воспитанный мальчик. Любит людей,доверяет. Кто то выбросил на улицу. К себе взять не могу- два добермана взрослых. Никому не нужен. Уже не знаю что делать. Помог
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 465
+    [USER_START_ID] => 2665
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1824-broshennyy-labrador
+    [START_DATE] => 19.12.2020 21:07:03
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2665
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 19.12.2020 21:07:03
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-19 21:07:03
+    [LAST_MESSAGE_ID] => 4695
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2665
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 19.12.2020 21:07:03
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-19 21:07:03
+    [ABS_LAST_MESSAGE_ID] => 4695
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Лабрадор-ретривер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1826
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Поездки с питомцем
+    [TAGS] => 
+    [DESCRIPTION] => Друзья, я работаю над дипломным проектом на тему «Безопасной транспортировки животных». Создаю дизайн переноски для наших питомцев.
+⠀
+Буда рада, если вы поможете ответить на 10 простых вопросов. Для меня важно получить обратную связь владельцев домашних
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 18
+    [USER_START_ID] => 2666
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1826-poezdki-s-pitomtsem
+    [START_DATE] => 20.12.2020 09:39:27
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2666
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 20.12.2020 09:39:27
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-20 09:39:27
+    [LAST_MESSAGE_ID] => 4697
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2666
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 20.12.2020 09:39:27
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-20 09:39:27
+    [ABS_LAST_MESSAGE_ID] => 4697
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1829
+    [FORUM_ID] => 89
+    [TOPIC_ID] => 
+    [TITLE] => Немецкая овчарка
+    [TAGS] => 
+    [DESCRIPTION] => Подскажите пожалуйста! Предложили взять немецкую овчарку, ей уже 1,5 года, отдают в связи браковки. Жила и воспитывалась в служебных условиях, т.е. занимались кинологи. Стоит ли брать? И привыкнет ли она к семье?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 245
+    [USER_START_ID] => 2677
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1829-nemetskaya-ovcharka
+    [START_DATE] => 23.12.2020 07:56:00
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2677
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 23.12.2020 07:56:00
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-23 07:56:00
+    [LAST_MESSAGE_ID] => 4717
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2677
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 23.12.2020 07:56:00
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-23 07:56:00
+    [ABS_LAST_MESSAGE_ID] => 4717
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Немецкая овчарка
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1832
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Какую игрушку лучше купить активной кошке?
+    [TAGS] => 
+    [DESCRIPTION] => Любит катать комочки бумаги, поэтому остановили выбор на этих.какая из игрушек безопаснее?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 17
+    [USER_START_ID] => 1706
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1832-kakuyu-igrushku-luchshe-kupit-aktivnoy-koshke
+    [START_DATE] => 24.12.2020 13:51:23
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 1706
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 24.12.2020 13:51:23
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-24 13:51:23
+    [LAST_MESSAGE_ID] => 4727
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 1706
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 24.12.2020 13:51:23
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-24 13:51:23
+    [ABS_LAST_MESSAGE_ID] => 4727
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1833
+    [FORUM_ID] => 4
+    [TOPIC_ID] => 
+    [TITLE] => Питомники в Москве йоркширский терьер 
+    [TAGS] => 
+    [DESCRIPTION] => Добрый день. Хочу приобрести мальчика, йоркширский терьер. Подскажите в Москве надёжных разводчиков данной породы. Спасибо)
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 15
+    [USER_START_ID] => 2684
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1833-pitomniki-v-moskve-yorkshirskiy-terer
+    [START_DATE] => 24.12.2020 15:01:04
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2684
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 24.12.2020 15:01:04
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-24 15:01:04
+    [LAST_MESSAGE_ID] => 4728
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2684
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 24.12.2020 15:01:04
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-24 15:01:04
+    [ABS_LAST_MESSAGE_ID] => 4728
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Собаки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1836
+    [FORUM_ID] => 71
+    [TOPIC_ID] => 
+    [TITLE] => Щенок - проблемы с туалетом
+    [TAGS] => 
+    [DESCRIPTION] => Привет! У нас щенку 2 месяца. Заводчица сразу не объяснила, что корм надо размачивать. На третий день он стал вялый, очень часто какал, иногда просто слизью. На четвёртый наоборот тужился и без результата. Отвезли в клинику - дали дюфалак, ночью пропоноси
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 672
+    [USER_START_ID] => 2698
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1836-shchenok-_-problemy-s-tualetom
+    [START_DATE] => 26.12.2020 16:13:27
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2698
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 26.12.2020 16:13:27
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-26 16:13:27
+    [LAST_MESSAGE_ID] => 4733
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2698
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 26.12.2020 16:13:27
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-26 16:13:27
+    [ABS_LAST_MESSAGE_ID] => 4733
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Вельш-корги пемброк
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1854
+    [FORUM_ID] => 102
+    [TOPIC_ID] => 
+    [TITLE] => Какие питомники можете посоветовать?
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте! Подскажите, пожалуйста. Собираюсь завести собаку породы сиба-ину. Может кто-нибудь может подсказать хорошие питомники, желательно Москва и Московская область. 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 168
+    [USER_START_ID] => 2763
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1854-kakie-pitomniki-mozhete-posovetovat
+    [START_DATE] => 07.01.2021 15:43:07
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2763
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 07.01.2021 15:43:07
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-07 15:43:07
+    [LAST_MESSAGE_ID] => 4822
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2763
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 07.01.2021 15:43:07
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-07 15:43:07
+    [ABS_LAST_MESSAGE_ID] => 4822
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Сиба-ину
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1858
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Рвота у кота
+    [TAGS] => 
+    [DESCRIPTION] => Месяц назад взяли кота с улицы, оказался взрослым, через некоторое время начал блевать  прозрачной жижей с малым количеством пены, понизилась температура, отвезти к врачу, вылечили, через пару недель снова началась та же история, денег на лечения уже не о
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 9
+    [USER_START_ID] => 2765
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1858-rvota-u-kota
+    [START_DATE] => 07.01.2021 22:18:40
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2765
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 07.01.2021 22:18:40
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-07 22:18:40
+    [LAST_MESSAGE_ID] => 4830
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2765
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 07.01.2021 22:18:40
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-07 22:18:40
+    [ABS_LAST_MESSAGE_ID] => 4830
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1859
+    [FORUM_ID] => 94
+    [TOPIC_ID] => 
+    [TITLE] => Глистогонить
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте, сразу извинюсь за фото. 
+Может такое не принято обсуждать , но этот вопрос стоит внимания.
+
+Купили шпица 2 месяца, начали глистогонить перед первой прививкой. И уже месяц глистогоню каждые 10 дней. А глисты так и не уходят от нас.. глисто
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 300
+    [USER_START_ID] => 2768
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1859-glistogonit
+    [START_DATE] => 08.01.2021 04:53:15
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2768
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 08.01.2021 04:53:15
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-08 04:53:15
+    [LAST_MESSAGE_ID] => 4841
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2768
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 08.01.2021 04:53:15
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-08 04:53:15
+    [ABS_LAST_MESSAGE_ID] => 4841
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Померанский шпиц
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1861
+    [FORUM_ID] => 104
+    [TOPIC_ID] => 
+    [TITLE] => Кривая задняя лапа 
+    [TAGS] => 
+    [DESCRIPTION] => Такса, девочка, 4 месяца. Обратила внимание, что у щенка кривая одна задняя лапа. Левая при ходьбе ставится прчсо6, а правая изгибается дугой. Есть ли повод для беспокойства? (
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 40
+    [USER_START_ID] => 2775
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1861-krivaya-zadnyaya-lapa
+    [START_DATE] => 09.01.2021 02:23:46
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2775
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 09.01.2021 02:23:46
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-09 02:23:46
+    [LAST_MESSAGE_ID] => 4844
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2775
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 09.01.2021 02:23:46
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-09 02:23:46
+    [ABS_LAST_MESSAGE_ID] => 4844
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Такса
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1863
+    [FORUM_ID] => 89
+    [TOPIC_ID] => 
+    [TITLE] => Здравствуйте , подскажите немец , вео, или двортерьер))?Лапы здоровые (большие), задок не  опущен . 3.5 месяца. 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте , подскажите немец , вео, или двортерьер))?Лапы здоровые (большие), задок не  опущен . 3.5 месяца. 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 256
+    [USER_START_ID] => 2789
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1863-zdravstvuyte-_-podskazhite-nemets-_-veo_-ili-dvorterer_lapy-zdorovye-_bolshie_-zadok-ne-opushchen-.-3.5-mesyatsa.
+    [START_DATE] => 10.01.2021 16:49:28
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2789
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 10.01.2021 16:49:28
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-10 16:49:28
+    [LAST_MESSAGE_ID] => 4852
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2789
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 10.01.2021 16:49:28
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-10 16:49:28
+    [ABS_LAST_MESSAGE_ID] => 4852
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Немецкая овчарка
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1866
+    [FORUM_ID] => 54
+    [TOPIC_ID] => 
+    [TITLE] => Пневмония у щенка
+    [TAGS] => 
+    [DESCRIPTION] => Добрый день. Живём в Китае и здесь же купили щенка акиты 3 месяца. Щенок, пока нам его везли судя по всему достаточно переохладился, местные вообще любовью к животным не отличаются. А ведь ей недавно совсем делали прививку. А тут ещё зима очень холодная в
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 107
+    [USER_START_ID] => 2792
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1866-pnevmoniya-u-shchenka
+    [START_DATE] => 11.01.2021 04:50:13
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2792
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 11.01.2021 04:50:13
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-11 04:50:13
+    [LAST_MESSAGE_ID] => 4862
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2792
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 11.01.2021 04:50:13
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-11 04:50:13
+    [ABS_LAST_MESSAGE_ID] => 4862
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Акита-ину
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+-->
+
+<div class="main-banner">
+<a href="https://animalsmonth.ru/noses-tails" target="_blank" rel="nofollow">
+<div class="mb-tem">
+<div class="logo-bm"></div>
+
+<div class="mb-txt">
+<p>Очаровательные котики и собаки ждут своих хозяев. </p>
+<p>Возможно, кто-то из них станет Вашим преданным другом и членом семьи.</p>
+</div>
+
+<div class="mb-btn">Взгляните на них!</div>
+
+</div>
+</a>
+</div>
+
+<style>
+
+.logo-bm{background-image:url(https://static.tildacdn.com/tild3235-3531-4735-b462-633439353538/download_copy.png);
+width: 300px;
+    height: 100px;
+    background-repeat: no-repeat;
+margin: 15px auto;}
+.main-banner{
+background-image:url(mb.jpg);
+background-position: center;
+width: 100%;
+    max-width: 948px;
+    height: 400px;
+    background-size: cover;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.mb-tem{
+background-image: -moz-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    background-image: linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b2000000', endColorstr='#33000000');
+width: 100%;
+    height: 100%;
+    display: table;
+}
+.mb-txt {
+    text-align: center;
+    margin: 60px 5% 50px;
+    width: 90%;
+    color: #fff;
+    font-size: 22px;
+}
+.mb-btn {
+    color: #fff;
+    font-size: 22px;
+    border: 4px solid #fff;
+    width: 220px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.mb-txt p{
+margin: 0 0 10px;
+}
+
+@media screen and (max-width:1040px){
+
+.main-banner{
+	    width: auto;
+		margin: 0 40px;
+    height: 430px;
+	}
+
+}
+
+@media screen and (max-width:800px){
+.main-banner{
+		margin: 0 20px;
+	}	
+	
+}
+
+@media screen and (max-width:550px){
+	.main-banner {
+    height: 500px;
+}
+}
+</style>
+
+<div class="forum-inside">
+
+<h2 class="main-h2">Обсуждения</h2>
+<div class="fast-tag main-tag">
+	<a class="fta act-fta button-tabs" data-id="popular" href="?sort=best_topic">Популярные</a>
+	<a class="fta button-tabs" data-id="newtopic" href="?sort=new_topic">Новые</a>
+	<a class="fta button-tabs" data-id="without_answer" href="?sort=without_answer">Без ответа</a>
+</div>
+<div id="popular" style="display:block">
+
+	<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2736/">
+				<div class="ava-med">
+											<div class="noava fill6"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/meynkun-ili-metis-1849/" class="fh">Мейнкун или метис?</a></div>
+			<div class="forum-text">Дорогие форумчане! Возможно, на первом фото котята ещё малыши, но хочется узнать Вашего мнения. Насколько красавцы с двух фото похожи на чистокровных? Спасибо!</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2736/" class="fha">Наталья Фокс</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">912 просмотров</span>
+				<span class="vopros-otvet">31 ответ</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2802/">
+				<div class="ava-med">
+											<div class="noava fill2"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/pitomnik-imperialdog-89169900618-1884/" class="fh">Питомник IMPERIAL-DOG 89169900618</a></div>
+			<div class="forum-text">Всем привет. Купили щенка французского бульдога в вышеуказанном питомники на авито, картинки красивые щенков и они есть в наличие, вроде как питомник, вообщем купили. Привезли домой, щенок шустрый, игривый. Спустя...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2802/" class="fha">Таня  Назарова</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">1783 просмотра</span>
+				<span class="vopros-otvet">11 ответов</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2731/">
+				<div class="ava-med">
+											<div class="noava fill1"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/u-kotenka-regdola-ponos-i-inogda-rvota-1845/" class="fh">У котенка Регдола понос и иногда рвота.</a></div>
+			<div class="forum-text">Моему коту 7 месяцев, на данный момент никак не получается определиться с сбалансированным питание, чтобы нашему коту подходило. Когда он у нас только появился (где-то 2,5-3 месяца ему было), мы его кормили сухим...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2731/" class="fha">Александр Чупраков</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">339 просмотров</span>
+				<span class="vopros-otvet">9 ответов</span>
+			</span>
+		</div>
+	</div>
+	</div>
+<div id="newtopic" style="display:none">
+	<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/3155/">
+				<div class="ava-med">
+											<div class="noava fill5"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/eto-korgi-1999/" class="fh">Это Корги? </a></div>
+			<div class="forum-text">Здравствуйте, подскажите пожалуйста </div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/3155/" class="fha">Диана Талипова </a></span>
+				<span class="vopros-date">15 часов назад</span>
+				<span class="vopros-smotr">25 просмотров</span>
+				<span class="vopros-otvet">1 ответ</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/3147/">
+				<div class="ava-med">
+											<div class="noava fill7"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/stul-v-shchenka-1997/" class="fh">Стул в щенка </a></div>
+			<div class="forum-text">Здравствуйте. У меня щенок француз 3 месяца. Пару дней назад сделали 2 прививку. Кормила кормом который дал заводчик, но корм заканчивался и заводчица мне посоветовала взять корм Forza 10 для щенков. Я начала их...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/3147/" class="fha">Кристина Соловий </a></span>
+				<span class="vopros-date">1 день назад</span>
+				<span class="vopros-smotr">61 просмотр</span>
+				<span class="vopros-otvet">4 ответа</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/3138/">
+				<div class="ava-med">
+											<div class="noava fill8"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/vopros-york-skulit-v-odinochestve-1988/" class="fh">Вопрос. Йорк скулит в одиночестве?</a></div>
+			<div class="forum-text">Планирую завести йорка. Но днем нас не бывает дома. Сильно ли скучает йорик в одиночестве? Скулит? Соседи будут жаловаться?</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/3138/" class="fha">Наталья Иванова</a></span>
+				<span class="vopros-date">3 дня назад</span>
+				<span class="vopros-smotr">45 просмотров</span>
+				<span class="vopros-otvet">1 ответ</span>
+			</span>
+		</div>
+	</div>
+	</div>
+<div id="without_answer" style="display:none">
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2665/">
+				<div class="ava-med">
+											<div class="noava fill5"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/broshennyy-labrador-1824/" class="fh">Брошенный лабрадор</a></div>
+			<div class="forum-text">Помогите найти дом для лабрадора. Живёт на улице,на остановке. Уже долго. Очень умный. Добрый,воспитанный мальчик. Любит людей,доверяет. Кто то выбросил на улицу. К себе взять не могу- два добермана взрослых. Никому...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2665/" class="fha">Рита Воскресенье</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">465 просмотров</span>
+				<span class="vopros-otvet">0 ответов</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2666/">
+				<div class="ava-med">
+											<div class="noava fill6"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/poezdki-s-pitomtsem-1826/" class="fh">Поездки с питомцем</a></div>
+			<div class="forum-text">Друзья, я работаю над дипломным проектом на тему «Безопасной транспортировки животных». Создаю дизайн переноски для наших питомцев.
+⠀
+Буда рада, если вы поможете ответить на 10 простых вопросов. Для меня важно...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2666/" class="fha">Ольга  Орёл</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">18 просмотров</span>
+				<span class="vopros-otvet">0 ответов</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2677/">
+				<div class="ava-med">
+											<div class="noava fill7"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/nemetskaya-ovcharka-1829/" class="fh">Немецкая овчарка</a></div>
+			<div class="forum-text">Подскажите пожалуйста! Предложили взять немецкую овчарку, ей уже 1,5 года, отдают в связи браковки. Жила и воспитывалась в служебных условиях, т.е. занимались кинологи. Стоит ли брать? И привыкнет ли она к семье...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2677/" class="fha">Яна Мур</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">245 просмотров</span>
+				<span class="vopros-otvet">0 ответов</span>
+			</span>
+		</div>
+	</div>
+	</div>
+	<div class="but-div"><a href="/forum/" class="big-button">Перейти на форум</a></div>
+</div>
+
+				<div class="pop-porodi">
+
+					<h2>Популярные породы собак</h2>
+					<div class="pop-porodi-block">
+				
+				<a href="/dog/sibirskiy-khaski/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/325/325283728e9b607099b05b329accfe28.jpg' data-alt="Сибирский хаски">
+<noscript data-original='/upload/iblock/325/325283728e9b607099b05b329accfe28.jpg' data-alt="Сибирский хаски">
+<img src='/upload/iblock/325/325283728e9b607099b05b329accfe28.jpg' alt="Сибирский хаски">
+</noscript>
+</div>
+</div>
+				<span>Сибирский хаски</span>
+				</a>
+				
+				<a href="/dog/mops/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/130/1309222f033fb6928ea065578276ab44.jpg' data-alt="Мопс">
+<noscript data-original='/upload/iblock/130/1309222f033fb6928ea065578276ab44.jpg' data-alt="Мопс">
+<img src='/upload/iblock/130/1309222f033fb6928ea065578276ab44.jpg' alt="Мопс">
+</noscript>
+</div>
+</div>
+				<span>Мопс</span>
+				</a>
+				
+				<a href="/dog/chikhuakhua/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/49c/49cd241c27d90c0ce9bd82c950cd4a76.jpg' data-alt="Чихуахуа">
+<noscript data-original='/upload/iblock/49c/49cd241c27d90c0ce9bd82c950cd4a76.jpg' data-alt="Чихуахуа">
+<img src='/upload/iblock/49c/49cd241c27d90c0ce9bd82c950cd4a76.jpg' alt="Чихуахуа">
+</noscript>
+</div>
+</div>
+				<span>Чихуахуа</span>
+				</a>
+				
+				<a href="/dog/nemetskaya-ovcharka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/212/212adec96be4631fe2fa0584225b83ff.jpg' data-alt="Немецкая овчарка">
+<noscript data-original='/upload/iblock/212/212adec96be4631fe2fa0584225b83ff.jpg' data-alt="Немецкая овчарка">
+<img src='/upload/iblock/212/212adec96be4631fe2fa0584225b83ff.jpg' alt="Немецкая овчарка">
+</noscript>
+</div>
+</div>
+				<span>Немецкая овчарка</span>
+				</a>
+				
+				<a href="/dog/labrador-retriver/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/f09/f09005e451fc6fcacdbcabc6d2f1de09.jpg' data-alt="Лабрадор-ретривер">
+<noscript data-original='/upload/iblock/f09/f09005e451fc6fcacdbcabc6d2f1de09.jpg' data-alt="Лабрадор-ретривер">
+<img src='/upload/iblock/f09/f09005e451fc6fcacdbcabc6d2f1de09.jpg' alt="Лабрадор-ретривер">
+</noscript>
+</div>
+</div>
+				<span>Лабрадор-ретривер</span>
+				</a>
+				
+				<a href="/dog/taksa/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/53b/53b92eec713e2c552ebc1f1001a0a350.jpg' data-alt="Такса">
+<noscript data-original='/upload/iblock/53b/53b92eec713e2c552ebc1f1001a0a350.jpg' data-alt="Такса">
+<img src='/upload/iblock/53b/53b92eec713e2c552ebc1f1001a0a350.jpg' alt="Такса">
+</noscript>
+</div>
+</div>
+				<span>Такса</span>
+				</a>
+				
+				<a href="/dog/pudel/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/46c/46c48d510e99fd27d2b9d92eced1dfa4.jpg' data-alt="Пудель">
+<noscript data-original='/upload/iblock/46c/46c48d510e99fd27d2b9d92eced1dfa4.jpg' data-alt="Пудель">
+<img src='/upload/iblock/46c/46c48d510e99fd27d2b9d92eced1dfa4.jpg' alt="Пудель">
+</noscript>
+</div>
+</div>
+				<span>Пудель</span>
+				</a>
+				
+				<a href="/dog/velsh-korgi-pembrok/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/9af/9af916d1cf3fb7990d7618dd6861ec43.jpg' data-alt="Вельш-корги пемброк">
+<noscript data-original='/upload/iblock/9af/9af916d1cf3fb7990d7618dd6861ec43.jpg' data-alt="Вельш-корги пемброк">
+<img src='/upload/iblock/9af/9af916d1cf3fb7990d7618dd6861ec43.jpg' alt="Вельш-корги пемброк">
+</noscript>
+</div>
+</div>
+				<span>Вельш-корги пемброк</span>
+				</a>
+				
+				<a href="/dog/dzhek-rassel-terer/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/a02/a027665dded6df37d45e2c2a6c304b28.jpg' data-alt="Джек-рассел-терьер">
+<noscript data-original='/upload/iblock/a02/a027665dded6df37d45e2c2a6c304b28.jpg' data-alt="Джек-рассел-терьер">
+<img src='/upload/iblock/a02/a027665dded6df37d45e2c2a6c304b28.jpg' alt="Джек-рассел-терьер">
+</noscript>
+</div>
+</div>
+				<span>Джек-рассел-терьер</span>
+				</a>
+				
+				<a href="/dog/yorkshirskiy-terer/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/305/3052ffceecb0392a4bd66c672ac78a71.jpg' data-alt="Йоркширский терьер">
+<noscript data-original='/upload/iblock/305/3052ffceecb0392a4bd66c672ac78a71.jpg' data-alt="Йоркширский терьер">
+<img src='/upload/iblock/305/3052ffceecb0392a4bd66c672ac78a71.jpg' alt="Йоркширский терьер">
+</noscript>
+</div>
+</div>
+				<span>Йоркширский терьер</span>
+				</a>
+				
+				<a href="/dog/doberman/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/a5a/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg' data-alt="Доберман">
+<noscript data-original='/upload/iblock/a5a/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg' data-alt="Доберман">
+<img src='/upload/iblock/a5a/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg' alt="Доберман">
+</noscript>
+</div>
+</div>
+				<span>Доберман</span>
+				</a>
+				
+				<a href="/dog/frantsuzskiy-buldog/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/5c0/5c0c7393a5e5d42c33c23efc28a52f84.jpg' data-alt="Французский бульдог">
+<noscript data-original='/upload/iblock/5c0/5c0c7393a5e5d42c33c23efc28a52f84.jpg' data-alt="Французский бульдог">
+<img src='/upload/iblock/5c0/5c0c7393a5e5d42c33c23efc28a52f84.jpg' alt="Французский бульдог">
+</noscript>
+</div>
+</div>
+				<span>Французский бульдог</span>
+				</a>
+				
+				<a href="/dog/russkiy-toy-terer/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/947/947e6bec6c723daeddb2296e8b71ac1a.JPG' data-alt="Русский той-терьер">
+<noscript data-original='/upload/iblock/947/947e6bec6c723daeddb2296e8b71ac1a.JPG' data-alt="Русский той-терьер">
+<img src='/upload/iblock/947/947e6bec6c723daeddb2296e8b71ac1a.JPG' alt="Русский той-терьер">
+</noscript>
+</div>
+</div>
+				<span>Русский той-терьер</span>
+				</a>
+				
+				<a href="/dog/alabay-sredneaziatskaya-ovcharka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/609/609708aa8ba6a6e5eccecc9a058c1b65.jpg' data-alt="Алабай (Среднеазиатская овчарка)">
+<noscript data-original='/upload/iblock/609/609708aa8ba6a6e5eccecc9a058c1b65.jpg' data-alt="Алабай (Среднеазиатская овчарка)">
+<img src='/upload/iblock/609/609708aa8ba6a6e5eccecc9a058c1b65.jpg' alt="Алабай (Среднеазиатская овчарка)">
+</noscript>
+</div>
+</div>
+				<span>Алабай (Среднеазиатская овчарка)</span>
+				</a>
+				
+				<a href="/dog/akita-inu/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/923/923124829b0781ae065bff0951917c74.jpg' data-alt="Акита-ину">
+<noscript data-original='/upload/iblock/923/923124829b0781ae065bff0951917c74.jpg' data-alt="Акита-ину">
+<img src='/upload/iblock/923/923124829b0781ae065bff0951917c74.jpg' alt="Акита-ину">
+</noscript>
+</div>
+</div>
+				<span>Акита-ину</span>
+				</a>
+				
+				<a href="/dog/bigl/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/c35/c354befe4fd9dc1c6f7baaf41fa80d74.jpg' data-alt="Бигль">
+<noscript data-original='/upload/iblock/c35/c354befe4fd9dc1c6f7baaf41fa80d74.jpg' data-alt="Бигль">
+<img src='/upload/iblock/c35/c354befe4fd9dc1c6f7baaf41fa80d74.jpg' alt="Бигль">
+</noscript>
+</div>
+</div>
+				<span>Бигль</span>
+				</a>
+				</div>
+<div class="but-div">
+									<a href="/dog/" class="big-button">Все породы собак</a>
+								</div>
+
+	</div>
+
+			<div class="pop-porodi">
+
+					<h2>Популярные породы кошек</h2>
+					<div class="pop-porodi-block">
+				
+				<a href="/cat/britanskaya-korotkosherstnaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/122/122bc3af3bca3022274a46e1823d6734.jpg' data-alt="Британская короткошерстная кошка">
+<noscript data-original='/upload/iblock/122/122bc3af3bca3022274a46e1823d6734.jpg' data-alt="Британская короткошерстная кошка">
+<img src='/upload/iblock/122/122bc3af3bca3022274a46e1823d6734.jpg' alt="Британская короткошерстная кошка">
+</noscript>
+</div>
+</div>
+				<span>Британская короткошерстная кошка</span>
+				</a>
+				
+				<a href="/cat/shotlandskaya-visloukhaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/7bc/7bc6223592e579f73094c57104cb0a4a.jpg' data-alt="Шотландская вислоухая кошка">
+<noscript data-original='/upload/iblock/7bc/7bc6223592e579f73094c57104cb0a4a.jpg' data-alt="Шотландская вислоухая кошка">
+<img src='/upload/iblock/7bc/7bc6223592e579f73094c57104cb0a4a.jpg' alt="Шотландская вислоухая кошка">
+</noscript>
+</div>
+</div>
+				<span>Шотландская вислоухая кошка</span>
+				</a>
+				
+				<a href="/cat/bengalskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/d52/d52cc35f589b843f364ecfd09b8723e9.jpg' data-alt="Бенгальская кошка">
+<noscript data-original='/upload/iblock/d52/d52cc35f589b843f364ecfd09b8723e9.jpg' data-alt="Бенгальская кошка">
+<img src='/upload/iblock/d52/d52cc35f589b843f364ecfd09b8723e9.jpg' alt="Бенгальская кошка">
+</noscript>
+</div>
+</div>
+				<span>Бенгальская кошка</span>
+				</a>
+				
+				<a href="/cat/manchkin/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/1ea/1eaa39ec7e0e83c08201a175ffbcb05d.jpg' data-alt="Манчкин">
+<noscript data-original='/upload/iblock/1ea/1eaa39ec7e0e83c08201a175ffbcb05d.jpg' data-alt="Манчкин">
+<img src='/upload/iblock/1ea/1eaa39ec7e0e83c08201a175ffbcb05d.jpg' alt="Манчкин">
+</noscript>
+</div>
+</div>
+				<span>Манчкин</span>
+				</a>
+				
+				<a href="/cat/siamskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/cd1/cd184f32a5002cc00b1a8a0e5d304581.jpg' data-alt="Сиамская кошка">
+<noscript data-original='/upload/iblock/cd1/cd184f32a5002cc00b1a8a0e5d304581.jpg' data-alt="Сиамская кошка">
+<img src='/upload/iblock/cd1/cd184f32a5002cc00b1a8a0e5d304581.jpg' alt="Сиамская кошка">
+</noscript>
+</div>
+</div>
+				<span>Сиамская кошка</span>
+				</a>
+				
+				<a href="/cat/sibirskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/4d1/4d156c3a13ec27bf1dfc055964a80ecd.jpg' data-alt="Сибирская кошка">
+<noscript data-original='/upload/iblock/4d1/4d156c3a13ec27bf1dfc055964a80ecd.jpg' data-alt="Сибирская кошка">
+<img src='/upload/iblock/4d1/4d156c3a13ec27bf1dfc055964a80ecd.jpg' alt="Сибирская кошка">
+</noscript>
+</div>
+</div>
+				<span>Сибирская кошка</span>
+				</a>
+				
+				<a href="/cat/abissinskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/71c/71c4a069bc3f3acf7af94cc8f62171c7.jpg' data-alt="Абиссинская кошка">
+<noscript data-original='/upload/iblock/71c/71c4a069bc3f3acf7af94cc8f62171c7.jpg' data-alt="Абиссинская кошка">
+<img src='/upload/iblock/71c/71c4a069bc3f3acf7af94cc8f62171c7.jpg' alt="Абиссинская кошка">
+</noscript>
+</div>
+</div>
+				<span>Абиссинская кошка</span>
+				</a>
+				
+				<a href="/cat/savanna-ashera/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/247/2479864e5caef68e93275f3b0e3c29a7.jpg' data-alt="Саванна (Ашера)">
+<noscript data-original='/upload/iblock/247/2479864e5caef68e93275f3b0e3c29a7.jpg' data-alt="Саванна (Ашера)">
+<img src='/upload/iblock/247/2479864e5caef68e93275f3b0e3c29a7.jpg' alt="Саванна (Ашера)">
+</noscript>
+</div>
+</div>
+				<span>Саванна (Ашера)</span>
+				</a>
+				
+				<a href="/cat/nevskaya-maskaradnaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/d6a/d6a28fb3bd0e0047eb3ca5e0a5a97691.jpg' data-alt="Невская маскарадная кошка">
+<noscript data-original='/upload/iblock/d6a/d6a28fb3bd0e0047eb3ca5e0a5a97691.jpg' data-alt="Невская маскарадная кошка">
+<img src='/upload/iblock/d6a/d6a28fb3bd0e0047eb3ca5e0a5a97691.jpg' alt="Невская маскарадная кошка">
+</noscript>
+</div>
+</div>
+				<span>Невская маскарадная кошка</span>
+				</a>
+				
+				<a href="/cat/orientalnaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/30d/30dece23ef50eacf1342423f0e3cb1ec.jpg' data-alt="Ориентальная кошка">
+<noscript data-original='/upload/iblock/30d/30dece23ef50eacf1342423f0e3cb1ec.jpg' data-alt="Ориентальная кошка">
+<img src='/upload/iblock/30d/30dece23ef50eacf1342423f0e3cb1ec.jpg' alt="Ориентальная кошка">
+</noscript>
+</div>
+</div>
+				<span>Ориентальная кошка</span>
+				</a>
+				
+				<a href="/cat/kurilskiy-bobteyl/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/de5/de527272cbe8690804f5f50134cfb2dd.jpg' data-alt="Курильский бобтейл">
+<noscript data-original='/upload/iblock/de5/de527272cbe8690804f5f50134cfb2dd.jpg' data-alt="Курильский бобтейл">
+<img src='/upload/iblock/de5/de527272cbe8690804f5f50134cfb2dd.jpg' alt="Курильский бобтейл">
+</noscript>
+</div>
+</div>
+				<span>Курильский бобтейл</span>
+				</a>
+				
+				<a href="/cat/meyn-kun/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/dd6/dd6243954bee36fe1667bb49b3f6848f.jpg' data-alt="Мейн-кун">
+<noscript data-original='/upload/iblock/dd6/dd6243954bee36fe1667bb49b3f6848f.jpg' data-alt="Мейн-кун">
+<img src='/upload/iblock/dd6/dd6243954bee36fe1667bb49b3f6848f.jpg' alt="Мейн-кун">
+</noscript>
+</div>
+</div>
+				<span>Мейн-кун</span>
+				</a>
+				
+				<a href="/cat/kornish-reks/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/456/456c2b17b1d6d9975027e72b1a12a41d.jpg' data-alt="Корниш-рекс">
+<noscript data-original='/upload/iblock/456/456c2b17b1d6d9975027e72b1a12a41d.jpg' data-alt="Корниш-рекс">
+<img src='/upload/iblock/456/456c2b17b1d6d9975027e72b1a12a41d.jpg' alt="Корниш-рекс">
+</noscript>
+</div>
+</div>
+				<span>Корниш-рекс</span>
+				</a>
+				
+				<a href="/cat/ekzoticheskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/74e/74ee63922435ecb3e1957c816b34445d.jpg' data-alt="Экзотическая кошка">
+<noscript data-original='/upload/iblock/74e/74ee63922435ecb3e1957c816b34445d.jpg' data-alt="Экзотическая кошка">
+<img src='/upload/iblock/74e/74ee63922435ecb3e1957c816b34445d.jpg' alt="Экзотическая кошка">
+</noscript>
+</div>
+</div>
+				<span>Экзотическая кошка</span>
+				</a>
+				
+				<a href="/cat/regdoll/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/e26/e26069c7fbefaa7f3b9e314ab685a8ab.jpg' data-alt="Рэгдолл">
+<noscript data-original='/upload/iblock/e26/e26069c7fbefaa7f3b9e314ab685a8ab.jpg' data-alt="Рэгдолл">
+<img src='/upload/iblock/e26/e26069c7fbefaa7f3b9e314ab685a8ab.jpg' alt="Рэгдолл">
+</noscript>
+</div>
+</div>
+				<span>Рэгдолл</span>
+				</a>
+				
+				<a href="/cat/shinshilla/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/138/1383b3ac2b57167bc556bb64298f3757.jpg' data-alt="Шиншилла">
+<noscript data-original='/upload/iblock/138/1383b3ac2b57167bc556bb64298f3757.jpg' data-alt="Шиншилла">
+<img src='/upload/iblock/138/1383b3ac2b57167bc556bb64298f3757.jpg' alt="Шиншилла">
+</noscript>
+</div>
+</div>
+				<span>Шиншилла</span>
+				</a>
+				</div>
+<div class="but-div">
+									<a href="/cat/" class="big-button">Все породы кошек</a>
+								</div>
+
+	</div>
+	</div><!--.r-side-->
+</div><!--.content-->
+<div id="bxdynamic_footerad_start" style="display:none"></div><div id="bxdynamic_footerad_end" style="display:none"></div>
+
+<div id="bxdynamic_mobfix_start" style="display:none"></div><div id="bxdynamic_mobfix_end" style="display:none"></div>
+
+<footer>
+<div class="fl fl1">
+<div class="flz">Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:</div>
+<a href="https://vk.com/lapkins_ru" class="vk socicon" rel="nofollow" target="_blank"></a>
+<a href="https://www.facebook.com/lapkins.ru/" class="fb socicon" rel="nofollow" target="_blank"></a>
+<a href="https://www.instagram.com/lapkins.ru/" class="inst socicon" rel="nofollow" target="_blank"><i class="inst-ico"></i></a>
+</div>
+<div class="fl fl2">
+<a href="/">Главная</a>
+<a href="/dog/">Собаки</a>
+<a href="/cat/">Кошки</a>
+<a href="/publ/">Журнал</a>
+<!--<a href="#">Объявления</a>-->
+	<a href="/forum/">Форум</a>
+	<a href="/klichki/">Клички</a>
+</div>
+<div class="fl fl3">
+<a href="/o-proekte/">О проекте</a>
+<!--<a href="#">Команда</a>-->
+<!--<a href="#">Реклама</a>-->
+<a href="/os/">Обратная связь</a>
+<a href="/terms/">Правила</a>
+<!--<a href="#">Вакансии</a>-->
+</div>
+<div class="fl fl4">2020 © «Lapkins.ru». Сделано с <i class="love"></i> к животным. Копирование материалов запрещено.<span class="c-c">
+<script data-skip-moving=true>document.write("<a href='//www.liveinternet.ru/click' "+"target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r"+escape(document.referrer)+((typeof(screen)=="undefined2")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,150))+";"+Math.random()+"' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script>
+</span>
+<span id="bx-composite-banner"></span></div>
+</footer>
+</div>
+<div class="top"></div>
+</div>
+
+<header>
+<a href="/" class="logo lapka"><span class="logotxt">lapkins</span></a>
+<nav class="topmenu">
+<div class="iconmenu"><span></span></div>
+<div class="itemsmenu">
+<a href="/dog/">Собаки</a>
+<a href="/cat/">Кошки</a>
+<a href="/publ/">Журнал</a>
+<a href="/forum/">Форум</a>
+</div>
+<div class="find find_btn__open">
+<i class="find-toggle"></i>
+</div>
+</nav>
+
+                <div class="login no-login" id="auth_enter"></div>
+    
+</header>
+<div class="poisk-fon" style="display: none">
+    <div class="poisk-head">
+
+        <div class="find-stroka"><input type="text" placeholder="Поиск по сайту" name="q" value="" autocomplete="off" class="find-okno"></div>
+        <span class="close"></span>
+    </div>
+    <div class="poisk-content" >
+
+    </div>
+
+</div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="/js/my.js"></script>
+<script src="//s1.lapkins.ru/jquery.fancybox.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="/bitrix/js/main/core/core.min.js?1592727109249634"></script><script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script  src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1612175319255377"></script>
+<script src="/bitrix/js/twim.recaptchafree/script.js?15445269874421"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchafree&render=explicit&hl=ru"></script>
+<script  src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16015553681051"></script>
+<script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?159272712560291"></script>
+<script src="/bitrix/js/main/core/core_ls.min.js?14888980827365"></script>
+<script src="/bitrix/js/main/core/core_frame_cache.min.js?157850107810422"></script>
+<script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?159272710958041"></script>
+
+<script>
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+<script>var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+<script>
+$(document).ready(function(){
+	$('.button-tabs').on('click', function(e){
+		e.preventDefault();
+		
+		var oldSelected = $('.act-fta').attr('data-id');
+
+		var selectedId = $(this).attr('data-id');
+
+		$('#'+oldSelected).attr('style', 'display:none');
+		$('#'+selectedId).attr('style', 'display:block');
+		$('.act-fta').removeClass('act-fta');
+		$(this).addClass('act-fta');
+	});
+});
+</script>
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");ym(44565373,"init",{id:44565373,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
+</body>
+</html><!--7433f77710e79e796da6e2c84cbb980e--><!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<script data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','footerad':'d41d8cd98f00','mobfix':'d41d8cd98f00'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+<script data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+
+<link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?15445270121861" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?159272710523459" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/lapkins/template_4743a9ee595a7bbaba3faf9c8302740d/template_4743a9ee595a7bbaba3faf9c8302740d_v1.css?1610714191137873" type="text/css"  data-template-style="true" rel="stylesheet" />
+<meta name="keywords" content="кошки, собаки, коты, псы, домашние, животные, хозяева, форум, сообщества, объявления" />
+<meta name="description" content="сообщество питомцев и их хозяев" />
+
+
+
+
+
+
+
+<style>.o-saite{height:400px;background-repeat:no-repeat;background-position:420px 30px;display:table;width:100%;position:relative;}
+.o-saite.dog{background:url(/img/sobaki.jpg);background-size:100%;height:570px;margin:-1px 0 -20px 0;color:#fff;}
+.o-saite.dog h1{font-size:32px;font-weight:800;margin:90px 0 0 0;}
+.o-saite p , .o-saite h1{margin:230px 120px 0 120px;font-size:25px;text-align:center;line-height:36px;color:#fff;}
+.o-saite h1{margin:196px 120px 0 120px;line-height:70px;font-size:55px;}
+.main-find-rezult{background:#fff;margin:-1px 0 0 0;border:1px solid #eee;position:absolute;width:100%;padding:0 0 10px;z-index:1;}
+.main-find-rezult .ava-rezult{width:70px;height:70px;}
+.main-find-rezult .content-rezult{margin:0 0 0 70px;}
+.main-find-rezult .name-rezult{font-size:20px;}
+.main-find-rezult .rezult-tags{margin:2px 0 0 0;}
+.main-find-rezult .poroda-rezult{padding:20px;}
+.o-chem{right:30px;bottom:30px;position:absolute;color:#fff;}
+.o-chem p{line-height:20px;font-size:14px;}
+.o-chem a{color:#fff;border-bottom:1px solid rgba(255,255,255,0.5);}
+.o-saite{height:600px;background-repeat:no-repeat;background-position:50% 70px;display:table;width:100%;position:relative;background-size:150px;background-color:rgba(0,0,0,0.4);}
+.main-h2{font-size:35px;margin:0;text-align:center;}
+.main-tag{text-align:center;}
+.hide-on{overflow:hidden;height:55px;}
+.show-all{text-align:center;margin:15px auto;color:#333;border-bottom:1px dotted#ddd;display:table;cursor:pointer;}
+.obh{height:300px;}
+.main-search{width:670px;line-height:19px;background:#fff;height:50px;padding:0 16px;outline:none;border:none;color:#424242;font-size:16px;border-color:#cccccc;border-radius:2px;box-shadow:inset 2px 2px 0 0 #f0f0f0;}
+.bg-fon{position:relative;margin:0 0 20px;background-size:cover;}
+.o-saite p{margin:230px 120px 0 120px;font-size:25px;text-align:center;line-height:36px;color:#fff;}
+.main-find{margin:20px auto;width:670px;position:relative;}
+.lapka-white{background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzIwMCcgd2lkdGg9JzIwMCcgIGZpbGw9IiNmZmZmZmYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTM2LjI1LDM1YzYuMjAzLDAsMTEuMjUtNS42MDcsMTEuMjUtMTIuNVM0Mi40NTMsMTAsMzYuMjUsMTBTMjUsMTUuNjA3LDI1LDIyLjVTMzAuMDQ3LDM1LDM2LjI1LDM1eiBNMzYuMjUsMTUgIGMzLjQ0NiwwLDYuMjUsMy4zNjQsNi4yNSw3LjVTMzkuNjk2LDMwLDM2LjI1LDMwUzMwLDI2LjYzNiwzMCwyMi41UzMyLjgwNCwxNSwzNi4yNSwxNXoiPjwvcGF0aD48cGF0aCBkPSJNMTYuMjUsNTVjNi4yMDMsMCwxMS4yNS01LjYwNywxMS4yNS0xMi41UzIyLjQ1MywzMCwxNi4yNSwzMFM1LDM1LjYwNyw1LDQyLjVTMTAuMDQ3LDU1LDE2LjI1LDU1eiBNMTYuMjUsMzUgIGMzLjQ0NiwwLDYuMjUsMy4zNjQsNi4yNSw3LjVTMTkuNjk2LDUwLDE2LjI1LDUwUzEwLDQ2LjYzNiwxMCw0Mi41UzEyLjgwNCwzNSwxNi4yNSwzNXoiPjwvcGF0aD48cGF0aCBkPSJNODMuNzUsMzBjLTYuMjAzLDAtMTEuMjUsNS42MDctMTEuMjUsMTIuNVM3Ny41NDcsNTUsODMuNzUsNTVTOTUsNDkuMzkzLDk1LDQyLjVTODkuOTUzLDMwLDgzLjc1LDMweiBNODMuNzUsNTAgIGMtMy40NDYsMC02LjI1LTMuMzY0LTYuMjUtNy41czIuODA0LTcuNSw2LjI1LTcuNVM5MCwzOC4zNjQsOTAsNDIuNVM4Ny4xOTYsNTAsODMuNzUsNTB6Ij48L3BhdGg+PHBhdGggZD0iTTYzLjc1LDM1QzY5Ljk1MywzNSw3NSwyOS4zOTMsNzUsMjIuNVM2OS45NTMsMTAsNjMuNzUsMTBTNTIuNSwxNS42MDcsNTIuNSwyMi41UzU3LjU0NywzNSw2My43NSwzNXogTTYzLjc1LDE1ICBjMy40NDYsMCw2LjI1LDMuMzY0LDYuMjUsNy41UzY3LjE5NiwzMCw2My43NSwzMHMtNi4yNS0zLjM2NC02LjI1LTcuNVM2MC4zMDQsMTUsNjMuNzUsMTV6Ij48L3BhdGg+PHBhdGggZD0iTTM0LjQ0Myw0Ni45NDZMMjQuMDU2LDU5LjkzQzIxLjQzLDYzLjIxMiwyMCw2Ny4yOSwyMCw3MS40OTJDMjAsODEuNzE0LDI4LjI4Niw5MCwzOC41MDgsOTBoMjIuOTg0ICBDNzEuNzE0LDkwLDgwLDgxLjcxNCw4MCw3MS40OTJjMC00LjIwMy0xLjQzLTguMjgtNC4wNTYtMTEuNTYyTDY1LjU1Nyw0Ni45NDZDNjIuMDQ1LDQyLjU1Niw1Ni43MjcsNDAsNTEuMTA1LDQwaC0yLjIwOSAgQzQzLjI3Myw0MCwzNy45NTUsNDIuNTU2LDM0LjQ0Myw0Ni45NDZ6IE00OC44OTUsNDcuNWgyLjIwOWMzLjM2MiwwLDYuNDk1LDEuNTA2LDguNTk2LDQuMTMxbDEwLjM4OCwxMi45ODQgIGMxLjU1NiwxLjk0NCwyLjQxMiw0LjM4NywyLjQxMiw2Ljg3N2MwLDYuMDctNC45MzgsMTEuMDA4LTExLjAwOCwxMS4wMDhIMzguNTA4Yy02LjA3LDAtMTEuMDA4LTQuOTM4LTExLjAwOC0xMS4wMDggIGMwLTIuNDksMC44NTctNC45MzIsMi40MTItNi44NzdMNDAuMyw1MS42MzFDNDIuNCw0OS4wMDYsNDUuNTMzLDQ3LjUsNDguODk1LDQ3LjV6Ij48L3BhdGg+PC9zdmc+");}
+
+@media screen and (max-width:720px){
+.main-find{width: 90%;}
+.main-search{width:100%;}
+.o-saite p{margin:230px 0 0;font-size: 23px;line-height:30px;}
+.bg-fon{background-position:50%;}
+.o-saite h1{margin:196px 20px 0 20px;line-height:70px;font-size:38px;}
+.o-saite{height:400px;background-size:90px;}
+.o-saite p{margin:165px 0 0;}
+.o-saite h1{margin:86px 20px 0 20px;}
+}
+@media screen and (max-width:600px){
+.main-find-rezult .poroda-rezult{width:100%;}
+.o-saite{background-position:50% 35px;}
+.o-saite p{margin: 140px 0 0;}
+.o-chem{text-align:center;margin:-40px auto 0;position:relative;right:0;}
+.main-find-rezult .name-rezult{font-size:16px;}
+}</style>
+
+<title>Lapkins.ru — собаки, кошки и их хозяева</title>
+
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="Lapkins.ru" />
+<meta property="og:url" content="https://lapkins.ru/" />
+<meta property="og:title" content="Lapkins.ru — собаки, кошки и их хозяева" />
+<meta property="og:description" content="сообщество питомцев и их хозяев" />
+</head>
+<body>
+
+<div class="wrapper">
+
+<div id="bxdynamic_y0XwfU_start" style="display:none"></div><div id="bxdynamic_y0XwfU_end" style="display:none"></div>
+    <div class="page">
+        <span class="hidden-mask"></span>
+        <div class="content">
+            <div class="r-side">
+
+<div class="bg-fon" style="background-image:url(/upload/iblock/578/578eef26ed7500de1752786c293f67ca.jpg);">
+<div class="o-saite lapka-white">
+<p>Lapkins.ru — сообщество питомцев и их хозяев.</p>
+
+<div class="main-find">
+    <input id="title-search-input" type="text" data-target="index" placeholder="Поиск информации по породам" name="q" autocomplete="off" class="main-search">
+    <div class="main-find-rezult" style="display: none"></div>
+</div>
+</div>
+<div class="o-chem">
+<p><a href="/cat/somaliyskaya-koshka/">Сомалийская кошка</a> и еще<br>112 кошек в нашем <a href="/cat/">каталоге пород</a>.</p>
+</div>
+</div>
+
+<div class="forum-inside">
+    <h2 class="dr-h2">Новые материалы</h2>
+    <div class="ob-line-hid">
+        <div class="ob-line">
+	    <div class="ob-block" id="bx_3218110189_23039">
+<div class="ob-placeholder"></div>
+<div class="ob-back" style="background: rgb(32, 32, 48);">
+<div class="ob-image" style='background-image:url("/upload/resize_cache/iblock/5db/544_400_2/5dbd09653574a8870bdd3904db6c882d.jpeg")'></div>
+<div class="ob-blur" style='background-image:url("/upload/resize_cache/iblock/5db/544_400_2/5dbd09653574a8870bdd3904db6c882d.jpeg")'></div>
+<div class="ob-grad" style="background: linear-gradient(to top, rgb(32, 32, 48) 25%, rgba(32, 32, 48, 0.85) 35%, rgba(32, 32, 48, 0.6) 45%, rgba(32, 32, 48, 0) 70%);"></div>
+</div>
+<a href="/p/kak-pravilno-myt-sobaku/" class="ob-href">
+<div class="ob-text">
+<div class="ob-tz">Как правильно мыть собаку</div>
+<div class="ob-ta">Ухоженная шерсть собаки – настоящее украшение и показатель хорошего здоровья питомца, а также свидетельство...</div>
+</div>
+</a>
+</div>
+	
+
+	    <div class="ob-block" id="bx_3218110189_22615">
+<div class="ob-placeholder"></div>
+<div class="ob-back" style="background: rgb(32, 32, 48);">
+<div class="ob-image" style='background-image:url("/upload/resize_cache/iblock/15c/544_400_2/15c9d0d44d3b9042834f7fd095577ecc.jpg")'></div>
+<div class="ob-blur" style='background-image:url("/upload/resize_cache/iblock/15c/544_400_2/15c9d0d44d3b9042834f7fd095577ecc.jpg")'></div>
+<div class="ob-grad" style="background: linear-gradient(to top, rgb(32, 32, 48) 25%, rgba(32, 32, 48, 0.85) 35%, rgba(32, 32, 48, 0.6) 45%, rgba(32, 32, 48, 0) 70%);"></div>
+</div>
+<a href="/p/skolko-vremeni-koshka-vynashivaet-kotyat/" class="ob-href">
+<div class="ob-text">
+<div class="ob-tz">Сколько времени кошка вынашивает котят</div>
+<div class="ob-ta">Как правило, кошки становятся половозрелыми, то есть способными давать потомство, в возрасте 6-8 месяцев. Но...</div>
+</div>
+</a>
+</div>
+	
+
+	    <div class="ob-block" id="bx_3218110189_22376">
+<div class="ob-placeholder"></div>
+<div class="ob-back" style="background: rgb(32, 32, 48);">
+<div class="ob-image" style='background-image:url("/upload/resize_cache/iblock/25a/544_400_2/25a86d308ba48de833b6c19ee52938ea.jpg")'></div>
+<div class="ob-blur" style='background-image:url("/upload/resize_cache/iblock/25a/544_400_2/25a86d308ba48de833b6c19ee52938ea.jpg")'></div>
+<div class="ob-grad" style="background: linear-gradient(to top, rgb(32, 32, 48) 25%, rgba(32, 32, 48, 0.85) 35%, rgba(32, 32, 48, 0.6) 45%, rgba(32, 32, 48, 0) 70%);"></div>
+</div>
+<a href="/p/kak-podstrich-kogti-koshke/" class="ob-href">
+<div class="ob-text">
+<div class="ob-tz">Как подстричь когти кошке</div>
+<div class="ob-ta">У «кошачьего маникюра» множество противников и сторонников. Первые считают, что котики могут самостоятельно...</div>
+</div>
+</a>
+</div>
+	
+
+            </div>
+        </div>
+    </div>
+    
+
+<!--helloArray
+(
+    [ID] => 1999
+    [FORUM_ID] => 71
+    [TOPIC_ID] => 
+    [TITLE] => Это Корги? 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте, подскажите пожалуйста 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 25
+    [USER_START_ID] => 3155
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1999-eto-korgi_
+    [START_DATE] => 18.03.2021 18:53:05
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 268
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 18.03.2021 19:31:43
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-18 19:31:43
+    [LAST_MESSAGE_ID] => 5168
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 268
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 18.03.2021 19:31:43
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-18 19:31:43
+    [ABS_LAST_MESSAGE_ID] => 5168
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Вельш-корги пемброк
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1997
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Стул в щенка 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. У меня щенок француз 3 месяца. Пару дней назад сделали 2 прививку. Кормила кормом который дал заводчик, но корм заканчивался и заводчица мне посоветовала взять корм Forza 10 для щенков. Я начала их смешивать, потом перевела только на новый к
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 61
+    [USER_START_ID] => 3147
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1997-stul-v-shchenka
+    [START_DATE] => 17.03.2021 17:13:27
+    [POSTS] => 4
+    [LAST_POSTER_ID] => 3154
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 18.03.2021 19:56:41
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-18 19:56:41
+    [LAST_MESSAGE_ID] => 5169
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 3154
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 18.03.2021 19:56:41
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-18 19:56:41
+    [ABS_LAST_MESSAGE_ID] => 5169
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1988
+    [FORUM_ID] => 78
+    [TOPIC_ID] => 
+    [TITLE] => Вопрос. Йорк скулит в одиночестве?
+    [TAGS] => 
+    [DESCRIPTION] => Планирую завести йорка. Но днем нас не бывает дома. Сильно ли скучает йорик в одиночестве? Скулит? Соседи будут жаловаться?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 45
+    [USER_START_ID] => 3138
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1988-vopros.-york-skulit-v-odinochestve
+    [START_DATE] => 16.03.2021 07:52:35
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 497
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 16.03.2021 17:17:04
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-16 17:17:04
+    [LAST_MESSAGE_ID] => 5148
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 497
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 16.03.2021 17:17:04
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-16 17:17:04
+    [ABS_LAST_MESSAGE_ID] => 5148
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Йоркширский терьер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1987
+    [FORUM_ID] => 83
+    [TOPIC_ID] => 
+    [TITLE] => Роды у лабрадору 
+    [TAGS] => 
+    [DESCRIPTION] => Пожалуйста откликнетесь , у беременной собаки чёрные выделение родился потом щенок не доразвитый без шерсти сантиметров 9-10 . И нет схваток , что делать ?????!!!!! Пожалуйста скажите . Роды вторые . 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 33
+    [USER_START_ID] => 3136
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1987-rody-u-labradoru
+    [START_DATE] => 15.03.2021 21:56:32
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 465
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 16.03.2021 17:11:42
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-16 17:11:42
+    [LAST_MESSAGE_ID] => 5147
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 465
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 16.03.2021 17:11:42
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-16 17:11:42
+    [ABS_LAST_MESSAGE_ID] => 5147
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Лабрадор-ретривер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1986
+    [FORUM_ID] => 71
+    [TOPIC_ID] => 
+    [TITLE] => Ищут свой дом щенки вельш корги кардиган Ормай «П»
+    [TAGS] => 
+    [DESCRIPTION] => Ищут свой дом щенки вельш корги кардиган Ормай «П».
+Свободны две суки и пять кобелей, все щенки тигрово-белого окраса.
+Дата рождения 26.12.2020
+Отец – Ormai Cillini (Kerman Catcher in the Rye & Ormai Jemima) JChRus, JChRKF
+Мать – Ormai Verona (Man on 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 45
+    [USER_START_ID] => 1190
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1986-ishchut-svoy-dom-shchenki-velsh-korgi-kardigan-ormay-_p
+    [START_DATE] => 15.03.2021 19:04:26
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 25
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 16.03.2021 16:56:16
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-16 16:56:16
+    [LAST_MESSAGE_ID] => 5146
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 25
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 16.03.2021 16:56:16
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-16 16:56:16
+    [ABS_LAST_MESSAGE_ID] => 5146
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Вельш-корги пемброк
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1985
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Как вылечить кота от МКБ ?
+    [TAGS] => 
+    [DESCRIPTION] => И как оградить кошку 5 лет от МКБ? Кошка стерилизована, питается натуралкой. Задаю вопрос, потому что кот, живущий у бабушки, подхватил мкб
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 26
+    [USER_START_ID] => 1706
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1985-kak-vylechit-kota-ot-mkb
+    [START_DATE] => 15.03.2021 15:11:42
+    [POSTS] => 3
+    [LAST_POSTER_ID] => 1783
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 18.03.2021 10:59:23
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-18 10:59:23
+    [LAST_MESSAGE_ID] => 5163
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 1783
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 18.03.2021 10:59:23
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-18 10:59:23
+    [ABS_LAST_MESSAGE_ID] => 5163
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1984
+    [FORUM_ID] => 28
+    [TOPIC_ID] => 
+    [TITLE] => Вес котенка
+    [TAGS] => 
+    [DESCRIPTION] => Котёнок 22.07.2020 года вес 2700 смотрю везде пишут что котёнок такого возраста должен весить чуть ли не 4-5 кг. Был переезд, стресс, но все равно маловато. Скажите почему?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 90
+    [USER_START_ID] => 3116
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1984-ves-kotenka
+    [START_DATE] => 14.03.2021 22:12:22
+    [POSTS] => 4
+    [LAST_POSTER_ID] => 3116
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 18.03.2021 02:55:35
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-18 02:55:35
+    [LAST_MESSAGE_ID] => 5161
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 3116
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 18.03.2021 02:55:35
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-18 02:55:35
+    [ABS_LAST_MESSAGE_ID] => 5161
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Мейн-кун
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1983
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Прошу вашей помощи!!!!  SOS!!!!! 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. У нас такая проблема, ранее если пролистать то найдете от меня обращение.  В общем в крации собака переодически проявляла агрессию к супругу. Врач (сука)  изъвеняюсь, посоветовала кастрировать.  Все сделали по ее рекомендации.  Жаль документ
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 128
+    [USER_START_ID] => 2064
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1983-proshu-vashey-pomoshchi_-sos_
+    [START_DATE] => 13.03.2021 17:16:28
+    [POSTS] => 3
+    [LAST_POSTER_ID] => 2522
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 14.03.2021 15:36:41
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-14 15:36:41
+    [LAST_MESSAGE_ID] => 5132
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2522
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 14.03.2021 15:36:41
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-14 15:36:41
+    [ABS_LAST_MESSAGE_ID] => 5132
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1982
+    [FORUM_ID] => 60
+    [TOPIC_ID] => 
+    [TITLE] => Аргентинские доги Пахра Магнифика
+    [TAGS] => 
+    [DESCRIPTION] => У нас свободны два мальчика аргентинского дога. Белоснежные, обещают вырасти очень красивые и крупными дого.
+На фото 2, 3 мама щенков Зои и на фото 4, 5 дедушка щенков Zaino
+Эксклюзивное накопление кровей лучших питомников породы Verdes Pampas (Бразилия
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 68
+    [USER_START_ID] => 3120
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1982-argentinskie-dogi-pakhra-magnifika
+    [START_DATE] => 12.03.2021 16:08:46
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 3120
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 12.03.2021 16:08:46
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-12 16:08:46
+    [LAST_MESSAGE_ID] => 5123
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 3120
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 12.03.2021 16:08:46
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-12 16:08:46
+    [ABS_LAST_MESSAGE_ID] => 5123
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Аргентинский дог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1980
+    [FORUM_ID] => 78
+    [TOPIC_ID] => 
+    [TITLE] => Помощь в питании
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте!Срочно нужна помощь!купили йорочку,ей 4 месяц.очень плохо ест!когда купили кормили только детским питанием тема(мясным),я начала вводить сухой корм. Попробавала пурину ван,посоветовала девушка,у которой купили щенка.Почти не ела его.Купила ро
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 62
+    [USER_START_ID] => 3121
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1980-pomoshch-v-pitanii
+    [START_DATE] => 12.03.2021 15:18:50
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 441
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 13.03.2021 13:16:41
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-13 13:16:41
+    [LAST_MESSAGE_ID] => 5124
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 441
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 13.03.2021 13:16:41
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-13 13:16:41
+    [ABS_LAST_MESSAGE_ID] => 5124
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Йоркширский терьер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1979
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Какой объём сухого корма давать щенку!?
+    [TAGS] => 
+    [DESCRIPTION] => Какой объём сухого корма давать 4х месячному щенку в день?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 76
+    [USER_START_ID] => 3117
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1979-kakoy-obyem-sukhogo-korma-davat-shchenku_
+    [START_DATE] => 11.03.2021 23:27:43
+    [POSTS] => 1
+    [LAST_POSTER_ID] => 2522
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 12.03.2021 12:28:52
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-12 12:28:52
+    [LAST_MESSAGE_ID] => 5120
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2522
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 12.03.2021 12:28:52
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-12 12:28:52
+    [ABS_LAST_MESSAGE_ID] => 5120
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1978
+    [FORUM_ID] => 28
+    [TOPIC_ID] => 
+    [TITLE] => Мейн-кун 10 месяцев
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. Приобрела мейн-куна 2 дня назад. Он пугливый и не выходит вообще из под кровати. Только когда меня нет. Как его приручить, чтоб он не боялся
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 175
+    [USER_START_ID] => 3116
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1978-meyn_kun-10-mesyatsev
+    [START_DATE] => 11.03.2021 16:48:22
+    [POSTS] => 2
+    [LAST_POSTER_ID] => 3116
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 11.03.2021 20:09:55
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-11 20:09:55
+    [LAST_MESSAGE_ID] => 5116
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 3116
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 11.03.2021 20:09:55
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-11 20:09:55
+    [ABS_LAST_MESSAGE_ID] => 5116
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Мейн-кун
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1849
+    [FORUM_ID] => 28
+    [TOPIC_ID] => 
+    [TITLE] => Мейнкун или метис?
+    [TAGS] => 
+    [DESCRIPTION] => Дорогие форумчане! Возможно, на первом фото котята ещё малыши, но хочется узнать Вашего мнения. Насколько красавцы с двух фото похожи на чистокровных? Спасибо!
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 912
+    [USER_START_ID] => 2736
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1849-meynkun-ili-metis
+    [START_DATE] => 02.01.2021 03:07:42
+    [POSTS] => 31
+    [LAST_POSTER_ID] => 2948
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 09.02.2021 16:03:52
+    [LAST_POST_DATE_ORIGINAL] => 2021-02-09 16:03:52
+    [LAST_MESSAGE_ID] => 4986
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2948
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 09.02.2021 16:03:52
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-02-09 16:03:52
+    [ABS_LAST_MESSAGE_ID] => 4986
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Мейн-кун
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1884
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Питомник IMPERIAL-DOG 89169900618
+    [TAGS] => 
+    [DESCRIPTION] => Всем привет. Купили щенка французского бульдога в вышеуказанном питомники на авито, картинки красивые щенков и они есть в наличие, вроде как питомник, вообщем купили. Привезли домой, щенок шустрый, игривый. Спустя день-два щенок перестал кушать, спал пост
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 1783
+    [USER_START_ID] => 2802
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1884-pitomnik-imperial_dog-89169900618
+    [START_DATE] => 17.01.2021 14:32:59
+    [POSTS] => 11
+    [LAST_POSTER_ID] => 2890
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 04.02.2021 20:21:39
+    [LAST_POST_DATE_ORIGINAL] => 2021-02-04 20:21:39
+    [LAST_MESSAGE_ID] => 4978
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2890
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 04.02.2021 20:21:39
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-02-04 20:21:39
+    [ABS_LAST_MESSAGE_ID] => 4978
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1845
+    [FORUM_ID] => 38
+    [TOPIC_ID] => 
+    [TITLE] => У котенка Регдола понос и иногда рвота.
+    [TAGS] => 
+    [DESCRIPTION] => Моему коту 7 месяцев, на данный момент никак не получается определиться с сбалансированным питание, чтобы нашему коту подходило. Когда он у нас только появился (где-то 2,5-3 месяца ему было), мы его кормили сухим кормом от Роял кинин киттен до 12 месяцев 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 339
+    [USER_START_ID] => 2731
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1845-u-kotenka-regdola-ponos-i-inogda-rvota.
+    [START_DATE] => 01.01.2021 14:46:33
+    [POSTS] => 9
+    [LAST_POSTER_ID] => 2759
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 08.01.2021 12:16:53
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-08 12:16:53
+    [LAST_MESSAGE_ID] => 4842
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2759
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 08.01.2021 12:16:53
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-08 12:16:53
+    [ABS_LAST_MESSAGE_ID] => 4842
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Рэгдолл
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1896
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Маленький вес 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте! Приобрели девочку бульдожку 21.01. 21 у местного заводчика. Щенки от первого помета 10.11.20г Меня пугает её маленький вес 3100, смотрю фотографии щенков они все крупные, шкурастые а у моей косточки,ребра торчат. Как можно проверить настояща
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 469
+    [USER_START_ID] => 2869
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1896-malenkiy-ves
+    [START_DATE] => 26.01.2021 14:20:49
+    [POSTS] => 9
+    [LAST_POSTER_ID] => 2869
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 12.03.2021 10:43:31
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-12 10:43:31
+    [LAST_MESSAGE_ID] => 5119
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2869
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 12.03.2021 10:43:31
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-12 10:43:31
+    [ABS_LAST_MESSAGE_ID] => 5119
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1848
+    [FORUM_ID] => 14
+    [TOPIC_ID] => 
+    [TITLE] => Кошка и котёнок 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте! У кошки родились котята, 4 отдали, хотим одного оставить , и хотим узнать не будет ли кошка бить котёнка, хотим оставить девочку. 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 136
+    [USER_START_ID] => 2733
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1848-koshka-i-kotyenok
+    [START_DATE] => 01.01.2021 16:55:34
+    [POSTS] => 7
+    [LAST_POSTER_ID] => 2725
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 04.01.2021 11:33:24
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-04 11:33:24
+    [LAST_MESSAGE_ID] => 4813
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2725
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 04.01.2021 11:33:24
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-04 11:33:24
+    [ABS_LAST_MESSAGE_ID] => 4813
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Британская короткошерстная кошка
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1852
+    [FORUM_ID] => 14
+    [TOPIC_ID] => 
+    [TITLE] => Крики ночные
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте,может кто сможет помочь,у меня кошка,британка,5 лет,стерилизованная, последние 6 месяцев сходит сума ,орет ночами как ненормальная!!! Ходила к ветеринару,со стороны здоровья проблем нет,все в один голос говорят-скучает(дело в том,что 6 месяце
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 319
+    [USER_START_ID] => 2741
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1852-kriki-nochnye
+    [START_DATE] => 04.01.2021 00:04:53
+    [POSTS] => 7
+    [LAST_POSTER_ID] => 2741
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 12.01.2021 22:58:44
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-12 22:58:44
+    [LAST_MESSAGE_ID] => 4876
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2741
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 12.01.2021 22:58:44
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-12 22:58:44
+    [ABS_LAST_MESSAGE_ID] => 4876
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Британская короткошерстная кошка
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1865
+    [FORUM_ID] => 78
+    [TOPIC_ID] => 
+    [TITLE] => У Йорка ломкая шерсть и жёсткая. Что делать? 
+    [TAGS] => 
+    [DESCRIPTION] => Всем привет. У нас девочка, ей 4 мес. Она сразу была не очень пушистая. Покупали в 2.5 мес. Родители Йорки, но без родословной. И мы такие же. Стала почти и стали проявляться гены далеко не Йорка. Выяснили, что у отца нашей девочки в роду действительно бы
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 988
+    [USER_START_ID] => 2791
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1865-u-yorka-lomkaya-sherst-i-zhyestkaya.-chto-delat_
+    [START_DATE] => 11.01.2021 00:17:36
+    [POSTS] => 7
+    [LAST_POSTER_ID] => 2791
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 13.01.2021 14:59:11
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-13 14:59:11
+    [LAST_MESSAGE_ID] => 4886
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2791
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 13.01.2021 14:59:11
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-13 14:59:11
+    [ABS_LAST_MESSAGE_ID] => 4886
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Йоркширский терьер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1910
+    [FORUM_ID] => 106
+    [TOPIC_ID] => 
+    [TITLE] => Возникли сомнения по породе 
+    [TAGS] => 
+    [DESCRIPTION] => Взяли щенка с метрикой по РКФ. Связывались с клубом. Клеймо и щенка подтвердил. Ему 3 месяца, был на плохом корме. Обратились в ветклиники проверить здоровье — там сказали, что это боксёр. Мы в растерянности. Какие у вас мысли на этот счёт 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 514
+    [USER_START_ID] => 2913
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1910-voznikli-somneniya-po-porode
+    [START_DATE] => 02.02.2021 14:25:03
+    [POSTS] => 7
+    [LAST_POSTER_ID] => 2913
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 03.03.2021 11:05:24
+    [LAST_POST_DATE_ORIGINAL] => 2021-03-03 11:05:24
+    [LAST_MESSAGE_ID] => 5076
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2913
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 03.03.2021 11:05:24
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-03-03 11:05:24
+    [ABS_LAST_MESSAGE_ID] => 5076
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Французский бульдог
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1850
+    [FORUM_ID] => 104
+    [TOPIC_ID] => 
+    [TITLE] => 10 лет кобель облысел
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. Небольшое отступление. 3 года назад с передержки взяла кобеля таксы. На передержку он попал с улицы, подобрала добрая девочка (пес несколько дней "бомжевал" на улице). Когда забрала кобеля хвост был облезший немного на бугорках позвонков, гл
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 180
+    [USER_START_ID] => 2737
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1850-10-let-kobel-oblysel
+    [START_DATE] => 02.01.2021 20:06:02
+    [POSTS] => 6
+    [LAST_POSTER_ID] => 2737
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 03.01.2021 17:45:03
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-03 17:45:03
+    [LAST_MESSAGE_ID] => 4804
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2737
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 03.01.2021 17:45:03
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-03 17:45:03
+    [ABS_LAST_MESSAGE_ID] => 4804
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Такса
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1855
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Сильный стресс у кота
+    [TAGS] => 
+    [DESCRIPTION] => Всем привет! Взяли неделю назад кота, ему 7 месяцев. Похоже, что он рос всё время с другими животными, но с людьми тесного контакта не было. Очень нас боится, всё время шипит. Вроде начал немного привыкать, но дело очень осложнилось тем, что у него какая-
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 49
+    [USER_START_ID] => 2762
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1855-silnyy-stress-u-kota
+    [START_DATE] => 07.01.2021 15:51:25
+    [POSTS] => 6
+    [LAST_POSTER_ID] => 2725
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 08.01.2021 01:06:37
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-08 01:06:37
+    [LAST_MESSAGE_ID] => 4839
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2725
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 08.01.2021 01:06:37
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-08 01:06:37
+    [ABS_LAST_MESSAGE_ID] => 4839
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1857
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Вязка котов разного возраста 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте. Коту 1,5 года, дворняжка маленького размера. Кошке 4 года, полуперс, намного больше по размеру. У обоих это первая вязка. Кошка переехала 2,5 недели назад к коту, сутки назад началась течка. Кот залезает на неё, но тычется в спину, никак поп
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 42
+    [USER_START_ID] => 2764
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1857-vyazka-kotov-raznogo-vozrasta
+    [START_DATE] => 07.01.2021 19:53:51
+    [POSTS] => 6
+    [LAST_POSTER_ID] => 2764
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 08.01.2021 01:08:23
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-08 01:08:23
+    [LAST_MESSAGE_ID] => 4840
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2764
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 08.01.2021 01:08:23
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-08 01:08:23
+    [ABS_LAST_MESSAGE_ID] => 4840
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1903
+    [FORUM_ID] => 28
+    [TOPIC_ID] => 
+    [TITLE] => Мейн кунята 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте любители и владельцы такой замечательной породы кошек как мейн кун! Вчера наконец то забрали своё маленькое чудо от заводчицы. Мейн кун мальчик . 4 февраля будет 2 месяца. Столкнулись с такой лично для меня проблемой. Заводчики сказали что к 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 579
+    [USER_START_ID] => 2882
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1903-meyn-kunyata
+    [START_DATE] => 28.01.2021 13:17:09
+    [POSTS] => 6
+    [LAST_POSTER_ID] => 2882
+    [LAST_POSTER_NAME] => SYSTEM
+    [LAST_POST_DATE] => 10.02.2021 16:40:37
+    [LAST_POST_DATE_ORIGINAL] => 2021-02-10 16:40:37
+    [LAST_MESSAGE_ID] => 5001
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2882
+    [ABS_LAST_POSTER_NAME] => SYSTEM
+    [ABS_LAST_POST_DATE] => 10.02.2021 16:40:37
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-02-10 16:40:37
+    [ABS_LAST_MESSAGE_ID] => 5001
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Мейн-кун
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1824
+    [FORUM_ID] => 83
+    [TOPIC_ID] => 
+    [TITLE] => Брошенный лабрадор
+    [TAGS] => 
+    [DESCRIPTION] => Помогите найти дом для лабрадора. Живёт на улице,на остановке. Уже долго. Очень умный. Добрый,воспитанный мальчик. Любит людей,доверяет. Кто то выбросил на улицу. К себе взять не могу- два добермана взрослых. Никому не нужен. Уже не знаю что делать. Помог
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 465
+    [USER_START_ID] => 2665
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1824-broshennyy-labrador
+    [START_DATE] => 19.12.2020 21:07:03
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2665
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 19.12.2020 21:07:03
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-19 21:07:03
+    [LAST_MESSAGE_ID] => 4695
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2665
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 19.12.2020 21:07:03
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-19 21:07:03
+    [ABS_LAST_MESSAGE_ID] => 4695
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Лабрадор-ретривер
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1826
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Поездки с питомцем
+    [TAGS] => 
+    [DESCRIPTION] => Друзья, я работаю над дипломным проектом на тему «Безопасной транспортировки животных». Создаю дизайн переноски для наших питомцев.
+⠀
+Буда рада, если вы поможете ответить на 10 простых вопросов. Для меня важно получить обратную связь владельцев домашних
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 18
+    [USER_START_ID] => 2666
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1826-poezdki-s-pitomtsem
+    [START_DATE] => 20.12.2020 09:39:27
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2666
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 20.12.2020 09:39:27
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-20 09:39:27
+    [LAST_MESSAGE_ID] => 4697
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2666
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 20.12.2020 09:39:27
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-20 09:39:27
+    [ABS_LAST_MESSAGE_ID] => 4697
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1829
+    [FORUM_ID] => 89
+    [TOPIC_ID] => 
+    [TITLE] => Немецкая овчарка
+    [TAGS] => 
+    [DESCRIPTION] => Подскажите пожалуйста! Предложили взять немецкую овчарку, ей уже 1,5 года, отдают в связи браковки. Жила и воспитывалась в служебных условиях, т.е. занимались кинологи. Стоит ли брать? И привыкнет ли она к семье?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 245
+    [USER_START_ID] => 2677
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1829-nemetskaya-ovcharka
+    [START_DATE] => 23.12.2020 07:56:00
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2677
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 23.12.2020 07:56:00
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-23 07:56:00
+    [LAST_MESSAGE_ID] => 4717
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2677
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 23.12.2020 07:56:00
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-23 07:56:00
+    [ABS_LAST_MESSAGE_ID] => 4717
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Немецкая овчарка
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1832
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Какую игрушку лучше купить активной кошке?
+    [TAGS] => 
+    [DESCRIPTION] => Любит катать комочки бумаги, поэтому остановили выбор на этих.какая из игрушек безопаснее?
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 17
+    [USER_START_ID] => 1706
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1832-kakuyu-igrushku-luchshe-kupit-aktivnoy-koshke
+    [START_DATE] => 24.12.2020 13:51:23
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 1706
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 24.12.2020 13:51:23
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-24 13:51:23
+    [LAST_MESSAGE_ID] => 4727
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 1706
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 24.12.2020 13:51:23
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-24 13:51:23
+    [ABS_LAST_MESSAGE_ID] => 4727
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1833
+    [FORUM_ID] => 4
+    [TOPIC_ID] => 
+    [TITLE] => Питомники в Москве йоркширский терьер 
+    [TAGS] => 
+    [DESCRIPTION] => Добрый день. Хочу приобрести мальчика, йоркширский терьер. Подскажите в Москве надёжных разводчиков данной породы. Спасибо)
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 15
+    [USER_START_ID] => 2684
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1833-pitomniki-v-moskve-yorkshirskiy-terer
+    [START_DATE] => 24.12.2020 15:01:04
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2684
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 24.12.2020 15:01:04
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-24 15:01:04
+    [LAST_MESSAGE_ID] => 4728
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2684
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 24.12.2020 15:01:04
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-24 15:01:04
+    [ABS_LAST_MESSAGE_ID] => 4728
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Собаки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1836
+    [FORUM_ID] => 71
+    [TOPIC_ID] => 
+    [TITLE] => Щенок - проблемы с туалетом
+    [TAGS] => 
+    [DESCRIPTION] => Привет! У нас щенку 2 месяца. Заводчица сразу не объяснила, что корм надо размачивать. На третий день он стал вялый, очень часто какал, иногда просто слизью. На четвёртый наоборот тужился и без результата. Отвезли в клинику - дали дюфалак, ночью пропоноси
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 672
+    [USER_START_ID] => 2698
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1836-shchenok-_-problemy-s-tualetom
+    [START_DATE] => 26.12.2020 16:13:27
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2698
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 26.12.2020 16:13:27
+    [LAST_POST_DATE_ORIGINAL] => 2020-12-26 16:13:27
+    [LAST_MESSAGE_ID] => 4733
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2698
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 26.12.2020 16:13:27
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2020-12-26 16:13:27
+    [ABS_LAST_MESSAGE_ID] => 4733
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Вельш-корги пемброк
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1854
+    [FORUM_ID] => 102
+    [TOPIC_ID] => 
+    [TITLE] => Какие питомники можете посоветовать?
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте! Подскажите, пожалуйста. Собираюсь завести собаку породы сиба-ину. Может кто-нибудь может подсказать хорошие питомники, желательно Москва и Московская область. 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 168
+    [USER_START_ID] => 2763
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1854-kakie-pitomniki-mozhete-posovetovat
+    [START_DATE] => 07.01.2021 15:43:07
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2763
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 07.01.2021 15:43:07
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-07 15:43:07
+    [LAST_MESSAGE_ID] => 4822
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2763
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 07.01.2021 15:43:07
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-07 15:43:07
+    [ABS_LAST_MESSAGE_ID] => 4822
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Сиба-ину
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1858
+    [FORUM_ID] => 3
+    [TOPIC_ID] => 
+    [TITLE] => Рвота у кота
+    [TAGS] => 
+    [DESCRIPTION] => Месяц назад взяли кота с улицы, оказался взрослым, через некоторое время начал блевать  прозрачной жижей с малым количеством пены, понизилась температура, отвезти к врачу, вылечили, через пару недель снова началась та же история, денег на лечения уже не о
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 9
+    [USER_START_ID] => 2765
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1858-rvota-u-kota
+    [START_DATE] => 07.01.2021 22:18:40
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2765
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 07.01.2021 22:18:40
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-07 22:18:40
+    [LAST_MESSAGE_ID] => 4830
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2765
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 07.01.2021 22:18:40
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-07 22:18:40
+    [ABS_LAST_MESSAGE_ID] => 4830
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Кошки
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1859
+    [FORUM_ID] => 94
+    [TOPIC_ID] => 
+    [TITLE] => Глистогонить
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте, сразу извинюсь за фото. 
+Может такое не принято обсуждать , но этот вопрос стоит внимания.
+
+Купили шпица 2 месяца, начали глистогонить перед первой прививкой. И уже месяц глистогоню каждые 10 дней. А глисты так и не уходят от нас.. глисто
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 300
+    [USER_START_ID] => 2768
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1859-glistogonit
+    [START_DATE] => 08.01.2021 04:53:15
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2768
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 08.01.2021 04:53:15
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-08 04:53:15
+    [LAST_MESSAGE_ID] => 4841
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2768
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 08.01.2021 04:53:15
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-08 04:53:15
+    [ABS_LAST_MESSAGE_ID] => 4841
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Померанский шпиц
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1861
+    [FORUM_ID] => 104
+    [TOPIC_ID] => 
+    [TITLE] => Кривая задняя лапа 
+    [TAGS] => 
+    [DESCRIPTION] => Такса, девочка, 4 месяца. Обратила внимание, что у щенка кривая одна задняя лапа. Левая при ходьбе ставится прчсо6, а правая изгибается дугой. Есть ли повод для беспокойства? (
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 40
+    [USER_START_ID] => 2775
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1861-krivaya-zadnyaya-lapa
+    [START_DATE] => 09.01.2021 02:23:46
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2775
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 09.01.2021 02:23:46
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-09 02:23:46
+    [LAST_MESSAGE_ID] => 4844
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2775
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 09.01.2021 02:23:46
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-09 02:23:46
+    [ABS_LAST_MESSAGE_ID] => 4844
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Такса
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1863
+    [FORUM_ID] => 89
+    [TOPIC_ID] => 
+    [TITLE] => Здравствуйте , подскажите немец , вео, или двортерьер))?Лапы здоровые (большие), задок не  опущен . 3.5 месяца. 
+    [TAGS] => 
+    [DESCRIPTION] => Здравствуйте , подскажите немец , вео, или двортерьер))?Лапы здоровые (большие), задок не  опущен . 3.5 месяца. 
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 256
+    [USER_START_ID] => 2789
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1863-zdravstvuyte-_-podskazhite-nemets-_-veo_-ili-dvorterer_lapy-zdorovye-_bolshie_-zadok-ne-opushchen-.-3.5-mesyatsa.
+    [START_DATE] => 10.01.2021 16:49:28
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2789
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 10.01.2021 16:49:28
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-10 16:49:28
+    [LAST_MESSAGE_ID] => 4852
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2789
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 10.01.2021 16:49:28
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-10 16:49:28
+    [ABS_LAST_MESSAGE_ID] => 4852
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Немецкая овчарка
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+--><!--helloArray
+(
+    [ID] => 1866
+    [FORUM_ID] => 54
+    [TOPIC_ID] => 
+    [TITLE] => Пневмония у щенка
+    [TAGS] => 
+    [DESCRIPTION] => Добрый день. Живём в Китае и здесь же купили щенка акиты 3 месяца. Щенок, пока нам его везли судя по всему достаточно переохладился, местные вообще любовью к животным не отличаются. А ведь ей недавно совсем делали прививку. А тут ещё зима очень холодная в
+    [ICON] => 
+    [STATE] => Y
+    [APPROVED] => Y
+    [SORT] => 150
+    [VIEWS] => 107
+    [USER_START_ID] => 2792
+    [USER_START_NAME] => ROBOT
+    [TITLE_SEO] => 1866-pnevmoniya-u-shchenka
+    [START_DATE] => 11.01.2021 04:50:13
+    [POSTS] => 0
+    [LAST_POSTER_ID] => 2792
+    [LAST_POSTER_NAME] => ROBOT
+    [LAST_POST_DATE] => 11.01.2021 04:50:13
+    [LAST_POST_DATE_ORIGINAL] => 2021-01-11 04:50:13
+    [LAST_MESSAGE_ID] => 4862
+    [POSTS_UNAPPROVED] => 0
+    [ABS_LAST_POSTER_ID] => 2792
+    [ABS_LAST_POSTER_NAME] => ROBOT
+    [ABS_LAST_POST_DATE] => 11.01.2021 04:50:13
+    [ABS_LAST_POST_DATE_ORIGINAL] => 2021-01-11 04:50:13
+    [ABS_LAST_MESSAGE_ID] => 4862
+    [SOCNET_GROUP_ID] => 0
+    [OWNER_ID] => 0
+    [HTML] => 
+    [XML_ID] => 
+    [FORUM_NAME] => Акита-ину
+    [IMAGE] => 
+    [IMAGE_DESCR] => 
+)
+-->
+
+<div class="main-banner">
+<a href="https://animalsmonth.ru/noses-tails" target="_blank" rel="nofollow">
+<div class="mb-tem">
+<div class="logo-bm"></div>
+
+<div class="mb-txt">
+<p>Очаровательные котики и собаки ждут своих хозяев. </p>
+<p>Возможно, кто-то из них станет Вашим преданным другом и членом семьи.</p>
+</div>
+
+<div class="mb-btn">Взгляните на них!</div>
+
+</div>
+</a>
+</div>
+
+<style>
+
+.logo-bm{background-image:url(https://static.tildacdn.com/tild3235-3531-4735-b462-633439353538/download_copy.png);
+width: 300px;
+    height: 100px;
+    background-repeat: no-repeat;
+margin: 15px auto;}
+.main-banner{
+background-image:url(mb.jpg);
+background-position: center;
+width: 100%;
+    max-width: 948px;
+    height: 400px;
+    background-size: cover;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.mb-tem{
+background-image: -moz-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    background-image: linear-gradient(top, rgba(0,0,0,0.30), rgba(0,0,0,0.80));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b2000000', endColorstr='#33000000');
+width: 100%;
+    height: 100%;
+    display: table;
+}
+.mb-txt {
+    text-align: center;
+    margin: 60px 5% 50px;
+    width: 90%;
+    color: #fff;
+    font-size: 22px;
+}
+.mb-btn {
+    color: #fff;
+    font-size: 22px;
+    border: 4px solid #fff;
+    width: 220px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.mb-txt p{
+margin: 0 0 10px;
+}
+
+@media screen and (max-width:1040px){
+
+.main-banner{
+	    width: auto;
+		margin: 0 40px;
+    height: 430px;
+	}
+
+}
+
+@media screen and (max-width:800px){
+.main-banner{
+		margin: 0 20px;
+	}	
+	
+}
+
+@media screen and (max-width:550px){
+	.main-banner {
+    height: 500px;
+}
+}
+</style>
+
+<div class="forum-inside">
+
+<h2 class="main-h2">Обсуждения</h2>
+<div class="fast-tag main-tag">
+	<a class="fta act-fta button-tabs" data-id="popular" href="?sort=best_topic">Популярные</a>
+	<a class="fta button-tabs" data-id="newtopic" href="?sort=new_topic">Новые</a>
+	<a class="fta button-tabs" data-id="without_answer" href="?sort=without_answer">Без ответа</a>
+</div>
+<div id="popular" style="display:block">
+
+	<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2736/">
+				<div class="ava-med">
+											<div class="noava fill6"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/meynkun-ili-metis-1849/" class="fh">Мейнкун или метис?</a></div>
+			<div class="forum-text">Дорогие форумчане! Возможно, на первом фото котята ещё малыши, но хочется узнать Вашего мнения. Насколько красавцы с двух фото похожи на чистокровных? Спасибо!</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2736/" class="fha">Наталья Фокс</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">912 просмотров</span>
+				<span class="vopros-otvet">31 ответ</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2802/">
+				<div class="ava-med">
+											<div class="noava fill2"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/pitomnik-imperialdog-89169900618-1884/" class="fh">Питомник IMPERIAL-DOG 89169900618</a></div>
+			<div class="forum-text">Всем привет. Купили щенка французского бульдога в вышеуказанном питомники на авито, картинки красивые щенков и они есть в наличие, вроде как питомник, вообщем купили. Привезли домой, щенок шустрый, игривый. Спустя...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2802/" class="fha">Таня  Назарова</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">1783 просмотра</span>
+				<span class="vopros-otvet">11 ответов</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2731/">
+				<div class="ava-med">
+											<div class="noava fill1"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/u-kotenka-regdola-ponos-i-inogda-rvota-1845/" class="fh">У котенка Регдола понос и иногда рвота.</a></div>
+			<div class="forum-text">Моему коту 7 месяцев, на данный момент никак не получается определиться с сбалансированным питание, чтобы нашему коту подходило. Когда он у нас только появился (где-то 2,5-3 месяца ему было), мы его кормили сухим...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2731/" class="fha">Александр Чупраков</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">339 просмотров</span>
+				<span class="vopros-otvet">9 ответов</span>
+			</span>
+		</div>
+	</div>
+	</div>
+<div id="newtopic" style="display:none">
+	<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/3155/">
+				<div class="ava-med">
+											<div class="noava fill5"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/eto-korgi-1999/" class="fh">Это Корги? </a></div>
+			<div class="forum-text">Здравствуйте, подскажите пожалуйста </div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/3155/" class="fha">Диана Талипова </a></span>
+				<span class="vopros-date">15 часов назад</span>
+				<span class="vopros-smotr">25 просмотров</span>
+				<span class="vopros-otvet">1 ответ</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/3147/">
+				<div class="ava-med">
+											<div class="noava fill7"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/stul-v-shchenka-1997/" class="fh">Стул в щенка </a></div>
+			<div class="forum-text">Здравствуйте. У меня щенок француз 3 месяца. Пару дней назад сделали 2 прививку. Кормила кормом который дал заводчик, но корм заканчивался и заводчица мне посоветовала взять корм Forza 10 для щенков. Я начала их...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/3147/" class="fha">Кристина Соловий </a></span>
+				<span class="vopros-date">1 день назад</span>
+				<span class="vopros-smotr">61 просмотр</span>
+				<span class="vopros-otvet">4 ответа</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/3138/">
+				<div class="ava-med">
+											<div class="noava fill8"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/vopros-york-skulit-v-odinochestve-1988/" class="fh">Вопрос. Йорк скулит в одиночестве?</a></div>
+			<div class="forum-text">Планирую завести йорка. Но днем нас не бывает дома. Сильно ли скучает йорик в одиночестве? Скулит? Соседи будут жаловаться?</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/3138/" class="fha">Наталья Иванова</a></span>
+				<span class="vopros-date">3 дня назад</span>
+				<span class="vopros-smotr">45 просмотров</span>
+				<span class="vopros-otvet">1 ответ</span>
+			</span>
+		</div>
+	</div>
+	</div>
+<div id="without_answer" style="display:none">
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2665/">
+				<div class="ava-med">
+											<div class="noava fill5"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/broshennyy-labrador-1824/" class="fh">Брошенный лабрадор</a></div>
+			<div class="forum-text">Помогите найти дом для лабрадора. Живёт на улице,на остановке. Уже долго. Очень умный. Добрый,воспитанный мальчик. Любит людей,доверяет. Кто то выбросил на улицу. К себе взять не могу- два добермана взрослых. Никому...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2665/" class="fha">Рита Воскресенье</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">465 просмотров</span>
+				<span class="vopros-otvet">0 ответов</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2666/">
+				<div class="ava-med">
+											<div class="noava fill6"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/poezdki-s-pitomtsem-1826/" class="fh">Поездки с питомцем</a></div>
+			<div class="forum-text">Друзья, я работаю над дипломным проектом на тему «Безопасной транспортировки животных». Создаю дизайн переноски для наших питомцев.
+⠀
+Буда рада, если вы поможете ответить на 10 простых вопросов. Для меня важно...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2666/" class="fha">Ольга  Орёл</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">18 просмотров</span>
+				<span class="vopros-otvet">0 ответов</span>
+			</span>
+		</div>
+	</div>
+		<div class="forum-prew">
+		<div class="forum-ava-block">
+			<a href="/u/2677/">
+				<div class="ava-med">
+											<div class="noava fill7"></div>
+									</div>
+			</a>
+		</div>
+		<div class="forum-text-block">
+			<div class="forum-href"><a href="/f/nemetskaya-ovcharka-1829/" class="fh">Немецкая овчарка</a></div>
+			<div class="forum-text">Подскажите пожалуйста! Предложили взять немецкую овчарку, ей уже 1,5 года, отдают в связи браковки. Жила и воспитывалась в служебных условиях, т.е. занимались кинологи. Стоит ли брать? И привыкнет ли она к семье...</div>
+			<span class="vopros-stat">
+<span class="ava-med-name"><a href="/u/2677/" class="fha">Яна Мур</a></span>
+				<span class="vopros-date">2 месяца назад</span>
+				<span class="vopros-smotr">245 просмотров</span>
+				<span class="vopros-otvet">0 ответов</span>
+			</span>
+		</div>
+	</div>
+	</div>
+	<div class="but-div"><a href="/forum/" class="big-button">Перейти на форум</a></div>
+</div>
+
+				<div class="pop-porodi">
+
+					<h2>Популярные породы собак</h2>
+					<div class="pop-porodi-block">
+				
+				<a href="/dog/sibirskiy-khaski/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/325/325283728e9b607099b05b329accfe28.jpg' data-alt="Сибирский хаски">
+<noscript data-original='/upload/iblock/325/325283728e9b607099b05b329accfe28.jpg' data-alt="Сибирский хаски">
+<img src='/upload/iblock/325/325283728e9b607099b05b329accfe28.jpg' alt="Сибирский хаски">
+</noscript>
+</div>
+</div>
+				<span>Сибирский хаски</span>
+				</a>
+				
+				<a href="/dog/mops/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/130/1309222f033fb6928ea065578276ab44.jpg' data-alt="Мопс">
+<noscript data-original='/upload/iblock/130/1309222f033fb6928ea065578276ab44.jpg' data-alt="Мопс">
+<img src='/upload/iblock/130/1309222f033fb6928ea065578276ab44.jpg' alt="Мопс">
+</noscript>
+</div>
+</div>
+				<span>Мопс</span>
+				</a>
+				
+				<a href="/dog/chikhuakhua/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/49c/49cd241c27d90c0ce9bd82c950cd4a76.jpg' data-alt="Чихуахуа">
+<noscript data-original='/upload/iblock/49c/49cd241c27d90c0ce9bd82c950cd4a76.jpg' data-alt="Чихуахуа">
+<img src='/upload/iblock/49c/49cd241c27d90c0ce9bd82c950cd4a76.jpg' alt="Чихуахуа">
+</noscript>
+</div>
+</div>
+				<span>Чихуахуа</span>
+				</a>
+				
+				<a href="/dog/nemetskaya-ovcharka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/212/212adec96be4631fe2fa0584225b83ff.jpg' data-alt="Немецкая овчарка">
+<noscript data-original='/upload/iblock/212/212adec96be4631fe2fa0584225b83ff.jpg' data-alt="Немецкая овчарка">
+<img src='/upload/iblock/212/212adec96be4631fe2fa0584225b83ff.jpg' alt="Немецкая овчарка">
+</noscript>
+</div>
+</div>
+				<span>Немецкая овчарка</span>
+				</a>
+				
+				<a href="/dog/labrador-retriver/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/f09/f09005e451fc6fcacdbcabc6d2f1de09.jpg' data-alt="Лабрадор-ретривер">
+<noscript data-original='/upload/iblock/f09/f09005e451fc6fcacdbcabc6d2f1de09.jpg' data-alt="Лабрадор-ретривер">
+<img src='/upload/iblock/f09/f09005e451fc6fcacdbcabc6d2f1de09.jpg' alt="Лабрадор-ретривер">
+</noscript>
+</div>
+</div>
+				<span>Лабрадор-ретривер</span>
+				</a>
+				
+				<a href="/dog/taksa/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/53b/53b92eec713e2c552ebc1f1001a0a350.jpg' data-alt="Такса">
+<noscript data-original='/upload/iblock/53b/53b92eec713e2c552ebc1f1001a0a350.jpg' data-alt="Такса">
+<img src='/upload/iblock/53b/53b92eec713e2c552ebc1f1001a0a350.jpg' alt="Такса">
+</noscript>
+</div>
+</div>
+				<span>Такса</span>
+				</a>
+				
+				<a href="/dog/pudel/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/46c/46c48d510e99fd27d2b9d92eced1dfa4.jpg' data-alt="Пудель">
+<noscript data-original='/upload/iblock/46c/46c48d510e99fd27d2b9d92eced1dfa4.jpg' data-alt="Пудель">
+<img src='/upload/iblock/46c/46c48d510e99fd27d2b9d92eced1dfa4.jpg' alt="Пудель">
+</noscript>
+</div>
+</div>
+				<span>Пудель</span>
+				</a>
+				
+				<a href="/dog/velsh-korgi-pembrok/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/9af/9af916d1cf3fb7990d7618dd6861ec43.jpg' data-alt="Вельш-корги пемброк">
+<noscript data-original='/upload/iblock/9af/9af916d1cf3fb7990d7618dd6861ec43.jpg' data-alt="Вельш-корги пемброк">
+<img src='/upload/iblock/9af/9af916d1cf3fb7990d7618dd6861ec43.jpg' alt="Вельш-корги пемброк">
+</noscript>
+</div>
+</div>
+				<span>Вельш-корги пемброк</span>
+				</a>
+				
+				<a href="/dog/dzhek-rassel-terer/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/a02/a027665dded6df37d45e2c2a6c304b28.jpg' data-alt="Джек-рассел-терьер">
+<noscript data-original='/upload/iblock/a02/a027665dded6df37d45e2c2a6c304b28.jpg' data-alt="Джек-рассел-терьер">
+<img src='/upload/iblock/a02/a027665dded6df37d45e2c2a6c304b28.jpg' alt="Джек-рассел-терьер">
+</noscript>
+</div>
+</div>
+				<span>Джек-рассел-терьер</span>
+				</a>
+				
+				<a href="/dog/yorkshirskiy-terer/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/305/3052ffceecb0392a4bd66c672ac78a71.jpg' data-alt="Йоркширский терьер">
+<noscript data-original='/upload/iblock/305/3052ffceecb0392a4bd66c672ac78a71.jpg' data-alt="Йоркширский терьер">
+<img src='/upload/iblock/305/3052ffceecb0392a4bd66c672ac78a71.jpg' alt="Йоркширский терьер">
+</noscript>
+</div>
+</div>
+				<span>Йоркширский терьер</span>
+				</a>
+				
+				<a href="/dog/doberman/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/a5a/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg' data-alt="Доберман">
+<noscript data-original='/upload/iblock/a5a/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg' data-alt="Доберман">
+<img src='/upload/iblock/a5a/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg' alt="Доберман">
+</noscript>
+</div>
+</div>
+				<span>Доберман</span>
+				</a>
+				
+				<a href="/dog/frantsuzskiy-buldog/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/5c0/5c0c7393a5e5d42c33c23efc28a52f84.jpg' data-alt="Французский бульдог">
+<noscript data-original='/upload/iblock/5c0/5c0c7393a5e5d42c33c23efc28a52f84.jpg' data-alt="Французский бульдог">
+<img src='/upload/iblock/5c0/5c0c7393a5e5d42c33c23efc28a52f84.jpg' alt="Французский бульдог">
+</noscript>
+</div>
+</div>
+				<span>Французский бульдог</span>
+				</a>
+				
+				<a href="/dog/russkiy-toy-terer/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/947/947e6bec6c723daeddb2296e8b71ac1a.JPG' data-alt="Русский той-терьер">
+<noscript data-original='/upload/iblock/947/947e6bec6c723daeddb2296e8b71ac1a.JPG' data-alt="Русский той-терьер">
+<img src='/upload/iblock/947/947e6bec6c723daeddb2296e8b71ac1a.JPG' alt="Русский той-терьер">
+</noscript>
+</div>
+</div>
+				<span>Русский той-терьер</span>
+				</a>
+				
+				<a href="/dog/alabay-sredneaziatskaya-ovcharka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/609/609708aa8ba6a6e5eccecc9a058c1b65.jpg' data-alt="Алабай (Среднеазиатская овчарка)">
+<noscript data-original='/upload/iblock/609/609708aa8ba6a6e5eccecc9a058c1b65.jpg' data-alt="Алабай (Среднеазиатская овчарка)">
+<img src='/upload/iblock/609/609708aa8ba6a6e5eccecc9a058c1b65.jpg' alt="Алабай (Среднеазиатская овчарка)">
+</noscript>
+</div>
+</div>
+				<span>Алабай (Среднеазиатская овчарка)</span>
+				</a>
+				
+				<a href="/dog/akita-inu/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/923/923124829b0781ae065bff0951917c74.jpg' data-alt="Акита-ину">
+<noscript data-original='/upload/iblock/923/923124829b0781ae065bff0951917c74.jpg' data-alt="Акита-ину">
+<img src='/upload/iblock/923/923124829b0781ae065bff0951917c74.jpg' alt="Акита-ину">
+</noscript>
+</div>
+</div>
+				<span>Акита-ину</span>
+				</a>
+				
+				<a href="/dog/bigl/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/c35/c354befe4fd9dc1c6f7baaf41fa80d74.jpg' data-alt="Бигль">
+<noscript data-original='/upload/iblock/c35/c354befe4fd9dc1c6f7baaf41fa80d74.jpg' data-alt="Бигль">
+<img src='/upload/iblock/c35/c354befe4fd9dc1c6f7baaf41fa80d74.jpg' alt="Бигль">
+</noscript>
+</div>
+</div>
+				<span>Бигль</span>
+				</a>
+				</div>
+<div class="but-div">
+									<a href="/dog/" class="big-button">Все породы собак</a>
+								</div>
+
+	</div>
+
+			<div class="pop-porodi">
+
+					<h2>Популярные породы кошек</h2>
+					<div class="pop-porodi-block">
+				
+				<a href="/cat/britanskaya-korotkosherstnaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/122/122bc3af3bca3022274a46e1823d6734.jpg' data-alt="Британская короткошерстная кошка">
+<noscript data-original='/upload/iblock/122/122bc3af3bca3022274a46e1823d6734.jpg' data-alt="Британская короткошерстная кошка">
+<img src='/upload/iblock/122/122bc3af3bca3022274a46e1823d6734.jpg' alt="Британская короткошерстная кошка">
+</noscript>
+</div>
+</div>
+				<span>Британская короткошерстная кошка</span>
+				</a>
+				
+				<a href="/cat/shotlandskaya-visloukhaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/7bc/7bc6223592e579f73094c57104cb0a4a.jpg' data-alt="Шотландская вислоухая кошка">
+<noscript data-original='/upload/iblock/7bc/7bc6223592e579f73094c57104cb0a4a.jpg' data-alt="Шотландская вислоухая кошка">
+<img src='/upload/iblock/7bc/7bc6223592e579f73094c57104cb0a4a.jpg' alt="Шотландская вислоухая кошка">
+</noscript>
+</div>
+</div>
+				<span>Шотландская вислоухая кошка</span>
+				</a>
+				
+				<a href="/cat/bengalskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/d52/d52cc35f589b843f364ecfd09b8723e9.jpg' data-alt="Бенгальская кошка">
+<noscript data-original='/upload/iblock/d52/d52cc35f589b843f364ecfd09b8723e9.jpg' data-alt="Бенгальская кошка">
+<img src='/upload/iblock/d52/d52cc35f589b843f364ecfd09b8723e9.jpg' alt="Бенгальская кошка">
+</noscript>
+</div>
+</div>
+				<span>Бенгальская кошка</span>
+				</a>
+				
+				<a href="/cat/manchkin/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/1ea/1eaa39ec7e0e83c08201a175ffbcb05d.jpg' data-alt="Манчкин">
+<noscript data-original='/upload/iblock/1ea/1eaa39ec7e0e83c08201a175ffbcb05d.jpg' data-alt="Манчкин">
+<img src='/upload/iblock/1ea/1eaa39ec7e0e83c08201a175ffbcb05d.jpg' alt="Манчкин">
+</noscript>
+</div>
+</div>
+				<span>Манчкин</span>
+				</a>
+				
+				<a href="/cat/siamskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/cd1/cd184f32a5002cc00b1a8a0e5d304581.jpg' data-alt="Сиамская кошка">
+<noscript data-original='/upload/iblock/cd1/cd184f32a5002cc00b1a8a0e5d304581.jpg' data-alt="Сиамская кошка">
+<img src='/upload/iblock/cd1/cd184f32a5002cc00b1a8a0e5d304581.jpg' alt="Сиамская кошка">
+</noscript>
+</div>
+</div>
+				<span>Сиамская кошка</span>
+				</a>
+				
+				<a href="/cat/sibirskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/4d1/4d156c3a13ec27bf1dfc055964a80ecd.jpg' data-alt="Сибирская кошка">
+<noscript data-original='/upload/iblock/4d1/4d156c3a13ec27bf1dfc055964a80ecd.jpg' data-alt="Сибирская кошка">
+<img src='/upload/iblock/4d1/4d156c3a13ec27bf1dfc055964a80ecd.jpg' alt="Сибирская кошка">
+</noscript>
+</div>
+</div>
+				<span>Сибирская кошка</span>
+				</a>
+				
+				<a href="/cat/abissinskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/71c/71c4a069bc3f3acf7af94cc8f62171c7.jpg' data-alt="Абиссинская кошка">
+<noscript data-original='/upload/iblock/71c/71c4a069bc3f3acf7af94cc8f62171c7.jpg' data-alt="Абиссинская кошка">
+<img src='/upload/iblock/71c/71c4a069bc3f3acf7af94cc8f62171c7.jpg' alt="Абиссинская кошка">
+</noscript>
+</div>
+</div>
+				<span>Абиссинская кошка</span>
+				</a>
+				
+				<a href="/cat/savanna-ashera/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/247/2479864e5caef68e93275f3b0e3c29a7.jpg' data-alt="Саванна (Ашера)">
+<noscript data-original='/upload/iblock/247/2479864e5caef68e93275f3b0e3c29a7.jpg' data-alt="Саванна (Ашера)">
+<img src='/upload/iblock/247/2479864e5caef68e93275f3b0e3c29a7.jpg' alt="Саванна (Ашера)">
+</noscript>
+</div>
+</div>
+				<span>Саванна (Ашера)</span>
+				</a>
+				
+				<a href="/cat/nevskaya-maskaradnaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/d6a/d6a28fb3bd0e0047eb3ca5e0a5a97691.jpg' data-alt="Невская маскарадная кошка">
+<noscript data-original='/upload/iblock/d6a/d6a28fb3bd0e0047eb3ca5e0a5a97691.jpg' data-alt="Невская маскарадная кошка">
+<img src='/upload/iblock/d6a/d6a28fb3bd0e0047eb3ca5e0a5a97691.jpg' alt="Невская маскарадная кошка">
+</noscript>
+</div>
+</div>
+				<span>Невская маскарадная кошка</span>
+				</a>
+				
+				<a href="/cat/orientalnaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/30d/30dece23ef50eacf1342423f0e3cb1ec.jpg' data-alt="Ориентальная кошка">
+<noscript data-original='/upload/iblock/30d/30dece23ef50eacf1342423f0e3cb1ec.jpg' data-alt="Ориентальная кошка">
+<img src='/upload/iblock/30d/30dece23ef50eacf1342423f0e3cb1ec.jpg' alt="Ориентальная кошка">
+</noscript>
+</div>
+</div>
+				<span>Ориентальная кошка</span>
+				</a>
+				
+				<a href="/cat/kurilskiy-bobteyl/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/de5/de527272cbe8690804f5f50134cfb2dd.jpg' data-alt="Курильский бобтейл">
+<noscript data-original='/upload/iblock/de5/de527272cbe8690804f5f50134cfb2dd.jpg' data-alt="Курильский бобтейл">
+<img src='/upload/iblock/de5/de527272cbe8690804f5f50134cfb2dd.jpg' alt="Курильский бобтейл">
+</noscript>
+</div>
+</div>
+				<span>Курильский бобтейл</span>
+				</a>
+				
+				<a href="/cat/meyn-kun/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/dd6/dd6243954bee36fe1667bb49b3f6848f.jpg' data-alt="Мейн-кун">
+<noscript data-original='/upload/iblock/dd6/dd6243954bee36fe1667bb49b3f6848f.jpg' data-alt="Мейн-кун">
+<img src='/upload/iblock/dd6/dd6243954bee36fe1667bb49b3f6848f.jpg' alt="Мейн-кун">
+</noscript>
+</div>
+</div>
+				<span>Мейн-кун</span>
+				</a>
+				
+				<a href="/cat/kornish-reks/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/456/456c2b17b1d6d9975027e72b1a12a41d.jpg' data-alt="Корниш-рекс">
+<noscript data-original='/upload/iblock/456/456c2b17b1d6d9975027e72b1a12a41d.jpg' data-alt="Корниш-рекс">
+<img src='/upload/iblock/456/456c2b17b1d6d9975027e72b1a12a41d.jpg' alt="Корниш-рекс">
+</noscript>
+</div>
+</div>
+				<span>Корниш-рекс</span>
+				</a>
+				
+				<a href="/cat/ekzoticheskaya-koshka/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/74e/74ee63922435ecb3e1957c816b34445d.jpg' data-alt="Экзотическая кошка">
+<noscript data-original='/upload/iblock/74e/74ee63922435ecb3e1957c816b34445d.jpg' data-alt="Экзотическая кошка">
+<img src='/upload/iblock/74e/74ee63922435ecb3e1957c816b34445d.jpg' alt="Экзотическая кошка">
+</noscript>
+</div>
+</div>
+				<span>Экзотическая кошка</span>
+				</a>
+				
+				<a href="/cat/regdoll/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/e26/e26069c7fbefaa7f3b9e314ab685a8ab.jpg' data-alt="Рэгдолл">
+<noscript data-original='/upload/iblock/e26/e26069c7fbefaa7f3b9e314ab685a8ab.jpg' data-alt="Рэгдолл">
+<img src='/upload/iblock/e26/e26069c7fbefaa7f3b9e314ab685a8ab.jpg' alt="Рэгдолл">
+</noscript>
+</div>
+</div>
+				<span>Рэгдолл</span>
+				</a>
+				
+				<a href="/cat/shinshilla/" class="poroda-element">
+					<div class="ava-poroda">
+<div class="lazy-load" data-original='/upload/iblock/138/1383b3ac2b57167bc556bb64298f3757.jpg' data-alt="Шиншилла">
+<noscript data-original='/upload/iblock/138/1383b3ac2b57167bc556bb64298f3757.jpg' data-alt="Шиншилла">
+<img src='/upload/iblock/138/1383b3ac2b57167bc556bb64298f3757.jpg' alt="Шиншилла">
+</noscript>
+</div>
+</div>
+				<span>Шиншилла</span>
+				</a>
+				</div>
+<div class="but-div">
+									<a href="/cat/" class="big-button">Все породы кошек</a>
+								</div>
+
+	</div>
+	</div><!--.r-side-->
+</div><!--.content-->
+<div id="bxdynamic_footerad_start" style="display:none"></div><div id="bxdynamic_footerad_end" style="display:none"></div>
+
+<div id="bxdynamic_mobfix_start" style="display:none"></div><div id="bxdynamic_mobfix_end" style="display:none"></div>
+
+<footer>
+<div class="fl fl1">
+<div class="flz">Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:</div>
+<a href="https://vk.com/lapkins_ru" class="vk socicon" rel="nofollow" target="_blank"></a>
+<a href="https://www.facebook.com/lapkins.ru/" class="fb socicon" rel="nofollow" target="_blank"></a>
+<a href="https://www.instagram.com/lapkins.ru/" class="inst socicon" rel="nofollow" target="_blank"><i class="inst-ico"></i></a>
+</div>
+<div class="fl fl2">
+<a href="/">Главная</a>
+<a href="/dog/">Собаки</a>
+<a href="/cat/">Кошки</a>
+<a href="/publ/">Журнал</a>
+<!--<a href="#">Объявления</a>-->
+	<a href="/forum/">Форум</a>
+	<a href="/klichki/">Клички</a>
+</div>
+<div class="fl fl3">
+<a href="/o-proekte/">О проекте</a>
+<!--<a href="#">Команда</a>-->
+<!--<a href="#">Реклама</a>-->
+<a href="/os/">Обратная связь</a>
+<a href="/terms/">Правила</a>
+<!--<a href="#">Вакансии</a>-->
+</div>
+<div class="fl fl4">2020 © «Lapkins.ru». Сделано с <i class="love"></i> к животным. Копирование материалов запрещено.<span class="c-c">
+<script data-skip-moving=true>document.write("<a href='//www.liveinternet.ru/click' "+"target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r"+escape(document.referrer)+((typeof(screen)=="undefined2")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,150))+";"+Math.random()+"' alt='' title='LiveInternet' "+"border='0' width='31' height='31'><\/a>")</script>
+</span>
+<span id="bx-composite-banner"></span></div>
+</footer>
+</div>
+<div class="top"></div>
+</div>
+
+<header>
+<a href="/" class="logo lapka"><span class="logotxt">lapkins</span></a>
+<nav class="topmenu">
+<div class="iconmenu"><span></span></div>
+<div class="itemsmenu">
+<a href="/dog/">Собаки</a>
+<a href="/cat/">Кошки</a>
+<a href="/publ/">Журнал</a>
+<a href="/forum/">Форум</a>
+</div>
+<div class="find find_btn__open">
+<i class="find-toggle"></i>
+</div>
+</nav>
+
+                <div class="login no-login" id="auth_enter"></div>
+    
+</header>
+<div class="poisk-fon" style="display: none">
+    <div class="poisk-head">
+
+        <div class="find-stroka"><input type="text" placeholder="Поиск по сайту" name="q" value="" autocomplete="off" class="find-okno"></div>
+        <span class="close"></span>
+    </div>
+    <div class="poisk-content" >
+
+    </div>
+
+</div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="/js/my.js"></script>
+<script src="//s1.lapkins.ru/jquery.fancybox.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="/bitrix/js/main/core/core.min.js?1592727109249634"></script><script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script  src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1612175319255377"></script>
+<script src="/bitrix/js/twim.recaptchafree/script.js?15445269874421"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchafree&render=explicit&hl=ru"></script>
+<script  src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16015553681051"></script>
+<script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?159272712560291"></script>
+<script src="/bitrix/js/main/core/core_ls.min.js?14888980827365"></script>
+<script src="/bitrix/js/main/core/core_frame_cache.min.js?157850107810422"></script>
+<script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?159272710958041"></script>
+
+<script>
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+<script>var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+<script>
+$(document).ready(function(){
+	$('.button-tabs').on('click', function(e){
+		e.preventDefault();
+		
+		var oldSelected = $('.act-fta').attr('data-id');
+
+		var selectedId = $(this).attr('data-id');
+
+		$('#'+oldSelected).attr('style', 'display:none');
+		$('#'+selectedId).attr('style', 'display:block');
+		$('.act-fta').removeClass('act-fta');
+		$(this).addClass('act-fta');
+	});
+});
+</script>
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");ym(44565373,"init",{id:44565373,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
+</body>
+</html><!--7433f77710e79e796da6e2c84cbb980e-->
